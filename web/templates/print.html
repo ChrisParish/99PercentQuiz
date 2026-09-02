@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>{{.Title}} &middot; {{.DateLong}} &middot; print</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="print">
+<header class="masthead">
+  <h1>{{.Title}}</h1>
+  <p class="date">{{.DateLong}} &middot; set {{.DayNumber}}</p>
+  <nav class="controls no-print">
+    <a class="btn" href="/{{.DateISO}}">Back to the quiz</a>
+  </nav>
+</header>
+
+<main>
+<ol class="questions print-list">
+{{range .Questions}}
+  <li>
+    <p class="question">{{.Question}}</p>
+    <p class="answer">{{.Answer}}</p>
+  </li>
+{{end}}
+</ol>
+</main>
+</body>
+</html>

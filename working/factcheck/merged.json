@@ -1,0 +1,3446 @@
+﻿[
+    {
+        "id":  "maths-024",
+        "answer":  "63",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-048",
+        "answer":  "Robin",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-031",
+        "answer":  "Autumn",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-005",
+        "answer":  "100",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-017",
+        "answer":  "Peanut butter",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-028",
+        "answer":  "Birmingham",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-007",
+        "answer":  "Spice Girls",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-013",
+        "answer":  "Badminton",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-005",
+        "answer":  "32",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-017",
+        "answer":  "False",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-027",
+        "answer":  "34",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-047",
+        "answer":  "Dove",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-002",
+        "answer":  "12",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-018",
+        "answer":  "North",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-005",
+        "answer":  "78",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-002",
+        "answer":  "Wine",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-007",
+        "answer":  "English Channel",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-028",
+        "answer":  "Take That",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-020",
+        "answer":  "Polo",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-028",
+        "answer":  "Chameleon",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-011",
+        "answer":  "Skin",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-001",
+        "answer":  "False",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-017",
+        "answer":  "3",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-043",
+        "answer":  "Mercury",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-032",
+        "answer":  "35",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-037",
+        "answer":  "Turkey",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-015",
+        "answer":  "Pasta",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-010",
+        "answer":  "4",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-009",
+        "answer":  "Adele",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-005",
+        "answer":  "Cricket",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-020",
+        "answer":  "41",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-042",
+        "answer":  "China",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-026",
+        "answer":  "Carnivores",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-015",
+        "answer":  "Teeth",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-023",
+        "answer":  "True",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-027",
+        "answer":  "Panda",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-050",
+        "answer":  "81",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-001",
+        "answer":  "Avocado",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-014",
+        "answer":  "Germany",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-016",
+        "answer":  "North Sea",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-003",
+        "answer":  "Take That",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-016",
+        "answer":  "Lava",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-022",
+        "answer":  "Liverpool",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-007",
+        "answer":  "79",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-036",
+        "answer":  "Dog",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-023",
+        "answer":  "Pulse",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-018",
+        "answer":  "True",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-012",
+        "answer":  "Spain",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-015",
+        "answer":  "Spring",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-025",
+        "answer":  "88",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-003",
+        "answer":  "Coffee",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-011",
+        "answer":  "London",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-024",
+        "answer":  "5",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-006",
+        "answer":  "Duckling",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-035",
+        "answer":  "45",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-034",
+        "answer":  "1 year",
+        "difficulty":  1,
+        "ambiguous":  true,
+        "reason":  "365 days also defensible."
+    },
+    {
+        "id":  "animals-045",
+        "answer":  "Sheep",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-025",
+        "answer":  "Eyes",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-009",
+        "answer":  "True",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-023",
+        "answer":  "Pork",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-027",
+        "answer":  "England",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-004",
+        "answer":  "Adele",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-021",
+        "answer":  "Manchester United",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-041",
+        "answer":  "18",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-020",
+        "answer":  "Z",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-036",
+        "answer":  "Moon",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-033",
+        "answer":  "Ram",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-002",
+        "answer":  "60",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-007",
+        "answer":  "Smell",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-011",
+        "answer":  "False",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-027",
+        "answer":  "Cocoa bean",
+        "difficulty":  2,
+        "ambiguous":  true,
+        "reason":  "Cacao bean also defensible."
+    },
+    {
+        "id":  "geography-001",
+        "answer":  "London",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-030",
+        "answer":  "Red",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-040",
+        "answer":  "Thermometer",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-008",
+        "answer":  "Cow",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-047",
+        "answer":  "54",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-058",
+        "answer":  "42",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-022",
+        "answer":  "Lion",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-019",
+        "answer":  "A",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-032",
+        "answer":  "7",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-030",
+        "answer":  "Beer",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-017",
+        "answer":  "Pound sterling",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-005",
+        "answer":  "Ed Sheeran",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-014",
+        "answer":  "Curling",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-024",
+        "answer":  "1",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-020",
+        "answer":  "True",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-014",
+        "answer":  "38",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-041",
+        "answer":  "Breakfast",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-033",
+        "answer":  "Orbit",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-003",
+        "answer":  "34",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-016",
+        "answer":  "Salt and vinegar",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-027",
+        "answer":  "Gymnastics",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-026",
+        "answer":  "Giraffe",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-013",
+        "answer":  "tongue",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-014",
+        "answer":  "false",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-011",
+        "answer":  "France",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-031",
+        "answer":  "lightning",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-028",
+        "answer":  "36",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-035",
+        "answer":  "cat",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-026",
+        "answer":  "orange juice",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-020",
+        "answer":  "Sheffield",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-003",
+        "answer":  "cricket",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-060",
+        "answer":  "63",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-026",
+        "answer":  "Friday",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-017",
+        "answer":  "compass",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-018",
+        "answer":  "lungs",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-016",
+        "answer":  "true",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-042",
+        "answer":  "beaver",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-001",
+        "answer":  "45",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-021",
+        "answer":  "sausage roll",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-035",
+        "answer":  "dry",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-033",
+        "answer":  "Kent",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-010",
+        "answer":  "Sun",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-017",
+        "answer":  "Wimbledon",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-053",
+        "answer":  "49",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-009",
+        "answer":  "pig",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-020",
+        "answer":  "elbow",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-022",
+        "answer":  "false",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-029",
+        "answer":  "10",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-039",
+        "answer":  "flower",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-040",
+        "answer":  "27",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-018",
+        "answer":  "lemon",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-003",
+        "answer":  "Cardiff",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-033",
+        "answer":  "Amy Winehouse",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-032",
+        "answer":  "archery",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-011",
+        "answer":  "horse",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-022",
+        "answer":  "87",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-024",
+        "answer":  "pollen",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-007",
+        "answer":  "kid",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-012",
+        "answer":  "blood",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-029",
+        "answer":  "false",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-028",
+        "answer":  "broccoli",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-031",
+        "answer":  "Irish Sea",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-016",
+        "answer":  "One Direction",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-008",
+        "answer":  "18",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-042",
+        "answer":  "26",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-036",
+        "answer":  "key",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-015",
+        "answer":  "4",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-017",
+        "answer":  "90",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-028",
+        "answer":  "index finger",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-019",
+        "answer":  "false",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-006",
+        "answer":  "apple",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-022",
+        "answer":  "Tower Bridge",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-008",
+        "answer":  "Blur",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-026",
+        "answer":  "cricket",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-002",
+        "answer":  "carbon dioxide",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-039",
+        "answer":  "zebra",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-023",
+        "answer":  "90",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-043",
+        "answer":  "28",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-050",
+        "answer":  "pig",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-010",
+        "answer":  "366",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-003",
+        "answer":  "photosynthesis",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-020",
+        "answer":  "mozzarella",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-026",
+        "answer":  "Edinburgh",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-016",
+        "answer":  "Grand National",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-021",
+        "answer":  "true",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-018",
+        "answer":  "64",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-019",
+        "answer":  "herd",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-045",
+        "answer":  "Christmas",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-001",
+        "answer":  "oxygen",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-034",
+        "answer":  "43",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-019",
+        "answer":  "tomato sauce",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-035",
+        "answer":  "Scotland",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-001",
+        "answer":  "11",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-018",
+        "answer":  "flock",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-006",
+        "answer":  "rib cage",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-006",
+        "answer":  "true",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-037",
+        "answer":  "watch",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-009",
+        "answer":  "Mars",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-015",
+        "answer":  "77",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-025",
+        "answer":  "octopus",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-008",
+        "answer":  "onion",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-012",
+        "answer":  "Liverpool",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-009",
+        "answer":  "Formula 1",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-059",
+        "answer":  "25",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-043",
+        "answer":  "New York",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-011",
+        "answer":  "ice",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-005",
+        "answer":  "true",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-001",
+        "answer":  "kitten",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-046",
+        "answer":  "56",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-009",
+        "answer":  "tea",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-021",
+        "answer":  "Earth",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-023",
+        "answer":  "Lake District",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-012",
+        "answer":  "Rihanna",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-025",
+        "answer":  "Herbivores",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-023",
+        "answer":  "Golf",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-055",
+        "answer":  "24",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-034",
+        "answer":  "Camel",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-008",
+        "answer":  "Hearing",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-012",
+        "answer":  "True",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-013",
+        "answer":  "Italy",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-023",
+        "answer":  "360",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-004",
+        "answer":  "80",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-025",
+        "answer":  "Ketchup",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-032",
+        "answer":  "Newcastle",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-018",
+        "answer":  "Cycling",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-044",
+        "answer":  "Reindeer",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-054",
+        "answer":  "45",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-004",
+        "answer":  "60",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-017",
+        "answer":  "Pack",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-027",
+        "answer":  "Shin",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-008",
+        "answer":  "True",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-029",
+        "answer":  "Pumpkin",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-010",
+        "answer":  "Robbie Williams",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-007",
+        "answer":  "Golf",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-026",
+        "answer":  "27",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-027",
+        "answer":  "3",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-044",
+        "answer":  "Saturn",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-041",
+        "answer":  "Frog",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-048",
+        "answer":  "28",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-014",
+        "answer":  "Hair",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-025",
+        "answer":  "True",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-035",
+        "answer":  "Water",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-015",
+        "answer":  "M1",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-020",
+        "answer":  "Lady Gaga",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-025",
+        "answer":  "Tuesday",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-022",
+        "answer":  "90",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-032",
+        "answer":  "Hen",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-031",
+        "answer":  "27",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-057",
+        "answer":  "36",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-024",
+        "answer":  "Kangaroo",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-023",
+        "answer":  "Firefighter",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-006",
+        "answer":  "0",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-013",
+        "answer":  "Porridge",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-005",
+        "answer":  "Dublin",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-029",
+        "answer":  "Rugby union",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-013",
+        "answer":  "True",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-045",
+        "answer":  "25",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-020",
+        "answer":  "elephant",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-003",
+        "answer":  "24",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-028",
+        "answer":  "north and south",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-033",
+        "answer":  "45",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-004",
+        "answer":  "jacket potato",
+        "difficulty":  1,
+        "ambiguous":  true,
+        "reason":  "Baked potato is also used."
+    },
+    {
+        "id":  "geography-013",
+        "answer":  "Bath",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-013",
+        "answer":  "Billie Eilish",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-028",
+        "answer":  "basketball",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-004",
+        "answer":  "foal",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-029",
+        "answer":  "toenails",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-026",
+        "answer":  "false",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-005",
+        "answer":  "60",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-045",
+        "answer":  "rain",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-030",
+        "answer":  "40",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-013",
+        "answer":  "8",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-024",
+        "answer":  "Yorkshire pudding",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-018",
+        "answer":  "Wales",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-029",
+        "answer":  "54",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-040",
+        "answer":  "atlas",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-021",
+        "answer":  "8",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-003",
+        "answer":  "brain",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-015",
+        "answer":  "false",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-023",
+        "answer":  "parrot",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-039",
+        "answer":  "26",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-014",
+        "answer":  "pizza",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-033",
+        "answer":  "down",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-025",
+        "answer":  "Atlantic Ocean",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-027",
+        "answer":  "Taylor Swift",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-004",
+        "answer":  "15",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-011",
+        "answer":  "59",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-031",
+        "answer":  "bull",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-022",
+        "answer":  "knee",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-002",
+        "answer":  "true",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-006",
+        "answer":  "July",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-037",
+        "answer":  "volcano",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-012",
+        "answer":  "74",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-012",
+        "answer":  "apple",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-004",
+        "answer":  "Belfast",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-012",
+        "answer":  "snooker",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-021",
+        "answer":  "49",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-016",
+        "answer":  "2",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-008",
+        "answer":  "8",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-017",
+        "answer":  "ear",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-007",
+        "answer":  "false",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-022",
+        "answer":  "beef",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-008",
+        "answer":  "Scotland",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-006",
+        "answer":  "Oasis",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-016",
+        "answer":  "61",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-008",
+        "answer":  "26",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-041",
+        "answer":  "solid liquid gas",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-010",
+        "answer":  "sheep",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-044",
+        "answer":  "18",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-004",
+        "answer":  "2",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-003",
+        "answer":  "false",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-002",
+        "answer":  "Spice Girls",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-019",
+        "answer":  "tennis",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-039",
+        "answer":  "piano",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-042",
+        "answer":  "friction",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-030",
+        "answer":  "mare",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-051",
+        "answer":  "24",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-038",
+        "answer":  "66",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-049",
+        "answer":  "rabbit",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-022",
+        "answer":  "pilot",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-004",
+        "answer":  "gravity",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-034",
+        "answer":  "potatoes",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-009",
+        "answer":  "Wales",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-010",
+        "answer":  "football",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-016",
+        "answer":  "2",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-028",
+        "answer":  "true",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-036",
+        "answer":  "36",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-038",
+        "answer":  "penguin",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-018",
+        "answer":  "4",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-013",
+        "answer":  "bark",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-049",
+        "answer":  "64",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-002",
+        "answer":  "Edinburgh",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-001",
+        "answer":  "Oasis",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-031",
+        "answer":  "football",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-016",
+        "answer":  "pride",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-010",
+        "answer":  "10",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-010",
+        "answer":  "false",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-038",
+        "answer":  "6",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-052",
+        "answer":  "36",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-002",
+        "answer":  "puppy",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-005",
+        "answer":  "wheat",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-024",
+        "answer":  "France",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-011",
+        "answer":  "Coldplay",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-006",
+        "answer":  "rugby",
+        "difficulty":  1,
+        "ambiguous":  true,
+        "reason":  "A try is scored in both rugby union and league."
+    },
+    {
+        "id":  "maths-006",
+        "answer":  "61",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-032",
+        "answer":  "cold",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-007",
+        "answer":  "water",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-026",
+        "answer":  "thigh",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-024",
+        "answer":  "false",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-029",
+        "answer":  "honey",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-008",
+        "answer":  "50",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-010",
+        "answer":  "milk",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-019",
+        "answer":  "rose",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-025",
+        "answer":  "Britney Spears",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-038",
+        "answer":  "root",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-013",
+        "answer":  "77",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-005",
+        "answer":  "calf",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-019",
+        "answer":  "tears",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-004",
+        "answer":  "false",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-015",
+        "answer":  "France",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-020",
+        "answer":  "6",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-009",
+        "answer":  "30",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-011",
+        "answer":  "carrot",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-014",
+        "answer":  "Stonehenge",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-017",
+        "answer":  "Adele",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-002",
+        "answer":  "tennis",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-003",
+        "answer":  "lamb",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-019",
+        "answer":  "89",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-028",
+        "answer":  "square",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-019",
+        "answer":  "triangle",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-021",
+        "answer":  "tiger",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-021",
+        "answer":  "ankle",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-027",
+        "answer":  "true",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-031",
+        "answer":  "peas",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-006",
+        "answer":  "Thames",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-033",
+        "answer":  "marathon",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-037",
+        "answer":  "16",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-030",
+        "answer":  "100",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-027",
+        "answer":  "H2O",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-014",
+        "answer":  "6",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-010",
+        "answer":  "51",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-001",
+        "answer":  "heart",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-030",
+        "answer":  "true",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-007",
+        "answer":  "egg",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-030",
+        "answer":  "London",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-025",
+        "answer":  "every 4 years",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-001",
+        "answer":  "7",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-029",
+        "answer":  "biology",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-046",
+        "answer":  "dolphin",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "maths-056",
+        "answer":  "40",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-maths-001",
+        "answer":  "43",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-maths-002",
+        "answer":  "82",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-maths-003",
+        "answer":  "77",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-maths-004",
+        "answer":  "71",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-maths-005",
+        "answer":  "28",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-maths-006",
+        "answer":  "35",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-maths-007",
+        "answer":  "36",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-maths-008",
+        "answer":  "32",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-maths-009",
+        "answer":  "48",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-maths-010",
+        "answer":  "27",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-040",
+        "answer":  "owl",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-animals-002",
+        "answer":  "spider",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-animals-003",
+        "answer":  "shark",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-animals-004",
+        "answer":  "rabbit",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-animals-005",
+        "answer":  "ladybird",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-animals-006",
+        "answer":  "peacock",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-animals-007",
+        "answer":  "horse",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-animals-008",
+        "answer":  "guide dog",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-science-001",
+        "answer":  "seedling",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-science-002",
+        "answer":  "carbon dioxide",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-science-003",
+        "answer":  "leaves",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-science-004",
+        "answer":  "star",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-science-005",
+        "answer":  "gravity",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-science-006",
+        "answer":  "light",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-science-007",
+        "answer":  "autumn",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-science-008",
+        "answer":  "frost",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-general-001",
+        "answer":  "5",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-general-002",
+        "answer":  "green",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-general-003",
+        "answer":  "pink",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-general-004",
+        "answer":  "3",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-general-005",
+        "answer":  "Halloween",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-general-006",
+        "answer":  "1 January",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-general-007",
+        "answer":  "30",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-general-008",
+        "answer":  "Australia",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-general-009",
+        "answer":  "South America",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-general-010",
+        "answer":  "fiction",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-geography-002",
+        "answer":  "Isle of Wight",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-029",
+        "answer":  "Scotland",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-geography-005",
+        "answer":  "Tyne",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-034",
+        "answer":  "Edinburgh",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-033",
+        "answer":  "cabbage",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-food-002",
+        "answer":  "plum",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-food-003",
+        "answer":  "apple juice",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-food-004",
+        "answer":  "basil",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-food-005",
+        "answer":  "cucumber",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-food-006",
+        "answer":  "paella",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-sports-001",
+        "answer":  "11",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-011",
+        "answer":  "Ice hockey",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-sports-004",
+        "answer":  "2",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-034",
+        "answer":  "Wembley Stadium",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-015",
+        "answer":  "Snooker",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-music-001",
+        "answer":  "Oasis",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-music-003",
+        "answer":  "Coldplay",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-music-005",
+        "answer":  "The Weeknd",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-002",
+        "answer":  "4",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-030",
+        "answer":  "Kidneys",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-031",
+        "answer":  "2",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-032",
+        "answer":  "Nose",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-033",
+        "answer":  "Saliva",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-truefalse-001",
+        "answer":  "False",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-truefalse-002",
+        "answer":  "True",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-truefalse-003",
+        "answer":  "True",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-truefalse-004",
+        "answer":  "False",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "reserve-truefalse-005",
+        "answer":  "True",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-012",
+        "answer":  "Steam",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-014",
+        "answer":  "Water",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-030",
+        "answer":  "Thunder",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "science-035",
+        "answer":  "24 hours",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-007",
+        "answer":  "February",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-009",
+        "answer":  "Red, yellow, blue",
+        "difficulty":  2,
+        "ambiguous":  true,
+        "reason":  "Traditional painting answer; modern pigment primaries are cyan, magenta, yellow."
+    },
+    {
+        "id":  "general-024",
+        "answer":  "Vet",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-034",
+        "answer":  "Short",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "general-044",
+        "answer":  "Africa",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-009",
+        "answer":  "10",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-012",
+        "answer":  "Cow",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "animals-043",
+        "answer":  "Snail",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-032",
+        "answer":  "Peach",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-021",
+        "answer":  "Buckingham Palace",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-035",
+        "answer":  "Skiing",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-014",
+        "answer":  "Take That",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-015",
+        "answer":  "The X Factor",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-018",
+        "answer":  "5",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-019",
+        "answer":  "Victoria Beckham",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-021",
+        "answer":  "Coldplay",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-022",
+        "answer":  "Noel and Liam Gallagher",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-023",
+        "answer":  "Glastonbury Festival",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-024",
+        "answer":  "Spotify",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-026",
+        "answer":  "disc jockey",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-029",
+        "answer":  "Destiny\u0027s Child",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-030",
+        "answer":  "Justin Bieber",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-031",
+        "answer":  "Eminem",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-032",
+        "answer":  "Britain\u0027s Got Talent",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-034",
+        "answer":  "piano",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-035",
+        "answer":  "chorus",
+        "difficulty":  2,
+        "ambiguous":  true,
+        "reason":  "Refrain is also defensible."
+    },
+    {
+        "id":  "geography-036",
+        "answer":  "Scotland",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-037",
+        "answer":  "Wales",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-038",
+        "answer":  "Northern Ireland",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-039",
+        "answer":  "London",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "geography-040",
+        "answer":  "England",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-036",
+        "answer":  "butter",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-037",
+        "answer":  "jam",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-038",
+        "answer":  "ice cream",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-039",
+        "answer":  "lemonade",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "food-040",
+        "answer":  "bun",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-036",
+        "answer":  "cycling",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-037",
+        "answer":  "boxing",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-038",
+        "answer":  "table tennis",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-039",
+        "answer":  "surfing",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "sports-040",
+        "answer":  "football",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-036",
+        "answer":  "TikTok",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-037",
+        "answer":  "One Direction",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-038",
+        "answer":  "drums",
+        "difficulty":  2,
+        "ambiguous":  true,
+        "reason":  "Many percussion instruments fit."
+    },
+    {
+        "id":  "music-039",
+        "answer":  "Radio 1",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "music-040",
+        "answer":  "choir",
+        "difficulty":  2,
+        "ambiguous":  true,
+        "reason":  "Chorus is also defensible."
+    },
+    {
+        "id":  "truefalse-031",
+        "answer":  "true",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-032",
+        "answer":  "false",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-033",
+        "answer":  "false",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-034",
+        "answer":  "true",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-035",
+        "answer":  "false",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-036",
+        "answer":  "false",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-037",
+        "answer":  "true",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-038",
+        "answer":  "false",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-039",
+        "answer":  "true",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "truefalse-040",
+        "answer":  "true",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-034",
+        "answer":  "head",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-035",
+        "answer":  "2",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-036",
+        "answer":  "gloves",
+        "difficulty":  1,
+        "ambiguous":  true,
+        "reason":  "Mittens are also a defensible answer."
+    },
+    {
+        "id":  "body-037",
+        "answer":  "legs",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-038",
+        "answer":  "nails",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-039",
+        "answer":  "brain",
+        "difficulty":  1,
+        "ambiguous":  false,
+        "reason":  ""
+    },
+    {
+        "id":  "body-040",
+        "answer":  "kneecap",
+        "difficulty":  2,
+        "ambiguous":  false,
+        "reason":  ""
+    }
+]

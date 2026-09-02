@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>{{.Title}} &middot; {{.DateLong}}</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="masthead">
+  <h1>{{.Title}}</h1>
+  <p class="date">{{.DateLong}}</p>
+  {{if .Resolved}}<p class="notice">Weekend &mdash; showing the next weekday's questions.</p>{{end}}
+  <nav class="controls">
+    <a class="btn" href="/{{.PrevISO}}" rel="prev" aria-label="Previous weekday">&larr;</a>
+    <button class="btn btn-primary" id="reveal-all" type="button" data-state="closed">Reveal all answers</button>
+    <a class="btn" href="/{{.NextISO}}" rel="next" aria-label="Next weekday">&rarr;</a>
+  </nav>
+</header>
+
+<main>
+<ol class="questions">
+{{range .Questions}}
+  <li>
+    <details>
+      <summary>
+        <span class="question">{{.Question}}</span>
+        <span class="hint">Tap for answer</span>
+      </summary>
+      <p class="answer">{{.Answer}}</p>
+    </details>
+  </li>
+{{end}}
+</ol>
+</main>
+
+<footer class="page-footer">
+  <a href="/print/{{.PrintISO}}">Printable version</a>
+  <span class="muted">Set {{.DayNumber}}</span>
+</footer>
+
+<script src="/static/quiz.js" defer></script>
+</body>
+</html>

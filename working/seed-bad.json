@@ -1,0 +1,17 @@
+[
+  { "id": "bad-001", "category": "maths", "question": "What is 18 + 27?", "answer": "46" },
+  { "id": "bad-002", "category": "maths", "question": "What is 18 + 27?", "answer": "45" },
+  { "id": "bad-003", "category": "maths", "question": "What is 12 x 11?", "answer": "132" },
+  { "id": "bad-004", "category": "animals", "question": "What is the smallest mammal?", "answer": "Shrew" },
+  { "id": "bad-005", "category": "animals", "question": "What is the only bird that cannot fly?", "answer": "Penguin" },
+  { "id": "bad-006", "category": "food", "question": "What colour is a zucchini?", "answer": "Green" },
+  { "id": "bad-007", "category": "food", "question": "What colour is an apple?", "answer": "Red" },
+  { "id": "bad-008", "category": "general", "question": "Who is the current Prime Minister of the United Kingdom?", "answer": "Unknown" },
+  { "id": "bad-009", "category": "body", "question": "What is the strongest muscle?", "answer": "Masseter or glute" },
+  { "id": "bad-010", "category": "science", "question": "How many legs does a spider have?", "answer": "eight" },
+  { "id": "bad-011", "category": "general", "question": "Which of the following is a colour: a) red b) seven?", "answer": "Red" },
+  { "id": "bad-012", "category": "general", "question": "In which year did the Titanic sink on its maiden voyage across the Atlantic Ocean to New York?", "answer": "1912" },
+  { "id": "bad-013", "category": "music", "question": "Which band released the song \u2018Wonderwall\u2019?", "answer": "Oasis" },
+  { "id": "bad-014", "category": "science", "question": "How many sides does a triangle have", "answer": "3" },
+  { "id": "bad-015", "category": "sports", "question": "What sport is played at Wimbledon?", "answer": "Tennis" }
+]
