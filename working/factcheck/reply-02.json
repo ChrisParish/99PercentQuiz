@@ -1,1 +1,352 @@
-[{"id":"food-003","answer":"Coffee","difficulty":1,"ambiguous":false,"reason":""},{"id":"geography-011","answer":"London","difficulty":1,"ambiguous":false,"reason":""},{"id":"music-031","answer":"Lewis Capaldi","difficulty":3,"ambiguous":false,"reason":""},{"id":"sports-024","answer":"5","difficulty":1,"ambiguous":false,"reason":""},{"id":"animals-006","answer":"Duckling","difficulty":1,"ambiguous":false,"reason":""},{"id":"maths-035","answer":"45","difficulty":1,"ambiguous":false,"reason":""},{"id":"general-034","answer":"Small","difficulty":1,"ambiguous":true,"reason":"Little is also defensible."},{"id":"science-034","answer":"1 year","difficulty":1,"ambiguous":true,"reason":"365 days also defensible."},{"id":"animals-045","answer":"Sheep","difficulty":1,"ambiguous":false,"reason":""},{"id":"body-025","answer":"Eyes","difficulty":1,"ambiguous":false,"reason":""},{"id":"truefalse-009","answer":"True","difficulty":1,"ambiguous":false,"reason":""},{"id":"food-023","answer":"Pork","difficulty":1,"ambiguous":false,"reason":""},{"id":"geography-027","answer":"England","difficulty":1,"ambiguous":false,"reason":""},{"id":"music-004","answer":"Adele","difficulty":2,"ambiguous":false,"reason":""},{"id":"sports-021","answer":"Manchester United","difficulty":2,"ambiguous":false,"reason":""},{"id":"maths-041","answer":"18","difficulty":1,"ambiguous":false,"reason":""},{"id":"general-020","answer":"Z","difficulty":1,"ambiguous":false,"reason":""},{"id":"science-036","answer":"Moon","difficulty":1,"ambiguous":false,"reason":""},{"id":"animals-033","answer":"Ram","difficulty":2,"ambiguous":false,"reason":""},{"id":"maths-002","answer":"60","difficulty":1,"ambiguous":false,"reason":""},{"id":"body-007","answer":"Smell","difficulty":1,"ambiguous":false,"reason":""},{"id":"truefalse-011","answer":"False","difficulty":1,"ambiguous":false,"reason":""},{"id":"food-027","answer":"Cocoa bean","difficulty":2,"ambiguous":true,"reason":"Cacao bean also defensible."},{"id":"geography-001","answer":"London","difficulty":1,"ambiguous":false,"reason":""},{"id":"music-030","answer":"R.E.M.","difficulty":3,"ambiguous":false,"reason":""},{"id":"sports-030","answer":"Red","difficulty":1,"ambiguous":false,"reason":""},{"id":"general-024","answer":"Doctor","difficulty":1,"ambiguous":true,"reason":"Nurse is also defensible."},{"id":"science-040","answer":"Thermometer","difficulty":1,"ambiguous":false,"reason":""},{"id":"animals-008","answer":"Cow","difficulty":1,"ambiguous":false,"reason":""},{"id":"maths-047","answer":"54","difficulty":1,"ambiguous":false,"reason":""},{"id":"maths-058","answer":"42","difficulty":1,"ambiguous":false,"reason":""},{"id":"animals-022","answer":"Lion","difficulty":1,"ambiguous":false,"reason":""},{"id":"general-019","answer":"A","difficulty":1,"ambiguous":false,"reason":""},{"id":"science-032","answer":"7","difficulty":1,"ambiguous":false,"reason":""},{"id":"food-030","answer":"Beer","difficulty":2,"ambiguous":false,"reason":""},{"id":"geography-017","answer":"Pound sterling","difficulty":1,"ambiguous":false,"reason":""},{"id":"music-005","answer":"Ed Sheeran","difficulty":2,"ambiguous":false,"reason":""},{"id":"sports-014","answer":"Curling","difficulty":2,"ambiguous":false,"reason":""},{"id":"body-024","answer":"1","difficulty":1,"ambiguous":false,"reason":""},{"id":"truefalse-020","answer":"True","difficulty":1,"ambiguous":false,"reason":""},{"id":"maths-014","answer":"38","difficulty":1,"ambiguous":false,"reason":""},{"id":"animals-040","answer":"Butterfly","difficulty":1,"ambiguous":true,"reason":"Moth is also possible."},{"id":"general-041","answer":"Breakfast","difficulty":1,"ambiguous":false,"reason":""},{"id":"science-033","answer":"Orbit","difficulty":2,"ambiguous":false,"reason":""},{"id":"maths-003","answer":"34","difficulty":1,"ambiguous":false,"reason":""},{"id":"food-016","answer":"Salt and vinegar","difficulty":1,"ambiguous":false,"reason":""},{"id":"geography-021","answer":"Buckingham Palace","difficulty":2,"ambiguous":true,"reason":"Several royal palaces fit."},{"id":"music-019","answer":"Kings of Leon","difficulty":3,"ambiguous":false,"reason":""},{"id":"sports-027","answer":"Gymnastics","difficulty":2,"ambiguous":false,"reason":""},{"id":"animals-026","answer":"Giraffe","difficulty":1,"ambiguous":false,"reason":""}]
+[
+  {
+    "id": "body-070",
+    "answer": "Enamel",
+    "difficulty": 2,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "geography-053",
+    "answer": "Belfast",
+    "difficulty": 2,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "sports-075",
+    "answer": "Netball",
+    "difficulty": 2,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "maths-062",
+    "answer": "15",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "animals-083",
+    "answer": "A nightingale",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "science-052",
+    "answer": "The Moon",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "body-061",
+    "answer": "Sight",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "sports-072",
+    "answer": "Hockey",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "animals-067",
+    "answer": "A turtle",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "science-059",
+    "answer": "Melting",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "food-067",
+    "answer": "Pitta bread",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "geography-080",
+    "answer": "England",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "music-060",
+    "answer": "Katy Perry",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "sports-060",
+    "answer": "Gymnastics",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "animals-074",
+    "answer": "A koala",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "body-048",
+    "answer": "The stomach",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "food-048",
+    "answer": "Kipper",
+    "difficulty": 2,
+    "ambiguous": true,
+    "reason": "Kipper and smoked haddock are both common UK smoked breakfast fish."
+  },
+  {
+    "id": "geography-072",
+    "answer": "The North Sea",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "music-053",
+    "answer": "Queen",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "sports-059",
+    "answer": "Martial arts",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "animals-077",
+    "answer": "A crab",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "general-077",
+    "answer": "A hairdresser",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "food-041",
+    "answer": "A leek",
+    "difficulty": 2,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "geography-055",
+    "answer": "Aberdeen",
+    "difficulty": 2,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "sports-044",
+    "answer": "Figure skating",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "general-088",
+    "answer": "A spoon",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "maths-067",
+    "answer": "1",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "food-071",
+    "answer": "Paella",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "sports-066",
+    "answer": "Discus",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "truefalse-062",
+    "answer": "True",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "animals-075",
+    "answer": "An emu",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "truefalse-052",
+    "answer": "True",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "general-056",
+    "answer": "99",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "science-068",
+    "answer": "Charles Darwin",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "animals-076",
+    "answer": "A cockerel",
+    "difficulty": 1,
+    "ambiguous": true,
+    "reason": "Cockerel and rooster are both correct names for the same bird."
+  },
+  {
+    "id": "maths-073",
+    "answer": "132",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "food-054",
+    "answer": "Sauerkraut",
+    "difficulty": 2,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "geography-049",
+    "answer": "York",
+    "difficulty": 2,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "truefalse-073",
+    "answer": "True",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "animals-085",
+    "answer": "An eagle",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "general-063",
+    "answer": "Sad",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "music-056",
+    "answer": "Elton John",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "sports-074",
+    "answer": "Rhythmic gymnastics",
+    "difficulty": 2,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "science-062",
+    "answer": "A ramp",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "body-073",
+    "answer": "Your neck",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "music-049",
+    "answer": "Michael Jackson",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "animals-057",
+    "answer": "A cygnet",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "general-086",
+    "answer": "A hexagon",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "science-046",
+    "answer": "Oxygen",
+    "difficulty": 1,
+    "ambiguous": false,
+    "reason": ""
+  },
+  {
+    "id": "body-055",
+    "answer": "The liver",
+    "difficulty": 2,
+    "ambiguous": false,
+    "reason": ""
+  }
+]

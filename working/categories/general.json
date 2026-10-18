@@ -1,47 +1,621 @@
 [
-  { "id": "general-001", "category": "general", "question": "How many days are in a week?", "answer": "7" },
-  { "id": "general-002", "category": "general", "question": "How many months are in a year?", "answer": "12" },
-  { "id": "general-003", "category": "general", "question": "How many hours are in a day?", "answer": "24" },
-  { "id": "general-004", "category": "general", "question": "How many minutes are in an hour?", "answer": "60" },
-  { "id": "general-005", "category": "general", "question": "How many seconds are in a minute?", "answer": "60" },
-  { "id": "general-006", "category": "general", "question": "Which month comes after June?", "answer": "July" },
-  { "id": "general-007", "category": "general", "question": "Which month has fewer than 30 days?", "answer": "February" },
-  { "id": "general-008", "category": "general", "question": "How many letters are in the English alphabet?", "answer": "26" },
-  { "id": "general-009", "category": "general", "question": "What are the three primary colours in painting?", "answer": "Red, yellow, blue" },
-  { "id": "general-010", "category": "general", "question": "How many days are in a leap year?", "answer": "366" },
-  { "id": "general-011", "category": "general", "question": "Paris is the capital of which country?", "answer": "France" },
-  { "id": "general-012", "category": "general", "question": "Madrid is the capital of which country?", "answer": "Spain" },
-  { "id": "general-013", "category": "general", "question": "Rome is the capital of which country?", "answer": "Italy" },
-  { "id": "general-014", "category": "general", "question": "Berlin is the capital of which country?", "answer": "Germany" },
-  { "id": "general-015", "category": "general", "question": "In which country is the Eiffel Tower?", "answer": "France" },
-  { "id": "general-016", "category": "general", "question": "How many wheels does a bicycle have?", "answer": "2" },
-  { "id": "general-017", "category": "general", "question": "How many wheels does a tricycle have?", "answer": "3" },
-  { "id": "general-018", "category": "general", "question": "How many sides does a square have?", "answer": "4" },
-  { "id": "general-019", "category": "general", "question": "What is the first letter of the alphabet?", "answer": "A" },
-  { "id": "general-020", "category": "general", "question": "What is the last letter of the alphabet?", "answer": "Z" },
-  { "id": "general-021", "category": "general", "question": "Which planet do we live on?", "answer": "Earth" },
-  { "id": "general-022", "category": "general", "question": "Which job involves flying a plane?", "answer": "A pilot", "acceptedAnswers": ["Pilot"] },
-  { "id": "general-023", "category": "general", "question": "Which job involves putting out fires?", "answer": "A firefighter", "acceptedAnswers": ["Firefighter", "Fireman"] },
-  { "id": "general-024", "category": "general", "question": "Which job involves treating sick animals?", "answer": "A vet", "acceptedAnswers": ["Vet", "Veterinarian", "Veterinary surgeon"] },
-  { "id": "general-025", "category": "general", "question": "Which day comes after Monday?", "answer": "Tuesday" },
-  { "id": "general-026", "category": "general", "question": "Which day comes before Saturday?", "answer": "Friday" },
-  { "id": "general-027", "category": "general", "question": "How many colours are on a traffic light?", "answer": "3" },
-  { "id": "general-028", "category": "general", "question": "What shape has four equal sides?", "answer": "A square", "acceptedAnswers": ["Square"] },
-  { "id": "general-029", "category": "general", "question": "Which number comes after 9?", "answer": "10" },
-  { "id": "general-030", "category": "general", "question": "How many pence are in a pound?", "answer": "100" },
-  { "id": "general-031", "category": "general", "question": "Which season comes after summer?", "answer": "Autumn" },
-  { "id": "general-032", "category": "general", "question": "What is the opposite of hot?", "answer": "Cold" },
-  { "id": "general-033", "category": "general", "question": "What is the opposite of up?", "answer": "Down" },
-  { "id": "general-034", "category": "general", "question": "What is the opposite of tall?", "answer": "Short" },
-  { "id": "general-035", "category": "general", "question": "What is the opposite of wet?", "answer": "Dry" },
-  { "id": "general-036", "category": "general", "question": "What do you use to unlock a door?", "answer": "A key", "acceptedAnswers": ["Key"] },
-  { "id": "general-037", "category": "general", "question": "Which item tells the time on your wrist?", "answer": "A watch", "acceptedAnswers": ["Watch"] },
-  { "id": "general-038", "category": "general", "question": "How many strings does a standard guitar have?", "answer": "6" },
-  { "id": "general-039", "category": "general", "question": "Which instrument has black and white keys?", "answer": "A piano", "acceptedAnswers": ["Piano", "Keyboard"] },
-  { "id": "general-040", "category": "general", "question": "What is a book of maps called?", "answer": "An atlas", "acceptedAnswers": ["Atlas"] },
-  { "id": "general-041", "category": "general", "question": "Which meal do you eat in the morning?", "answer": "Breakfast" },
-  { "id": "general-042", "category": "general", "question": "Which country is famous for the Great Wall?", "answer": "China" },
-  { "id": "general-043", "category": "general", "question": "Which US city has the Statue of Liberty?", "answer": "New York" },
-  { "id": "general-044", "category": "general", "question": "Which continent is Kenya in?", "answer": "Africa" },
-  { "id": "general-045", "category": "general", "question": "Which festival is celebrated on 25th December?", "answer": "Christmas" }
+  {
+    "id": "general-001",
+    "category": "general",
+    "question": "How many days are in a week?",
+    "answer": "7"
+  },
+  {
+    "id": "general-002",
+    "category": "general",
+    "question": "How many months are in a year?",
+    "answer": "12"
+  },
+  {
+    "id": "general-003",
+    "category": "general",
+    "question": "How many hours are in a day?",
+    "answer": "24"
+  },
+  {
+    "id": "general-004",
+    "category": "general",
+    "question": "How many minutes are in an hour?",
+    "answer": "60"
+  },
+  {
+    "id": "general-005",
+    "category": "general",
+    "question": "How many seconds are in a minute?",
+    "answer": "60"
+  },
+  {
+    "id": "general-006",
+    "category": "general",
+    "question": "Which month comes after June?",
+    "answer": "July"
+  },
+  {
+    "id": "general-007",
+    "category": "general",
+    "question": "Which month has fewer than 30 days?",
+    "answer": "February"
+  },
+  {
+    "id": "general-008",
+    "category": "general",
+    "question": "How many letters are in the English alphabet?",
+    "answer": "26"
+  },
+  {
+    "id": "general-009",
+    "category": "general",
+    "question": "What are the three primary colours in painting?",
+    "answer": "Red, yellow, blue"
+  },
+  {
+    "id": "general-010",
+    "category": "general",
+    "question": "How many days are in a leap year?",
+    "answer": "366"
+  },
+  {
+    "id": "general-011",
+    "category": "general",
+    "question": "Paris is the capital of which country?",
+    "answer": "France"
+  },
+  {
+    "id": "general-012",
+    "category": "general",
+    "question": "Madrid is the capital of which country?",
+    "answer": "Spain"
+  },
+  {
+    "id": "general-013",
+    "category": "general",
+    "question": "Rome is the capital of which country?",
+    "answer": "Italy"
+  },
+  {
+    "id": "general-014",
+    "category": "general",
+    "question": "Berlin is the capital of which country?",
+    "answer": "Germany"
+  },
+  {
+    "id": "general-015",
+    "category": "general",
+    "question": "In which country is the Eiffel Tower?",
+    "answer": "France"
+  },
+  {
+    "id": "general-016",
+    "category": "general",
+    "question": "How many wheels does a bicycle have?",
+    "answer": "2"
+  },
+  {
+    "id": "general-017",
+    "category": "general",
+    "question": "How many wheels does a tricycle have?",
+    "answer": "3"
+  },
+  {
+    "id": "general-018",
+    "category": "general",
+    "question": "How many sides does a square have?",
+    "answer": "4"
+  },
+  {
+    "id": "general-019",
+    "category": "general",
+    "question": "What is the first letter of the alphabet?",
+    "answer": "A"
+  },
+  {
+    "id": "general-020",
+    "category": "general",
+    "question": "What is the last letter of the alphabet?",
+    "answer": "Z"
+  },
+  {
+    "id": "general-021",
+    "category": "general",
+    "question": "Which planet do we live on?",
+    "answer": "Earth"
+  },
+  {
+    "id": "general-022",
+    "category": "general",
+    "question": "Which job involves flying a plane?",
+    "answer": "A pilot",
+    "acceptedAnswers": [
+      "Pilot"
+    ]
+  },
+  {
+    "id": "general-023",
+    "category": "general",
+    "question": "Which job involves putting out fires?",
+    "answer": "A firefighter",
+    "acceptedAnswers": [
+      "Firefighter",
+      "Fireman"
+    ]
+  },
+  {
+    "id": "general-024",
+    "category": "general",
+    "question": "Which job involves treating sick animals?",
+    "answer": "A vet",
+    "acceptedAnswers": [
+      "Vet",
+      "Veterinarian",
+      "Veterinary surgeon"
+    ]
+  },
+  {
+    "id": "general-025",
+    "category": "general",
+    "question": "Which day comes after Monday?",
+    "answer": "Tuesday"
+  },
+  {
+    "id": "general-026",
+    "category": "general",
+    "question": "Which day comes before Saturday?",
+    "answer": "Friday"
+  },
+  {
+    "id": "general-027",
+    "category": "general",
+    "question": "How many colours are on a traffic light?",
+    "answer": "3"
+  },
+  {
+    "id": "general-028",
+    "category": "general",
+    "question": "What shape has four equal sides?",
+    "answer": "A square",
+    "acceptedAnswers": [
+      "Square"
+    ]
+  },
+  {
+    "id": "general-029",
+    "category": "general",
+    "question": "Which number comes after 9?",
+    "answer": "10"
+  },
+  {
+    "id": "general-030",
+    "category": "general",
+    "question": "How many pence are in a pound?",
+    "answer": "100"
+  },
+  {
+    "id": "general-031",
+    "category": "general",
+    "question": "Which season comes after summer?",
+    "answer": "Autumn"
+  },
+  {
+    "id": "general-032",
+    "category": "general",
+    "question": "What is the opposite of hot?",
+    "answer": "Cold"
+  },
+  {
+    "id": "general-033",
+    "category": "general",
+    "question": "What is the opposite of up?",
+    "answer": "Down"
+  },
+  {
+    "id": "general-034",
+    "category": "general",
+    "question": "What is the opposite of tall?",
+    "answer": "Short"
+  },
+  {
+    "id": "general-035",
+    "category": "general",
+    "question": "What is the opposite of wet?",
+    "answer": "Dry"
+  },
+  {
+    "id": "general-036",
+    "category": "general",
+    "question": "What do you use to unlock a door?",
+    "answer": "A key",
+    "acceptedAnswers": [
+      "Key"
+    ]
+  },
+  {
+    "id": "general-037",
+    "category": "general",
+    "question": "Which item tells the time on your wrist?",
+    "answer": "A watch",
+    "acceptedAnswers": [
+      "Watch"
+    ]
+  },
+  {
+    "id": "general-038",
+    "category": "general",
+    "question": "How many strings does a standard guitar have?",
+    "answer": "6"
+  },
+  {
+    "id": "general-039",
+    "category": "general",
+    "question": "Which instrument has black and white keys?",
+    "answer": "A piano",
+    "acceptedAnswers": [
+      "Piano",
+      "Keyboard"
+    ]
+  },
+  {
+    "id": "general-040",
+    "category": "general",
+    "question": "What is a book of maps called?",
+    "answer": "An atlas",
+    "acceptedAnswers": [
+      "Atlas"
+    ]
+  },
+  {
+    "id": "general-041",
+    "category": "general",
+    "question": "Which meal do you eat in the morning?",
+    "answer": "Breakfast"
+  },
+  {
+    "id": "general-042",
+    "category": "general",
+    "question": "Which country is famous for the Great Wall?",
+    "answer": "China"
+  },
+  {
+    "id": "general-043",
+    "category": "general",
+    "question": "Which US city has the Statue of Liberty?",
+    "answer": "New York"
+  },
+  {
+    "id": "general-044",
+    "category": "general",
+    "question": "Which continent is Kenya in?",
+    "answer": "Africa"
+  },
+  {
+    "id": "general-045",
+    "category": "general",
+    "question": "Which festival is celebrated on 25th December?",
+    "answer": "Christmas"
+  },
+  {
+    "id": "general-046",
+    "category": "general",
+    "question": "Which colour is a London bus traditionally painted?",
+    "answer": "Red"
+  },
+  {
+    "id": "general-047",
+    "category": "general",
+    "question": "Which colour is a Royal Mail postbox traditionally painted?",
+    "answer": "Red"
+  },
+  {
+    "id": "general-048",
+    "category": "general",
+    "question": "Which continent is the Sahara Desert located in?",
+    "answer": "Africa"
+  },
+  {
+    "id": "general-049",
+    "category": "general",
+    "question": "What is the largest continent by area?",
+    "answer": "Asia"
+  },
+  {
+    "id": "general-050",
+    "category": "general",
+    "question": "How many continents are there in the world?",
+    "answer": "7"
+  },
+  {
+    "id": "general-051",
+    "category": "general",
+    "question": "What is the largest ocean on Earth?",
+    "answer": "The Pacific Ocean",
+    "acceptedAnswers": [
+      "Pacific",
+      "Pacific Ocean"
+    ]
+  },
+  {
+    "id": "general-052",
+    "category": "general",
+    "question": "Which language is mainly spoken in France?",
+    "answer": "French"
+  },
+  {
+    "id": "general-053",
+    "category": "general",
+    "question": "Which language is mainly spoken in Spain?",
+    "answer": "Spanish"
+  },
+  {
+    "id": "general-054",
+    "category": "general",
+    "question": "Which language is mainly spoken in Germany?",
+    "answer": "German"
+  },
+  {
+    "id": "general-055",
+    "category": "general",
+    "question": "Which shape has five straight sides?",
+    "answer": "A pentagon",
+    "acceptedAnswers": [
+      "Pentagon"
+    ]
+  },
+  {
+    "id": "general-056",
+    "category": "general",
+    "question": "Which number comes before 100?",
+    "answer": "99"
+  },
+  {
+    "id": "general-057",
+    "category": "general",
+    "question": "Which number comes after 99?",
+    "answer": "100"
+  },
+  {
+    "id": "general-058",
+    "category": "general",
+    "question": "How many zeros are in the number 1000?",
+    "answer": "3"
+  },
+  {
+    "id": "general-059",
+    "category": "general",
+    "question": "Which shape is a stop sign?",
+    "answer": "An octagon",
+    "acceptedAnswers": [
+      "Octagon"
+    ]
+  },
+  {
+    "id": "general-060",
+    "category": "general",
+    "question": "How many playing cards are in a standard deck, excluding jokers?",
+    "answer": "52"
+  },
+  {
+    "id": "general-061",
+    "category": "general",
+    "question": "Which shape is a football pitch, roughly?",
+    "answer": "A rectangle",
+    "acceptedAnswers": [
+      "Rectangle"
+    ]
+  },
+  {
+    "id": "general-062",
+    "category": "general",
+    "question": "How many sides does a rectangle have?",
+    "answer": "4"
+  },
+  {
+    "id": "general-063",
+    "category": "general",
+    "question": "What is the opposite of happy?",
+    "answer": "Sad"
+  },
+  {
+    "id": "general-064",
+    "category": "general",
+    "question": "What is the opposite of big?",
+    "answer": "Small"
+  },
+  {
+    "id": "general-065",
+    "category": "general",
+    "question": "Which colour do you get by mixing blue and yellow?",
+    "answer": "Green"
+  },
+  {
+    "id": "general-066",
+    "category": "general",
+    "question": "Which colour do you get by mixing red and white?",
+    "answer": "Pink"
+  },
+  {
+    "id": "general-067",
+    "category": "general",
+    "question": "How many days are there in September?",
+    "answer": "30"
+  },
+  {
+    "id": "general-068",
+    "category": "general",
+    "question": "Which traditional UK meal includes roast meat on Sundays?",
+    "answer": "Sunday roast",
+    "acceptedAnswers": [
+      "Roast dinner"
+    ]
+  },
+  {
+    "id": "general-069",
+    "category": "general",
+    "question": "What is the name for a baby's first set of teeth?",
+    "answer": "Milk teeth",
+    "acceptedAnswers": [
+      "Baby teeth"
+    ]
+  },
+  {
+    "id": "general-070",
+    "category": "general",
+    "question": "Which piece of cutlery has prongs and is used for eating?",
+    "answer": "A fork",
+    "acceptedAnswers": [
+      "Fork"
+    ]
+  },
+  {
+    "id": "general-071",
+    "category": "general",
+    "question": "Which meal do you typically eat in the evening?",
+    "answer": "Dinner",
+    "acceptedAnswers": [
+      "Supper",
+      "Tea"
+    ]
+  },
+  {
+    "id": "general-072",
+    "category": "general",
+    "question": "Which meal do you eat in the middle of the day?",
+    "answer": "Lunch"
+  },
+  {
+    "id": "general-073",
+    "category": "general",
+    "question": "How many wheels does a car usually have?",
+    "answer": "4"
+  },
+  {
+    "id": "general-074",
+    "category": "general",
+    "question": "How many wheels does a unicycle have?",
+    "answer": "1"
+  },
+  {
+    "id": "general-075",
+    "category": "general",
+    "question": "Which job involves teaching children in a classroom?",
+    "answer": "A teacher",
+    "acceptedAnswers": [
+      "Teacher"
+    ]
+  },
+  {
+    "id": "general-076",
+    "category": "general",
+    "question": "Which job involves delivering letters and parcels?",
+    "answer": "A postman",
+    "acceptedAnswers": [
+      "Postwoman",
+      "Postal worker"
+    ]
+  },
+  {
+    "id": "general-077",
+    "category": "general",
+    "question": "Which job involves cutting people's hair?",
+    "answer": "A hairdresser",
+    "acceptedAnswers": [
+      "Barber"
+    ]
+  },
+  {
+    "id": "general-078",
+    "category": "general",
+    "question": "Which job involves cooking food in a restaurant?",
+    "answer": "A chef",
+    "acceptedAnswers": [
+      "Cook"
+    ]
+  },
+  {
+    "id": "general-079",
+    "category": "general",
+    "question": "Which season comes before spring?",
+    "answer": "Winter"
+  },
+  {
+    "id": "general-080",
+    "category": "general",
+    "question": "Which season comes after spring?",
+    "answer": "Summer"
+  },
+  {
+    "id": "general-081",
+    "category": "general",
+    "question": "Which day comes after Wednesday?",
+    "answer": "Thursday"
+  },
+  {
+    "id": "general-082",
+    "category": "general",
+    "question": "Which day comes before Monday?",
+    "answer": "Sunday"
+  },
+  {
+    "id": "general-083",
+    "category": "general",
+    "question": "How many weeks are there in a year?",
+    "answer": "52"
+  },
+  {
+    "id": "general-084",
+    "category": "general",
+    "question": "Which precious yellow metal is used to make wedding rings?",
+    "answer": "Gold"
+  },
+  {
+    "id": "general-085",
+    "category": "general",
+    "question": "Which precious grey metal is cheaper than gold, used in jewellery?",
+    "answer": "Silver"
+  },
+  {
+    "id": "general-086",
+    "category": "general",
+    "question": "Which six-sided shape is used for honeycomb cells in a hive?",
+    "answer": "A hexagon",
+    "acceptedAnswers": [
+      "Hexagon"
+    ]
+  },
+  {
+    "id": "general-087",
+    "category": "general",
+    "question": "How many legs does a table usually have?",
+    "answer": "4"
+  },
+  {
+    "id": "general-088",
+    "category": "general",
+    "question": "Which utensil do you eat soup with?",
+    "answer": "A spoon",
+    "acceptedAnswers": [
+      "Spoon"
+    ]
+  },
+  {
+    "id": "general-089",
+    "category": "general",
+    "question": "Which utensil do you cut food with at the table?",
+    "answer": "A knife",
+    "acceptedAnswers": [
+      "Knife"
+    ]
+  },
+  {
+    "id": "general-090",
+    "category": "general",
+    "question": "Which item of furniture do you sleep on?",
+    "answer": "A bed",
+    "acceptedAnswers": [
+      "Bed"
+    ]
+  }
 ]

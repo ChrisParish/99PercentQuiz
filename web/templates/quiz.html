@@ -17,18 +17,26 @@
     <button class="btn btn-primary" id="reveal-all" type="button" data-state="closed">Reveal all answers</button>
     <a class="btn" href="/{{.NextISO}}" rel="next" aria-label="Next weekday">&rarr;</a>
   </nav>
+  <p class="tally" id="tally" aria-live="polite">0 / {{len .Questions}} correct</p>
 </header>
 
 <main>
-<ol class="questions">
-{{range .Questions}}
-  <li>
+<ol class="questions" data-date="{{.DateISO}}">
+{{range $index, $q := .Questions}}
+  <li data-qid="{{$index}}" data-id="{{.ID}}">
     <details>
       <summary>
         <span class="question">{{.Question}}</span>
         <span class="hint">Tap for answer</span>
       </summary>
       <p class="answer">{{.Answer}}</p>
+      <div class="mark-controls" role="group" aria-label="Mark result">
+        <button class="btn mark-correct" type="button" data-mark="correct" aria-pressed="false">&check; Correct</button>
+        <button class="btn mark-incorrect" type="button" data-mark="incorrect" aria-pressed="false">&cross; Incorrect</button>
+      </div>
+      <form class="swap-form" method="post" action="/{{$.DateISO}}/swap/{{$index}}">
+        <button class="btn swap" type="submit">Swap question</button>
+      </form>
     </details>
   </li>
 {{end}}

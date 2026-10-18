@@ -1,4 +1,4 @@
-﻿# Fact-check batch 2
+# Fact-check batch 2
 
 You are fact-checking questions for a UK breakfast-radio quiz aimed at the general public.
 
@@ -21,53 +21,53 @@ Reply with ONLY a JSON array. No commentary before or after:
 
 ## Questions
 
-food-003 | Which hot drink is made from roasted beans?
-geography-011 | Which city is Big Ben in?
-music-031 | Which singer released Someone You Loved?
-sports-024 | How many rings are on the Olympic flag?
-animals-006 | A baby duck is known as what?
-maths-035 | What is 93 - 48?
-general-034 | What is the opposite of big?
-science-034 | How long does Earth take to orbit the Sun?
-animals-045 | Which farm animal gives us wool?
-body-025 | Which body part do you use to see?
-truefalse-009 | There are 12 months in a year: true or false?
-food-023 | Which meat do we get from a pig?
-geography-027 | Which country lies directly south of Scotland?
-music-004 | Which singer released Rolling in the Deep?
-sports-021 | Which football club plays at Old Trafford?
-maths-041 | What is 36 - 18?
-general-020 | What is the last letter of the alphabet?
-science-036 | What is Earth's natural satellite called?
-animals-033 | What is a male sheep called?
-maths-002 | What is 34 + 26?
-body-007 | Which sense do you use your nose for?
-truefalse-011 | Cows lay eggs: true or false?
-food-027 | Which bean is chocolate made from?
-geography-001 | What is the capital of England?
-music-030 | Which band sang Everybody Hurts?
-sports-030 | What colour card sends a footballer off?
-general-024 | Which job involves treating sick people?
-science-040 | What do you use to measure temperature?
-animals-008 | Which farm animal says moo?
-maths-047 | What is 6 x 9?
-maths-058 | What is 7 x 6?
-animals-022 | Which animal is called the king of the jungle?
-general-019 | What is the first letter of the alphabet?
-science-032 | How many colours are in a rainbow?
-food-030 | Which drink is brewed from hops and barley?
-geography-017 | What is the currency of the United Kingdom?
-music-005 | Which singer released Shape of You?
-sports-014 | Which sport is played on ice with brooms?
-body-024 | How many hearts does a human have?
-truefalse-020 | Mount Everest is in Asia: true or false?
-maths-014 | What is 19 + 19?
-animals-040 | What does a caterpillar turn into?
-general-041 | Which meal do you eat in the morning?
-science-033 | What do we call Earth's path around the Sun?
-maths-003 | What is 15 + 19?
-food-016 | What is traditionally put on chips in a chip shop?
-geography-021 | Which royal palace stands in central London?
-music-019 | Which band sang Sex on Fire?
-sports-027 | Which sport uses a pommel horse and rings?
-animals-026 | Which animal is famous for its very long neck?
+body-070 | Which hard tissue covers and protects the crown of your teeth?
+geography-053 | The Titanic Museum can be visited in which UK city?
+sports-075 | Which sport is similar to basketball but played without dribbling?
+maths-062 | What is 3 x 5?
+animals-083 | Which songbird is known for singing at night?
+science-052 | Which natural satellite causes the tides on Earth?
+body-061 | Which sense do your eyes provide?
+sports-072 | Which sport uses curved sticks to hit a ball into a goal?
+animals-067 | Which reptile has a shell and swims in the sea?
+science-059 | Changing a solid into a liquid is known as what?
+food-067 | Which flatbread is used to make a doner or shawarma wrap?
+geography-080 | The Lake District is a national park in which UK country?
+music-060 | Which singer released the song Firework?
+sports-060 | Which sport includes routines performed on a balance beam?
+animals-074 | Which Australian animal eats eucalyptus leaves?
+body-048 | Which organ in your tummy helps you digest food?
+food-048 | Which smoked fish is often eaten for breakfast in the UK?
+geography-072 | Which sea lies between Scotland and Norway?
+music-053 | Which British rock band released Bohemian Rhapsody?
+sports-059 | Which group of combat sports includes judo, karate and taekwondo?
+animals-077 | Which sea creature has a hard shell and large claws?
+general-077 | Which job involves cutting people's hair?
+food-041 | Which vegetable is the national emblem of Wales?
+geography-055 | Which Scottish city is known as the Granite City?
+sports-044 | Which winter sport involves jumping and spinning on ice skates?
+general-088 | Which utensil do you eat soup with?
+maths-067 | What is 21 - 20?
+food-071 | Which Spanish rice dish is cooked with saffron and seafood?
+sports-066 | Which athletics event involves throwing a discus as far as possible?
+truefalse-062 | The human body has one brain: true or false?
+animals-075 | Which large flightless bird is native to Australia?
+truefalse-052 | A triangle has three angles: true or false?
+general-056 | Which number comes before 100?
+science-068 | Which scientist developed the theory of evolution?
+animals-076 | Which male farmyard bird crows at dawn?
+maths-073 | What is 83 + 49?
+food-054 | Which fermented cabbage dish is a traditional German side?
+geography-049 | The Jorvik Viking Centre is located in which UK city?
+truefalse-073 | Snow is cold: true or false?
+animals-085 | Which large bird of prey has sharp talons?
+general-063 | What is the opposite of happy?
+music-056 | Which British singer is known for the song Rocket Man?
+sports-074 | Which gymnastics discipline uses ribbons and hoops set to music?
+science-062 | Which simple tool is a slanted surface used to move things up?
+body-073 | Which joint allows your head to turn from side to side?
+music-049 | Which singer released the song Thriller?
+animals-057 | A baby swan is called what?
+general-086 | Which six-sided shape is used for honeycomb cells in a hive?
+science-046 | What do plants give off during photosynthesis?
+body-055 | Which large organ in your abdomen helps clean toxins from your blood?

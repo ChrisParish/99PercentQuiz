@@ -1,4 +1,4 @@
-﻿# Fact-check batch 5
+# Fact-check batch 5
 
 You are fact-checking questions for a UK breakfast-radio quiz aimed at the general public.
 
@@ -21,53 +21,53 @@ Reply with ONLY a JSON array. No commentary before or after:
 
 ## Questions
 
-music-012 | Which singer released Umbrella?
-science-025 | Plant-eating animals are known as what?
-sports-023 | In which sport do players shout fore?
-maths-055 | What is 4 x 6?
-animals-034 | Which desert animal has a hump on its back?
-body-008 | Which sense do you use your ears for?
-truefalse-012 | Australia is a country: true or false?
-general-013 | Rome is the capital of which country?
-science-023 | How many degrees are in a full circle?
-maths-004 | What is 42 + 38?
-food-025 | Which red sauce is made from tomatoes?
-geography-032 | Which UK city has the Tyne Bridge?
-music-018 | Who released Uptown Funk with Bruno Mars?
-sports-018 | Which sport is Sir Chris Hoy famous for?
-animals-044 | Which animals pull Santa's sleigh?
-maths-054 | What is 5 x 9?
-general-004 | How many minutes are in an hour?
-science-030 | What makes the loud bang during a thunderstorm?
-animals-017 | What is a group of wolves called?
-body-027 | What is the front of your lower leg called?
-truefalse-008 | Water freezes at 0 Celsius: true or false?
-food-029 | Which vegetable is carved at Halloween?
-geography-029 | Which London park contains the Serpentine?
-music-010 | Which singer released Angels in 1997?
-sports-007 | Which sport uses a driver and a putter?
-maths-026 | What is 45 - 18?
-general-027 | How many colours are on a traffic light?
-science-044 | Which planet has bright rings around it?
-animals-041 | What does a tadpole turn into?
-maths-048 | What is 4 x 7?
-body-014 | What grows on top of your head?
-truefalse-025 | Honey is made by bees: true or false?
-food-035 | Which drink comes still or sparkling?
-geography-015 | Which motorway links London and Leeds?
-music-020 | Which singer released Poker Face?
-sports-034 | Which sport is played at Wembley Stadium?
-general-025 | Which day comes after Monday?
-science-022 | How many degrees are in a right angle?
-animals-032 | What is a female chicken called?
-maths-031 | What is 50 - 23?
-maths-057 | What is 9 x 4?
-animals-024 | Which animal carries its young in a pouch?
-general-023 | Which job involves putting out fires?
-science-006 | At what Celsius temperature does water freeze?
-food-013 | Which breakfast food is made from oats?
-geography-005 | What is the capital of the Republic of Ireland?
-music-014 | Which band released Mr Brightside?
-sports-029 | Which sport is played at Twickenham?
-body-030 | What is the name for the bones in your back?
-truefalse-013 | The Sun is a star: true or false?
+science-057 | Changing a liquid into a gas is known as what?
+animals-072 | Which large mammal has a horn on its nose?
+animals-094 | Which bird is associated with delivering babies in folklore?
+general-058 | How many zeros are in the number 1000?
+science-061 | What force pulls two magnets together or pushes them apart?
+geography-045 | Which UK city is Old Trafford football stadium in?
+truefalse-042 | The Great Wall of China is in Japan: true or false?
+general-085 | Which precious grey metal is cheaper than gold, used in jewellery?
+geography-042 | Which English city is home to the University of Cambridge?
+sports-061 | Which sport uses 10 pins and a rolling ball?
+animals-051 | A baby lion is called what?
+body-066 | Which instrument do doctors use to listen to your heartbeat?
+music-068 | Which British girl group released the song Wings?
+truefalse-047 | Ice is frozen water: true or false?
+maths-065 | What is 88 + 20?
+body-067 | What is the name for the middle joint of your finger?
+geography-060 | The Giant's Causeway is found in which UK country?
+music-057 | Which Canadian singer released the song Call Me Maybe?
+sports-052 | Which athletics event involves throwing a heavy metal ball?
+general-080 | Which season comes after spring?
+body-044 | Which part of your body do you use to kick a ball?
+food-059 | Which spice gives curry its yellow colour?
+geography-056 | Which river flows through Glasgow?
+sports-079 | Which sport involves racing bikes with jumps around a dirt track?
+truefalse-074 | A triangle has four corners: true or false?
+general-071 | Which meal do you typically eat in the evening?
+maths-069 | What is 52 - 32?
+food-057 | Which fruit is dried to make raisins?
+geography-076 | Which UK city hosts a famous winter festival in a royal park?
+general-049 | What is the largest continent by area?
+science-089 | How many degrees are there in a straight line?
+animals-056 | A baby owl is called what?
+geography-077 | The Mersey Tunnel runs beneath which UK city?
+truefalse-057 | Paris is the capital of Italy: true or false?
+general-052 | Which language is mainly spoken in France?
+science-069 | Which instrument is used to view very small objects like cells?
+maths-074 | What is 57 + 56?
+body-045 | How many ribs does an adult human typically have?
+sports-067 | Which athletics event uses a long flexible pole to clear a bar?
+science-054 | Which state of matter has a fixed volume but no fixed shape?
+general-059 | Which shape is a stop sign?
+music-079 | In which English county is Glastonbury Festival held?
+truefalse-061 | Tomatoes grow on trees: true or false?
+animals-079 | Which insect is known for living in organised colonies?
+general-057 | Which number comes after 99?
+science-050 | Which word describes animals that have a backbone?
+body-042 | Which bony part of your body protects your brain?
+food-042 | Which hot drink is made from cocoa and hot milk?
+sports-064 | Which famous French cycling race awards a yellow jersey to the leader?
+animals-088 | Which bird migrates to the UK in summer from Africa?

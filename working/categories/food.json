@@ -1,42 +1,559 @@
 [
-  { "id": "food-001", "category": "food", "question": "What is the main ingredient in guacamole?", "answer": "Avocado" },
-  { "id": "food-002", "category": "food", "question": "Which drink is made from crushed grapes?", "answer": "Wine" },
-  { "id": "food-003", "category": "food", "question": "Which hot drink is made from roasted beans?", "answer": "Coffee" },
-  { "id": "food-004", "category": "food", "question": "A potato baked in its skin is called what?", "answer": "Jacket potato", "acceptedAnswers": ["Baked potato"] },
-  { "id": "food-005", "category": "food", "question": "Which grain is used to make bread flour?", "answer": "Wheat" },
-  { "id": "food-006", "category": "food", "question": "Which fruit is used to make cider?", "answer": "Apples", "acceptedAnswers": ["Apple"] },
-  { "id": "food-007", "category": "food", "question": "What is the main ingredient in an omelette?", "answer": "Eggs", "acceptedAnswers": ["Egg"] },
-  { "id": "food-008", "category": "food", "question": "Which vegetable makes you cry when chopped?", "answer": "Onion" },
-  { "id": "food-009", "category": "food", "question": "Which hot drink do Britons famously add milk to?", "answer": "Tea" },
-  { "id": "food-010", "category": "food", "question": "What is cheese made from?", "answer": "Milk" },
-  { "id": "food-011", "category": "food", "question": "Which vegetable is orange and grows underground?", "answer": "A carrot", "acceptedAnswers": ["Carrot"] },
-  { "id": "food-012", "category": "food", "question": "Which fruit is said to keep the doctor away?", "answer": "An apple", "acceptedAnswers": ["Apple"] },
-  { "id": "food-013", "category": "food", "question": "Which breakfast food is made from oats?", "answer": "Porridge" },
-  { "id": "food-014", "category": "food", "question": "Which Italian dish has a base, sauce and cheese?", "answer": "Pizza" },
-  { "id": "food-015", "category": "food", "question": "Spaghetti and penne are types of what?", "answer": "Pasta" },
-  { "id": "food-016", "category": "food", "question": "What is traditionally put on chips in a chip shop?", "answer": "Salt and vinegar" },
-  { "id": "food-017", "category": "food", "question": "Which spread is made from crushed peanuts?", "answer": "Peanut butter" },
-  { "id": "food-018", "category": "food", "question": "Which fruit is yellow and very sour?", "answer": "A lemon", "acceptedAnswers": ["Lemon"] },
-  { "id": "food-019", "category": "food", "question": "What sauce are baked beans usually in?", "answer": "Tomato sauce" },
-  { "id": "food-020", "category": "food", "question": "Which cheese is traditionally used on pizza?", "answer": "Mozzarella" },
-  { "id": "food-021", "category": "food", "question": "A sausage wrapped in pastry is called what?", "answer": "A sausage roll", "acceptedAnswers": ["Sausage roll"] },
-  { "id": "food-022", "category": "food", "question": "Which meat do we get from a cow?", "answer": "Beef" },
-  { "id": "food-023", "category": "food", "question": "Which meat do we get from a pig?", "answer": "Pork" },
-  { "id": "food-024", "category": "food", "question": "Which batter pudding is served with roast beef?", "answer": "Yorkshire pudding" },
-  { "id": "food-025", "category": "food", "question": "Which red sauce is made from tomatoes?", "answer": "Ketchup" },
-  { "id": "food-026", "category": "food", "question": "Which juice comes from squeezing oranges?", "answer": "Orange juice" },
-  { "id": "food-027", "category": "food", "question": "Which bean is chocolate made from?", "answer": "Cocoa", "acceptedAnswers": ["Cocoa bean", "Cacao", "Cacao bean"] },
-  { "id": "food-028", "category": "food", "question": "Which green vegetable looks like a tiny tree?", "answer": "Broccoli" },
-  { "id": "food-029", "category": "food", "question": "Which vegetable is carved at Halloween?", "answer": "A pumpkin", "acceptedAnswers": ["Pumpkin"] },
-  { "id": "food-030", "category": "food", "question": "Which drink is brewed from hops and barley?", "answer": "Beer" },
-  { "id": "food-031", "category": "food", "question": "What is the main ingredient in mushy peas?", "answer": "Peas" },
-  { "id": "food-032", "category": "food", "question": "Which fuzzy-skinned fruit shares its name with a colour?", "answer": "A peach", "acceptedAnswers": ["Peach"] },
-  { "id": "food-033", "category": "food", "question": "Which vegetable is used to make coleslaw?", "answer": "Cabbage" },
-  { "id": "food-034", "category": "food", "question": "What are chips made from?", "answer": "Potatoes" },
-  { "id": "food-035", "category": "food", "question": "Which drink comes still or sparkling?", "answer": "Water" },
-  { "id": "food-036", "category": "food", "question": "Which spread is made from churned cream?", "answer": "Butter" },
-  { "id": "food-037", "category": "food", "question": "Which sweet spread is made from fruit and sugar?", "answer": "Jam" },
-  { "id": "food-038", "category": "food", "question": "Which frozen dessert is served in a cone?", "answer": "Ice cream" },
-  { "id": "food-039", "category": "food", "question": "Which drink is made from lemons, sugar and water?", "answer": "Lemonade" },
-  { "id": "food-040", "category": "food", "question": "What is a burger usually served in?", "answer": "A bun", "acceptedAnswers": ["Bun", "A roll"] }
+  {
+    "id": "food-001",
+    "category": "food",
+    "question": "What is the main ingredient in guacamole?",
+    "answer": "Avocado"
+  },
+  {
+    "id": "food-002",
+    "category": "food",
+    "question": "Which drink is made from crushed grapes?",
+    "answer": "Wine"
+  },
+  {
+    "id": "food-003",
+    "category": "food",
+    "question": "Which hot drink is made from roasted beans?",
+    "answer": "Coffee"
+  },
+  {
+    "id": "food-004",
+    "category": "food",
+    "question": "A potato baked in its skin is called what?",
+    "answer": "Jacket potato",
+    "acceptedAnswers": [
+      "Baked potato"
+    ]
+  },
+  {
+    "id": "food-005",
+    "category": "food",
+    "question": "Which grain is used to make bread flour?",
+    "answer": "Wheat"
+  },
+  {
+    "id": "food-006",
+    "category": "food",
+    "question": "Which fruit is used to make cider?",
+    "answer": "Apples",
+    "acceptedAnswers": [
+      "Apple"
+    ]
+  },
+  {
+    "id": "food-007",
+    "category": "food",
+    "question": "What is the main ingredient in an omelette?",
+    "answer": "Eggs",
+    "acceptedAnswers": [
+      "Egg"
+    ]
+  },
+  {
+    "id": "food-008",
+    "category": "food",
+    "question": "Which vegetable makes you cry when chopped?",
+    "answer": "Onion"
+  },
+  {
+    "id": "food-009",
+    "category": "food",
+    "question": "Which hot drink do Britons famously add milk to?",
+    "answer": "Tea"
+  },
+  {
+    "id": "food-010",
+    "category": "food",
+    "question": "What is cheese made from?",
+    "answer": "Milk"
+  },
+  {
+    "id": "food-011",
+    "category": "food",
+    "question": "Which vegetable is orange and grows underground?",
+    "answer": "A carrot",
+    "acceptedAnswers": [
+      "Carrot"
+    ]
+  },
+  {
+    "id": "food-012",
+    "category": "food",
+    "question": "Which fruit is said to keep the doctor away?",
+    "answer": "An apple",
+    "acceptedAnswers": [
+      "Apple"
+    ]
+  },
+  {
+    "id": "food-013",
+    "category": "food",
+    "question": "Which breakfast food is made from oats?",
+    "answer": "Porridge"
+  },
+  {
+    "id": "food-014",
+    "category": "food",
+    "question": "Which Italian dish has a base, sauce and cheese?",
+    "answer": "Pizza"
+  },
+  {
+    "id": "food-015",
+    "category": "food",
+    "question": "Spaghetti and penne are types of what?",
+    "answer": "Pasta"
+  },
+  {
+    "id": "food-016",
+    "category": "food",
+    "question": "What is traditionally put on chips in a chip shop?",
+    "answer": "Salt and vinegar"
+  },
+  {
+    "id": "food-017",
+    "category": "food",
+    "question": "Which spread is made from crushed peanuts?",
+    "answer": "Peanut butter"
+  },
+  {
+    "id": "food-018",
+    "category": "food",
+    "question": "Which fruit is yellow and very sour?",
+    "answer": "A lemon",
+    "acceptedAnswers": [
+      "Lemon"
+    ]
+  },
+  {
+    "id": "food-019",
+    "category": "food",
+    "question": "What sauce are baked beans usually in?",
+    "answer": "Tomato sauce"
+  },
+  {
+    "id": "food-020",
+    "category": "food",
+    "question": "Which cheese is traditionally used on pizza?",
+    "answer": "Mozzarella"
+  },
+  {
+    "id": "food-021",
+    "category": "food",
+    "question": "A sausage wrapped in pastry is called what?",
+    "answer": "A sausage roll",
+    "acceptedAnswers": [
+      "Sausage roll"
+    ]
+  },
+  {
+    "id": "food-022",
+    "category": "food",
+    "question": "Which meat do we get from a cow?",
+    "answer": "Beef"
+  },
+  {
+    "id": "food-023",
+    "category": "food",
+    "question": "Which meat do we get from a pig?",
+    "answer": "Pork"
+  },
+  {
+    "id": "food-024",
+    "category": "food",
+    "question": "Which batter pudding is served with roast beef?",
+    "answer": "Yorkshire pudding"
+  },
+  {
+    "id": "food-025",
+    "category": "food",
+    "question": "Which red sauce is made from tomatoes?",
+    "answer": "Ketchup"
+  },
+  {
+    "id": "food-026",
+    "category": "food",
+    "question": "Which juice comes from squeezing oranges?",
+    "answer": "Orange juice"
+  },
+  {
+    "id": "food-027",
+    "category": "food",
+    "question": "Which bean is chocolate made from?",
+    "answer": "Cocoa",
+    "acceptedAnswers": [
+      "Cocoa bean",
+      "Cacao",
+      "Cacao bean"
+    ]
+  },
+  {
+    "id": "food-028",
+    "category": "food",
+    "question": "Which green vegetable looks like a tiny tree?",
+    "answer": "Broccoli"
+  },
+  {
+    "id": "food-029",
+    "category": "food",
+    "question": "Which vegetable is carved at Halloween?",
+    "answer": "A pumpkin",
+    "acceptedAnswers": [
+      "Pumpkin"
+    ]
+  },
+  {
+    "id": "food-030",
+    "category": "food",
+    "question": "Which drink is brewed from hops and barley?",
+    "answer": "Beer"
+  },
+  {
+    "id": "food-031",
+    "category": "food",
+    "question": "What is the main ingredient in mushy peas?",
+    "answer": "Peas"
+  },
+  {
+    "id": "food-032",
+    "category": "food",
+    "question": "Which fuzzy-skinned fruit shares its name with a colour?",
+    "answer": "A peach",
+    "acceptedAnswers": [
+      "Peach"
+    ]
+  },
+  {
+    "id": "food-033",
+    "category": "food",
+    "question": "Which vegetable is used to make coleslaw?",
+    "answer": "Cabbage"
+  },
+  {
+    "id": "food-034",
+    "category": "food",
+    "question": "What are chips made from?",
+    "answer": "Potatoes"
+  },
+  {
+    "id": "food-035",
+    "category": "food",
+    "question": "Which drink comes still or sparkling?",
+    "answer": "Water"
+  },
+  {
+    "id": "food-036",
+    "category": "food",
+    "question": "Which spread is made from churned cream?",
+    "answer": "Butter"
+  },
+  {
+    "id": "food-037",
+    "category": "food",
+    "question": "Which sweet spread is made from fruit and sugar?",
+    "answer": "Jam"
+  },
+  {
+    "id": "food-038",
+    "category": "food",
+    "question": "Which frozen dessert is served in a cone?",
+    "answer": "Ice cream"
+  },
+  {
+    "id": "food-039",
+    "category": "food",
+    "question": "Which drink is made from lemons, sugar and water?",
+    "answer": "Lemonade"
+  },
+  {
+    "id": "food-040",
+    "category": "food",
+    "question": "What is a burger usually served in?",
+    "answer": "A bun",
+    "acceptedAnswers": [
+      "Bun",
+      "A roll"
+    ]
+  },
+  {
+    "id": "food-041",
+    "category": "food",
+    "question": "Which vegetable is the national emblem of Wales?",
+    "answer": "A leek",
+    "acceptedAnswers": [
+      "Leek"
+    ]
+  },
+  {
+    "id": "food-042",
+    "category": "food",
+    "question": "Which hot drink is made from cocoa and hot milk?",
+    "answer": "Hot chocolate"
+  },
+  {
+    "id": "food-043",
+    "category": "food",
+    "question": "Which Italian rice dish is cooked slowly with stock?",
+    "answer": "Risotto"
+  },
+  {
+    "id": "food-044",
+    "category": "food",
+    "question": "Which British dessert is made from apples and a crumbly topping?",
+    "answer": "Apple crumble"
+  },
+  {
+    "id": "food-045",
+    "category": "food",
+    "question": "Which dessert is made of meringue, cream and fruit?",
+    "answer": "A pavlova",
+    "acceptedAnswers": [
+      "Pavlova"
+    ]
+  },
+  {
+    "id": "food-046",
+    "category": "food",
+    "question": "Which Christmas dessert is a dark, fruity steamed pudding?",
+    "answer": "Christmas pudding"
+  },
+  {
+    "id": "food-047",
+    "category": "food",
+    "question": "Which dark, salty spread is made from yeast extract?",
+    "answer": "Marmite"
+  },
+  {
+    "id": "food-048",
+    "category": "food",
+    "question": "Which smoked fish is often eaten for breakfast in the UK?",
+    "answer": "Kipper",
+    "acceptedAnswers": [
+      "Smoked haddock"
+    ]
+  },
+  {
+    "id": "food-049",
+    "category": "food",
+    "question": "Which roast bird is traditionally served for Christmas dinner?",
+    "answer": "Turkey"
+  },
+  {
+    "id": "food-050",
+    "category": "food",
+    "question": "Which Scottish dish is made from sheep's offal, oats and spices?",
+    "answer": "Haggis"
+  },
+  {
+    "id": "food-051",
+    "category": "food",
+    "question": "Which Welsh cakes are small and cooked on a griddle?",
+    "answer": "Welsh cakes"
+  },
+  {
+    "id": "food-052",
+    "category": "food",
+    "question": "Which English cheese is crumbly and often paired with pickle?",
+    "answer": "Cheddar",
+    "acceptedAnswers": [
+      "Cheddar cheese"
+    ]
+  },
+  {
+    "id": "food-053",
+    "category": "food",
+    "question": "Which blue-veined cheese is made in Leicestershire?",
+    "answer": "Stilton"
+  },
+  {
+    "id": "food-054",
+    "category": "food",
+    "question": "Which fermented cabbage dish is a traditional German side?",
+    "answer": "Sauerkraut"
+  },
+  {
+    "id": "food-055",
+    "category": "food",
+    "question": "Which hot sauce made from horseradish is served with roast beef?",
+    "answer": "Horseradish sauce"
+  },
+  {
+    "id": "food-056",
+    "category": "food",
+    "question": "Which mint-based sauce is traditionally served with roast lamb?",
+    "answer": "Mint sauce"
+  },
+  {
+    "id": "food-057",
+    "category": "food",
+    "question": "Which fruit is dried to make raisins?",
+    "answer": "Grapes",
+    "acceptedAnswers": [
+      "Grape"
+    ]
+  },
+  {
+    "id": "food-058",
+    "category": "food",
+    "question": "Which small dried fruit is a variety of raisin used in baking?",
+    "answer": "Sultana",
+    "acceptedAnswers": [
+      "Sultanas",
+      "Currant"
+    ]
+  },
+  {
+    "id": "food-059",
+    "category": "food",
+    "question": "Which spice gives curry its yellow colour?",
+    "answer": "Turmeric"
+  },
+  {
+    "id": "food-060",
+    "category": "food",
+    "question": "Which hot, spicy dish is a British takeaway favourite from South Asia?",
+    "answer": "Curry"
+  },
+  {
+    "id": "food-061",
+    "category": "food",
+    "question": "Which Japanese dish is made of vinegared rice and raw fish?",
+    "answer": "Sushi"
+  },
+  {
+    "id": "food-062",
+    "category": "food",
+    "question": "Which Mexican dish is a folded tortilla filled with meat and cheese?",
+    "answer": "A taco",
+    "acceptedAnswers": [
+      "Taco"
+    ]
+  },
+  {
+    "id": "food-063",
+    "category": "food",
+    "question": "Which Greek salad is made with feta cheese and olives?",
+    "answer": "Greek salad"
+  },
+  {
+    "id": "food-064",
+    "category": "food",
+    "question": "Which British afternoon meal includes scones, jam and clotted cream?",
+    "answer": "Afternoon tea"
+  },
+  {
+    "id": "food-065",
+    "category": "food",
+    "question": "Which Scottish soup is made with barley and vegetables?",
+    "answer": "Scotch broth"
+  },
+  {
+    "id": "food-066",
+    "category": "food",
+    "question": "Which type of bread has a hole in the middle, often toasted?",
+    "answer": "A bagel",
+    "acceptedAnswers": [
+      "Bagel"
+    ]
+  },
+  {
+    "id": "food-067",
+    "category": "food",
+    "question": "Which flatbread is used to make a doner or shawarma wrap?",
+    "answer": "Pitta bread",
+    "acceptedAnswers": [
+      "Pitta"
+    ]
+  },
+  {
+    "id": "food-068",
+    "category": "food",
+    "question": "Which sesame seed spread is used to make hummus?",
+    "answer": "Tahini"
+  },
+  {
+    "id": "food-069",
+    "category": "food",
+    "question": "Which Middle Eastern dip is made from blended chickpeas?",
+    "answer": "Hummus"
+  },
+  {
+    "id": "food-070",
+    "category": "food",
+    "question": "Which Indian bread is cooked in a clay oven called a tandoor?",
+    "answer": "Naan bread",
+    "acceptedAnswers": [
+      "Naan"
+    ]
+  },
+  {
+    "id": "food-071",
+    "category": "food",
+    "question": "Which Spanish rice dish is cooked with saffron and seafood?",
+    "answer": "Paella"
+  },
+  {
+    "id": "food-072",
+    "category": "food",
+    "question": "Which crescent-shaped French pastry is eaten at breakfast?",
+    "answer": "A croissant",
+    "acceptedAnswers": [
+      "Croissant"
+    ]
+  },
+  {
+    "id": "food-073",
+    "category": "food",
+    "question": "Which thin French pancakes are filled with sweet or savoury fillings?",
+    "answer": "Crepes",
+    "acceptedAnswers": [
+      "Crepe",
+      "Pancakes"
+    ]
+  },
+  {
+    "id": "food-074",
+    "category": "food",
+    "question": "Which dark British sausage is made with blood and oats?",
+    "answer": "Black pudding"
+  },
+  {
+    "id": "food-075",
+    "category": "food",
+    "question": "Which thin, deep-fried potato snack comes in a packet?",
+    "answer": "Crisps"
+  },
+  {
+    "id": "food-076",
+    "category": "food",
+    "question": "Which fizzy drink is traditionally flavoured with ginger?",
+    "answer": "Ginger beer"
+  },
+  {
+    "id": "food-077",
+    "category": "food",
+    "question": "Which herbal drink is made by infusing peppermint leaves?",
+    "answer": "Peppermint tea"
+  },
+  {
+    "id": "food-078",
+    "category": "food",
+    "question": "Which nut is used to make marzipan, often on Christmas cake?",
+    "answer": "Almonds",
+    "acceptedAnswers": [
+      "Almond"
+    ]
+  },
+  {
+    "id": "food-079",
+    "category": "food",
+    "question": "Which very expensive spice comes from the crocus flower?",
+    "answer": "Saffron"
+  },
+  {
+    "id": "food-080",
+    "category": "food",
+    "question": "Which sweet, sticky syrup is drizzled on pancakes, made from maple trees?",
+    "answer": "Maple syrup"
+  }
 ]

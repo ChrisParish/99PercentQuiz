@@ -1,4 +1,4 @@
-﻿# Fact-check batch 4
+# Fact-check batch 4
 
 You are fact-checking questions for a UK breakfast-radio quiz aimed at the general public.
 
@@ -21,53 +21,53 @@ Reply with ONLY a JSON array. No commentary before or after:
 
 ## Questions
 
-body-028 | Which finger sits next to your thumb?
-truefalse-019 | A week has eight days: true or false?
-food-006 | Which fruit is used to make cider?
-geography-022 | Which London bridge lifts for tall ships?
-music-008 | Which Britpop band released Parklife?
-sports-026 | Which sport features the Ashes series?
-general-044 | Which continent is Egypt in?
-science-002 | What gas do plants take in from the air?
-animals-039 | Which animal has black and white stripes?
-maths-023 | What is 71 + 19?
-maths-043 | What is 90 - 62?
-animals-050 | Which animal do we get bacon from?
-general-010 | How many days are in a leap year?
-science-003 | What process do plants use to make food?
-food-020 | Which cheese is traditionally used on pizza?
-geography-026 | Which UK city has the Royal Mile?
-music-021 | Which band released Chasing Cars?
-sports-016 | Which horse race is run at Aintree?
-body-009 | How many fingers does a person have?
-truefalse-021 | Carrots grow underground: true or false?
-maths-018 | What is 16 + 48?
-animals-019 | What is a group of cows called?
-general-045 | Which festival is celebrated on 25th December?
-science-001 | What gas do humans need to breathe?
-maths-034 | What is 60 - 17?
-food-019 | What sauce are baked beans usually in?
-geography-035 | Which UK country is Glasgow in?
-music-035 | Which duo released Get Lucky?
-sports-001 | How many players are in a football team on the pitch?
-animals-018 | What is a group of sheep called?
-body-006 | What protects your heart and lungs in your chest?
-truefalse-006 | The Pacific is an ocean: true or false?
-general-037 | Which item tells the time on your wrist?
-science-009 | Which planet is known as the red planet?
-maths-015 | What is 64 + 13?
-animals-025 | Which sea creature has eight arms?
-food-008 | Which vegetable makes you cry when chopped?
-geography-012 | Which UK city is famous for the Beatles?
-music-034 | Which band released Seven Nation Army?
-sports-009 | Which sport does Lewis Hamilton compete in?
-maths-059 | What is 5 x 5?
-general-043 | Which US city has the Statue of Liberty?
-science-011 | Frozen water is known as what?
-body-002 | How many bones does an adult human have?
-truefalse-005 | A tomato is a fruit: true or false?
-animals-001 | What do you call a baby cat?
-maths-046 | What is 7 x 8?
-food-009 | Which hot drink do Britons famously add milk to?
-general-021 | Which planet do we live on?
-geography-023 | Which national park is in Cumbria?
+truefalse-048 | The Moon is a planet: true or false?
+maths-077 | What is 34 - 23?
+food-079 | Which very expensive spice comes from the crocus flower?
+music-064 | Which singer released the song Shallow with Bradley Cooper?
+science-064 | Which renewable energy comes from the Sun?
+animals-064 | What is a baby butterfly called before it changes?
+food-056 | Which mint-based sauce is traditionally served with roast lamb?
+geography-067 | Harlech Castle stands in which UK country?
+music-041 | Which band released I Bet You Look Good on the Dancefloor?
+body-060 | Which sense lets you feel pain and temperature through your skin?
+music-070 | Which rapper released the song Old Town Road?
+truefalse-056 | A decade is ten years: true or false?
+science-048 | Which natural event is measured on the Richter scale?
+animals-095 | Which amphibian has smooth moist skin, like a small lizard?
+science-060 | Changing a liquid into a solid is known as what?
+body-064 | What is the name for the unique print on your fingers?
+music-069 | Which Scottish singer released the song Someone You Loved?
+sports-058 | Which rowing race is held every year between Oxford and Cambridge?
+general-076 | Which job involves delivering letters and parcels?
+science-063 | Which units do UK scientists use to measure temperature?
+science-088 | Which type of material is a good conductor of heat?
+body-065 | What is the coloured part of your eye called?
+food-051 | Which Welsh cakes are small and cooked on a griddle?
+geography-044 | Aintree Racecourse, home of the Grand National, is near which city?
+sports-055 | Which sport is contested for the World Cup every four years?
+animals-100 | Which farm animal lives in a sty?
+science-070 | Which instrument is used to view distant objects like stars?
+body-053 | Which part of your throat vibrates to make your voice?
+geography-071 | Which national park in Yorkshire is known for its dales?
+music-043 | Which Welsh rock band released the song Dakota?
+truefalse-045 | Humans have one heart: true or false?
+animals-091 | Which huge reptile lives in rivers and has powerful jaws?
+animals-093 | Which black and yellow striped insect can sting?
+food-049 | Which roast bird is traditionally served for Christmas dinner?
+sports-070 | Which winter sport involves sliding headfirst down an icy track?
+truefalse-076 | London is the capital of England: true or false?
+maths-064 | What is 9 x 5?
+body-078 | Which joint, just above your foot, has the Achilles tendon?
+music-047 | Which album did Amy Winehouse release in 2006, featuring Rehab?
+sports-056 | Which water sport uses oars and is raced at Henley?
+general-048 | Which continent is the Sahara Desert located in?
+science-058 | Changing a gas into a liquid is known as what?
+body-074 | Which flap of skin covers and protects your eye?
+geography-043 | Which UK city has the famous Albert Dock waterfront?
+truefalse-077 | Octopuses have eight legs: true or false?
+animals-062 | Which farm animal says quack?
+maths-070 | What is 68 - 57?
+body-080 | Which soft tissue in your mouth surrounds your teeth?
+geography-059 | Which UK country is the Isle of Skye part of?
+general-068 | Which traditional UK meal includes roast meat on Sundays?

@@ -23,4 +23,7 @@ FROM scratch
 COPY --from=build /out/quizweb /quizweb
 EXPOSE 8080
 USER 65532:65532
+# Swap state (working/pool.json schedule) is persisted here - mount a volume
+# so it survives a restart/redeploy, e.g. docker run -v quizstate:/data/state.
+VOLUME ["/data/state"]
 ENTRYPOINT ["/quizweb"]

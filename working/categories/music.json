@@ -1,42 +1,517 @@
 [
-  { "id": "music-001", "category": "music", "question": "Which band released Wonderwall?", "answer": "Oasis" },
-  { "id": "music-002", "category": "music", "question": "Which girl group sang Wannabe?", "answer": "Spice Girls", "acceptedAnswers": ["The Spice Girls"] },
-  { "id": "music-003", "category": "music", "question": "Which boy band sang Never Forget?", "answer": "Take That" },
-  { "id": "music-004", "category": "music", "question": "Which singer released Rolling in the Deep?", "answer": "Adele" },
-  { "id": "music-005", "category": "music", "question": "Which singer released Shape of You?", "answer": "Ed Sheeran" },
-  { "id": "music-006", "category": "music", "question": "Which band released Don't Look Back in Anger?", "answer": "Oasis" },
-  { "id": "music-007", "category": "music", "question": "Which girl group released Say You'll Be There?", "answer": "Spice Girls", "acceptedAnswers": ["The Spice Girls"] },
-  { "id": "music-008", "category": "music", "question": "Which Britpop band released Parklife?", "answer": "Blur" },
-  { "id": "music-009", "category": "music", "question": "Which singer released Someone Like You?", "answer": "Adele" },
-  { "id": "music-010", "category": "music", "question": "Which singer released Angels in 1997?", "answer": "Robbie Williams" },
-  { "id": "music-011", "category": "music", "question": "Which band released Yellow and Fix You?", "answer": "Coldplay" },
-  { "id": "music-012", "category": "music", "question": "Which singer released Umbrella?", "answer": "Rihanna" },
-  { "id": "music-013", "category": "music", "question": "Which artist released Bad Guy?", "answer": "Billie Eilish" },
-  { "id": "music-014", "category": "music", "question": "Which band did Robbie Williams leave in 1995?", "answer": "Take That" },
-  { "id": "music-015", "category": "music", "question": "Which talent show did One Direction form on?", "answer": "The X Factor", "acceptedAnswers": ["X Factor"] },
-  { "id": "music-016", "category": "music", "question": "Which boy band featured Harry Styles?", "answer": "One Direction" },
-  { "id": "music-017", "category": "music", "question": "Which singer released Hello in 2015?", "answer": "Adele" },
-  { "id": "music-018", "category": "music", "question": "How many Spice Girls were there?", "answer": "5" },
-  { "id": "music-019", "category": "music", "question": "Which Spice Girl was known as Posh Spice?", "answer": "Victoria Beckham" },
-  { "id": "music-020", "category": "music", "question": "Which singer released Poker Face?", "answer": "Lady Gaga" },
-  { "id": "music-021", "category": "music", "question": "Which band was formed by Chris Martin?", "answer": "Coldplay" },
-  { "id": "music-022", "category": "music", "question": "Which brothers formed the band Oasis?", "answer": "The Gallaghers", "acceptedAnswers": ["Gallagher brothers", "Noel and Liam", "Noel and Liam Gallagher"] },
-  { "id": "music-023", "category": "music", "question": "Which UK festival is held at Worthy Farm?", "answer": "Glastonbury", "acceptedAnswers": ["Glastonbury Festival"] },
-  { "id": "music-024", "category": "music", "question": "Which music streaming service has a green logo?", "answer": "Spotify" },
-  { "id": "music-025", "category": "music", "question": "Which singer released Baby One More Time?", "answer": "Britney Spears" },
-  { "id": "music-026", "category": "music", "question": "What does DJ stand for?", "answer": "Disc jockey" },
-  { "id": "music-027", "category": "music", "question": "Which singer released Shake It Off?", "answer": "Taylor Swift" },
-  { "id": "music-028", "category": "music", "question": "Which boy band released Back for Good?", "answer": "Take That" },
-  { "id": "music-029", "category": "music", "question": "Which girl group did Beyonce sing in?", "answer": "Destiny's Child" },
-  { "id": "music-030", "category": "music", "question": "Which singer released Sorry and Baby?", "answer": "Justin Bieber" },
-  { "id": "music-031", "category": "music", "question": "Which rapper is also known as Slim Shady?", "answer": "Eminem" },
-  { "id": "music-032", "category": "music", "question": "Which talent show made Susan Boyle famous?", "answer": "Britain's Got Talent" },
-  { "id": "music-033", "category": "music", "question": "Which singer sang Rehab?", "answer": "Amy Winehouse" },
-  { "id": "music-034", "category": "music", "question": "Which instrument has 88 keys?", "answer": "A piano", "acceptedAnswers": ["Piano"] },
-  { "id": "music-035", "category": "music", "question": "What is the repeated part of a song called?", "answer": "The chorus", "acceptedAnswers": ["Chorus"] },
-  { "id": "music-036", "category": "music", "question": "Which app is famous for short videos and viral songs?", "answer": "TikTok" },
-  { "id": "music-037", "category": "music", "question": "Which boy band did Zayn Malik leave in 2015?", "answer": "One Direction" },
-  { "id": "music-038", "category": "music", "question": "Which instrument is played by hitting it with sticks?", "answer": "Drums" },
-  { "id": "music-039", "category": "music", "question": "Which BBC radio station is aimed at young listeners?", "answer": "Radio 1" },
-  { "id": "music-040", "category": "music", "question": "What is a group of singers called?", "answer": "A choir", "acceptedAnswers": ["Choir"] }
+  {
+    "id": "music-001",
+    "category": "music",
+    "question": "Which band released Wonderwall?",
+    "answer": "Oasis"
+  },
+  {
+    "id": "music-002",
+    "category": "music",
+    "question": "Which girl group sang Wannabe?",
+    "answer": "Spice Girls",
+    "acceptedAnswers": [
+      "The Spice Girls"
+    ]
+  },
+  {
+    "id": "music-003",
+    "category": "music",
+    "question": "Which boy band sang Never Forget?",
+    "answer": "Take That"
+  },
+  {
+    "id": "music-004",
+    "category": "music",
+    "question": "Which singer released Rolling in the Deep?",
+    "answer": "Adele"
+  },
+  {
+    "id": "music-005",
+    "category": "music",
+    "question": "Which singer released Shape of You?",
+    "answer": "Ed Sheeran"
+  },
+  {
+    "id": "music-006",
+    "category": "music",
+    "question": "Which band released Don't Look Back in Anger?",
+    "answer": "Oasis"
+  },
+  {
+    "id": "music-007",
+    "category": "music",
+    "question": "Which girl group released Say You'll Be There?",
+    "answer": "Spice Girls",
+    "acceptedAnswers": [
+      "The Spice Girls"
+    ]
+  },
+  {
+    "id": "music-008",
+    "category": "music",
+    "question": "Which Britpop band released Parklife?",
+    "answer": "Blur"
+  },
+  {
+    "id": "music-009",
+    "category": "music",
+    "question": "Which singer released Someone Like You?",
+    "answer": "Adele"
+  },
+  {
+    "id": "music-010",
+    "category": "music",
+    "question": "Which singer released Angels in 1997?",
+    "answer": "Robbie Williams"
+  },
+  {
+    "id": "music-011",
+    "category": "music",
+    "question": "Which band released Yellow and Fix You?",
+    "answer": "Coldplay"
+  },
+  {
+    "id": "music-012",
+    "category": "music",
+    "question": "Which singer released Umbrella?",
+    "answer": "Rihanna"
+  },
+  {
+    "id": "music-013",
+    "category": "music",
+    "question": "Which artist released Bad Guy?",
+    "answer": "Billie Eilish"
+  },
+  {
+    "id": "music-014",
+    "category": "music",
+    "question": "Which band did Robbie Williams leave in 1995?",
+    "answer": "Take That"
+  },
+  {
+    "id": "music-015",
+    "category": "music",
+    "question": "Which talent show did One Direction form on?",
+    "answer": "The X Factor",
+    "acceptedAnswers": [
+      "X Factor"
+    ]
+  },
+  {
+    "id": "music-016",
+    "category": "music",
+    "question": "Which boy band featured Harry Styles?",
+    "answer": "One Direction"
+  },
+  {
+    "id": "music-017",
+    "category": "music",
+    "question": "Which singer released Hello in 2015?",
+    "answer": "Adele"
+  },
+  {
+    "id": "music-018",
+    "category": "music",
+    "question": "How many Spice Girls were there?",
+    "answer": "5"
+  },
+  {
+    "id": "music-019",
+    "category": "music",
+    "question": "Which Spice Girl was known as Posh Spice?",
+    "answer": "Victoria Beckham"
+  },
+  {
+    "id": "music-020",
+    "category": "music",
+    "question": "Which singer released Poker Face?",
+    "answer": "Lady Gaga"
+  },
+  {
+    "id": "music-021",
+    "category": "music",
+    "question": "Which band was formed by Chris Martin?",
+    "answer": "Coldplay"
+  },
+  {
+    "id": "music-022",
+    "category": "music",
+    "question": "Which brothers formed the band Oasis?",
+    "answer": "The Gallaghers",
+    "acceptedAnswers": [
+      "Gallagher brothers",
+      "Noel and Liam",
+      "Noel and Liam Gallagher"
+    ]
+  },
+  {
+    "id": "music-023",
+    "category": "music",
+    "question": "Which UK festival is held at Worthy Farm?",
+    "answer": "Glastonbury",
+    "acceptedAnswers": [
+      "Glastonbury Festival"
+    ]
+  },
+  {
+    "id": "music-024",
+    "category": "music",
+    "question": "Which music streaming service has a green logo?",
+    "answer": "Spotify"
+  },
+  {
+    "id": "music-025",
+    "category": "music",
+    "question": "Which singer released Baby One More Time?",
+    "answer": "Britney Spears"
+  },
+  {
+    "id": "music-026",
+    "category": "music",
+    "question": "What does DJ stand for?",
+    "answer": "Disc jockey"
+  },
+  {
+    "id": "music-027",
+    "category": "music",
+    "question": "Which singer released Shake It Off?",
+    "answer": "Taylor Swift"
+  },
+  {
+    "id": "music-028",
+    "category": "music",
+    "question": "Which boy band released Back for Good?",
+    "answer": "Take That"
+  },
+  {
+    "id": "music-029",
+    "category": "music",
+    "question": "Which girl group did Beyonce sing in?",
+    "answer": "Destiny's Child"
+  },
+  {
+    "id": "music-030",
+    "category": "music",
+    "question": "Which singer released Sorry and Baby?",
+    "answer": "Justin Bieber"
+  },
+  {
+    "id": "music-031",
+    "category": "music",
+    "question": "Which rapper is also known as Slim Shady?",
+    "answer": "Eminem"
+  },
+  {
+    "id": "music-032",
+    "category": "music",
+    "question": "Which talent show made Susan Boyle famous?",
+    "answer": "Britain's Got Talent"
+  },
+  {
+    "id": "music-033",
+    "category": "music",
+    "question": "Which singer sang Rehab?",
+    "answer": "Amy Winehouse"
+  },
+  {
+    "id": "music-034",
+    "category": "music",
+    "question": "Which instrument has 88 keys?",
+    "answer": "A piano",
+    "acceptedAnswers": [
+      "Piano"
+    ]
+  },
+  {
+    "id": "music-035",
+    "category": "music",
+    "question": "What is the repeated part of a song called?",
+    "answer": "The chorus",
+    "acceptedAnswers": [
+      "Chorus"
+    ]
+  },
+  {
+    "id": "music-036",
+    "category": "music",
+    "question": "Which app is famous for short videos and viral songs?",
+    "answer": "TikTok"
+  },
+  {
+    "id": "music-037",
+    "category": "music",
+    "question": "Which boy band did Zayn Malik leave in 2015?",
+    "answer": "One Direction"
+  },
+  {
+    "id": "music-038",
+    "category": "music",
+    "question": "Which instrument is played by hitting it with sticks?",
+    "answer": "Drums"
+  },
+  {
+    "id": "music-039",
+    "category": "music",
+    "question": "Which BBC radio station is aimed at young listeners?",
+    "answer": "Radio 1"
+  },
+  {
+    "id": "music-040",
+    "category": "music",
+    "question": "What is a group of singers called?",
+    "answer": "A choir",
+    "acceptedAnswers": [
+      "Choir"
+    ]
+  },
+  {
+    "id": "music-041",
+    "category": "music",
+    "question": "Which band released I Bet You Look Good on the Dancefloor?",
+    "answer": "Arctic Monkeys"
+  },
+  {
+    "id": "music-042",
+    "category": "music",
+    "question": "Which band released the song Chasing Cars?",
+    "answer": "Snow Patrol"
+  },
+  {
+    "id": "music-043",
+    "category": "music",
+    "question": "Which Welsh rock band released the song Dakota?",
+    "answer": "Stereophonics"
+  },
+  {
+    "id": "music-044",
+    "category": "music",
+    "question": "Which British singer released the album 25 in 2015?",
+    "answer": "Adele"
+  },
+  {
+    "id": "music-045",
+    "category": "music",
+    "question": "Which Coldplay song features the lyric 'nobody said it was easy'?",
+    "answer": "The Scientist"
+  },
+  {
+    "id": "music-046",
+    "category": "music",
+    "question": "Which British boy band released the song What Makes You Beautiful?",
+    "answer": "One Direction"
+  },
+  {
+    "id": "music-047",
+    "category": "music",
+    "question": "Which album did Amy Winehouse release in 2006, featuring Rehab?",
+    "answer": "Back to Black"
+  },
+  {
+    "id": "music-048",
+    "category": "music",
+    "question": "Which pop star is known as the Queen of Pop?",
+    "answer": "Madonna"
+  },
+  {
+    "id": "music-049",
+    "category": "music",
+    "question": "Which singer released the song Thriller?",
+    "answer": "Michael Jackson"
+  },
+  {
+    "id": "music-050",
+    "category": "music",
+    "question": "Which London-born singer released the song Price Tag?",
+    "answer": "Jessie J"
+  },
+  {
+    "id": "music-051",
+    "category": "music",
+    "question": "Which Irish band released the song With or Without You?",
+    "answer": "U2"
+  },
+  {
+    "id": "music-052",
+    "category": "music",
+    "question": "Which Swedish pop group released Dancing Queen?",
+    "answer": "ABBA"
+  },
+  {
+    "id": "music-053",
+    "category": "music",
+    "question": "Which British rock band released Bohemian Rhapsody?",
+    "answer": "Queen"
+  },
+  {
+    "id": "music-054",
+    "category": "music",
+    "question": "Which British band released the song Hey Jude?",
+    "answer": "The Beatles"
+  },
+  {
+    "id": "music-055",
+    "category": "music",
+    "question": "Which rock band released Stairway to Heaven?",
+    "answer": "Led Zeppelin"
+  },
+  {
+    "id": "music-056",
+    "category": "music",
+    "question": "Which British singer is known for the song Rocket Man?",
+    "answer": "Elton John"
+  },
+  {
+    "id": "music-057",
+    "category": "music",
+    "question": "Which Canadian singer released the song Call Me Maybe?",
+    "answer": "Carly Rae Jepsen"
+  },
+  {
+    "id": "music-058",
+    "category": "music",
+    "question": "Which American singer released the album 1989?",
+    "answer": "Taylor Swift"
+  },
+  {
+    "id": "music-059",
+    "category": "music",
+    "question": "Which girl group released the song Survivor?",
+    "answer": "Destiny's Child"
+  },
+  {
+    "id": "music-060",
+    "category": "music",
+    "question": "Which singer released the song Firework?",
+    "answer": "Katy Perry"
+  },
+  {
+    "id": "music-061",
+    "category": "music",
+    "question": "Which American rapper released the song Lose Yourself?",
+    "answer": "Eminem"
+  },
+  {
+    "id": "music-062",
+    "category": "music",
+    "question": "Which singer released the song No Tears Left to Cry?",
+    "answer": "Ariana Grande"
+  },
+  {
+    "id": "music-063",
+    "category": "music",
+    "question": "Which singer released the song Diamonds in 2012?",
+    "answer": "Rihanna"
+  },
+  {
+    "id": "music-064",
+    "category": "music",
+    "question": "Which singer released the song Shallow with Bradley Cooper?",
+    "answer": "Lady Gaga"
+  },
+  {
+    "id": "music-065",
+    "category": "music",
+    "question": "Which British singer released the song Castle on the Hill?",
+    "answer": "Ed Sheeran"
+  },
+  {
+    "id": "music-066",
+    "category": "music",
+    "question": "Which pop star released the song Blinding Lights?",
+    "answer": "The Weeknd"
+  },
+  {
+    "id": "music-067",
+    "category": "music",
+    "question": "Which singer released the album Future Nostalgia?",
+    "answer": "Dua Lipa"
+  },
+  {
+    "id": "music-068",
+    "category": "music",
+    "question": "Which British girl group released the song Wings?",
+    "answer": "Little Mix"
+  },
+  {
+    "id": "music-069",
+    "category": "music",
+    "question": "Which Scottish singer released the song Someone You Loved?",
+    "answer": "Lewis Capaldi"
+  },
+  {
+    "id": "music-070",
+    "category": "music",
+    "question": "Which rapper released the song Old Town Road?",
+    "answer": "Lil Nas X"
+  },
+  {
+    "id": "music-071",
+    "category": "music",
+    "question": "Which Spice Girl was known as Scary Spice?",
+    "answer": "Mel B",
+    "acceptedAnswers": [
+      "Melanie Brown"
+    ]
+  },
+  {
+    "id": "music-072",
+    "category": "music",
+    "question": "Which Spice Girl was known as Baby Spice?",
+    "answer": "Emma Bunton"
+  },
+  {
+    "id": "music-073",
+    "category": "music",
+    "question": "Which Spice Girl was known as Ginger Spice?",
+    "answer": "Geri Halliwell"
+  },
+  {
+    "id": "music-074",
+    "category": "music",
+    "question": "Which Spice Girl was known as Sporty Spice?",
+    "answer": "Mel C",
+    "acceptedAnswers": [
+      "Melanie Chisholm"
+    ]
+  },
+  {
+    "id": "music-075",
+    "category": "music",
+    "question": "Which instrument has a bag and pipes, linked to Scotland?",
+    "answer": "Bagpipes"
+  },
+  {
+    "id": "music-076",
+    "category": "music",
+    "question": "Which stringed instrument is traditionally associated with Wales?",
+    "answer": "Harp"
+  },
+  {
+    "id": "music-077",
+    "category": "music",
+    "question": "Which music genre, originating in Jamaica, is associated with Bob Marley?",
+    "answer": "Reggae"
+  },
+  {
+    "id": "music-078",
+    "category": "music",
+    "question": "Which music genre features fast rhyming lyrics over a beat?",
+    "answer": "Rap"
+  },
+  {
+    "id": "music-079",
+    "category": "music",
+    "question": "In which English county is Glastonbury Festival held?",
+    "answer": "Somerset"
+  },
+  {
+    "id": "music-080",
+    "category": "music",
+    "question": "Which BBC radio station plays classical music?",
+    "answer": "Radio 3",
+    "acceptedAnswers": [
+      "BBC Radio 3"
+    ]
+  }
 ]

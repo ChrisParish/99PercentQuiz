@@ -1,16 +1,19 @@
 package main
 
 import (
+	"encoding/json"
 	"errors"
 	"math"
+	"os"
+	"path/filepath"
 	"sort"
 	"sync"
 	"time"
 )
 
 const (
-	QuestionsPerDay = 20
-	ExclusionDays   = 15 // a question may not reappear within this many weekdays
+	QuestionsPerDay = 15
+	ExclusionDays   = 30 // a question may not reappear within this many weekdays
 
 	// Each day draws at random from the oldest candidateFactor*QuestionsPerDay
 	// eligible questions. Wide enough to keep groupings varied, narrow enough
@@ -30,8 +33,10 @@ var Epoch = time.Date(2026, time.January, 5, 0, 0, 0, 0, time.UTC)
 const MaxDayIndex = horizonYears * weekdaysPerYear
 
 var (
-	ErrBeforeEpoch   = errors.New("date is before the quiz start date")
-	ErrBeyondHorizon = errors.New("date is beyond the scheduling horizon")
+	ErrBeforeEpoch    = errors.New("date is before the quiz start date")
+	ErrBeyondHorizon  = errors.New("date is beyond the scheduling horizon")
+	ErrInvalidSlot    = errors.New("slot is out of range")
+	ErrNoAlternatives = errors.New("no alternative question is available for this slot")
 )
 
 // civilDay converts a calendar date to a day number, discarding clock time and
@@ -70,28 +75,86 @@ func WeekdayIndex(t time.Time) (int, error) {
 	return index, nil
 }
 
+// persistedSchedule is the on-disk form of the rotation's mutable state: the
+// questions actually shown (and swapped) on each day generated so far. Shared
+// globally across every visitor, so a swap changes the day for everyone.
+type persistedSchedule struct {
+	Days []persistedDay `json:"days"`
+}
+
+type persistedDay struct {
+	QuestionIDs []string `json:"questionIds"`
+	CyclePos    []int    `json:"cyclePos"`
+}
+
+// loadSchedule reads the schedule file, tolerating a missing file (fresh
+// start) but discarding anything it cannot cleanly map onto the current
+// question pool rather than risk serving a corrupted half-state.
+func loadSchedule(path string) *persistedSchedule {
+	if path == "" {
+		return nil
+	}
+	raw, err := os.ReadFile(path)
+	if err != nil {
+		return nil
+	}
+	var sched persistedSchedule
+	if err := json.Unmarshal(raw, &sched); err != nil {
+		return nil
+	}
+	return &sched
+}
+
+// saveSchedule writes the schedule atomically (temp file + rename) so a crash
+// mid-write cannot leave a truncated file behind.
+func saveSchedule(path string, sched *persistedSchedule) error {
+	if path == "" {
+		return nil
+	}
+	raw, err := json.MarshalIndent(sched, "", "  ")
+	if err != nil {
+		return err
+	}
+	if err := os.MkdirAll(filepath.Dir(path), 0o755); err != nil {
+		return err
+	}
+	tmp := path + ".tmp"
+	if err := os.WriteFile(tmp, raw, 0o644); err != nil {
+		return err
+	}
+	return os.Rename(tmp, path)
+}
+
 type Rotation struct {
 	questions []Question
+	byID      map[string]int
 	seed      uint64
+	storePath string
 
 	categories []string           // sorted, so iteration order is deterministic
 	members    map[string][]int   // category -> question indices
 	shares     map[string]float64 // category -> slots owed per day
 
 	mu       sync.Mutex
-	days     [][]int
+	days     [][]int            // dayIndex -> chosen question indices (current, post-swap)
+	cyclePos [][]int            // dayIndex -> per-slot swap cycle counter
 	lastUsed []int              // question index -> day it last appeared, -1 for never
 	credit   map[string]float64 // carries fractional entitlement between days
 }
 
-func NewRotation(questions []Question, seed uint64) *Rotation {
+// NewRotation builds a rotation engine. storePath, if non-empty, is where the
+// day-by-day schedule (including any swaps) is persisted so it survives a
+// restart; pass "" for an in-memory-only rotation, as tests do.
+func NewRotation(questions []Question, seed uint64, storePath string) *Rotation {
 	last := make([]int, len(questions))
 	for i := range last {
 		last[i] = -1
 	}
 
+	byID := make(map[string]int, len(questions))
 	members := make(map[string][]int)
 	for i, q := range questions {
+		byID[q.ID] = i
 		members[q.Category] = append(members[q.Category], i)
 	}
 
@@ -106,15 +169,83 @@ func NewRotation(questions []Question, seed uint64) *Rotation {
 		shares[c] = float64(len(members[c])) * QuestionsPerDay / float64(len(questions))
 	}
 
-	return &Rotation{
+	r := &Rotation{
 		questions:  questions,
+		byID:       byID,
 		seed:       seed,
+		storePath:  storePath,
 		categories: categories,
 		members:    members,
 		shares:     shares,
 		lastUsed:   last,
 		credit:     make(map[string]float64, len(members)),
 	}
+	r.restore()
+	return r
+}
+
+// restore replays a persisted schedule, if one exists and still maps cleanly
+// onto the current question pool, so the server resumes exactly where it
+// left off (including any swaps) rather than starting fresh after a restart.
+func (r *Rotation) restore() {
+	sched := loadSchedule(r.storePath)
+	if sched == nil {
+		return
+	}
+	days := make([][]int, 0, len(sched.Days))
+	cyclePos := make([][]int, 0, len(sched.Days))
+	for _, pd := range sched.Days {
+		indices := make([]int, len(pd.QuestionIDs))
+		for i, id := range pd.QuestionIDs {
+			idx, ok := r.byID[id]
+			if !ok {
+				// The pool changed since this was written; it's not safe to
+				// trust any of it, so start fresh instead of half-restoring.
+				return
+			}
+			indices[i] = idx
+		}
+		pos := make([]int, len(indices))
+		copy(pos, pd.CyclePos)
+		days = append(days, indices)
+		cyclePos = append(cyclePos, pos)
+	}
+	for day, indices := range days {
+		for _, idx := range indices {
+			r.lastUsed[idx] = day
+		}
+	}
+	r.days = days
+	r.cyclePos = cyclePos
+}
+
+// persist writes the full current schedule to disk. Called with mu held.
+func (r *Rotation) persist() {
+	if r.storePath == "" {
+		return
+	}
+	sched := &persistedSchedule{Days: make([]persistedDay, len(r.days))}
+	for d, indices := range r.days {
+		ids := make([]string, len(indices))
+		for i, idx := range indices {
+			ids[i] = r.questions[idx].ID
+		}
+		sched.Days[d] = persistedDay{QuestionIDs: ids, CyclePos: append([]int(nil), r.cyclePos[d]...)}
+	}
+	_ = saveSchedule(r.storePath, sched)
+}
+
+// extendTo ensures days up to and including i have been generated, persisting
+// once at the end rather than after every individual day.
+func (r *Rotation) extendTo(i int) {
+	if len(r.days) > i {
+		return
+	}
+	for len(r.days) <= i {
+		r.days = append(r.days, r.generate(len(r.days)))
+		r.cyclePos = append(r.cyclePos, make([]int, QuestionsPerDay))
+	}
+	r.persist()
 }
 
 // Day returns the question indices for weekday index i. Every preceding day is
@@ -122,9 +253,7 @@ func NewRotation(questions []Question, seed uint64) *Rotation {
 func (r *Rotation) Day(i int) []int {
 	r.mu.Lock()
 	defer r.mu.Unlock()
-	for len(r.days) <= i {
-		r.days = append(r.days, r.generate(len(r.days)))
-	}
+	r.extendTo(i)
 	out := make([]int, len(r.days[i]))
 	copy(out, r.days[i])
 	return out
@@ -138,6 +267,99 @@ func (r *Rotation) Questions(i int) []Question {
 		out[n] = r.questions[idx]
 	}
 	return out
+}
+
+// windowUsed returns every question index shown on any day within
+// ExclusionDays either side of center, across the schedule generated so far.
+func (r *Rotation) windowUsed(center int) map[int]bool {
+	used := make(map[int]bool)
+	lo, hi := center-ExclusionDays, center+ExclusionDays
+	if lo < 0 {
+		lo = 0
+	}
+	if hi >= len(r.days) {
+		hi = len(r.days) - 1
+	}
+	for d := lo; d <= hi; d++ {
+		for _, idx := range r.days[d] {
+			used[idx] = true
+		}
+	}
+	return used
+}
+
+// Swap replaces the question in the given day/slot with the next eligible
+// alternative, cycling deterministically through alternatives on repeated
+// calls. The change is global: every visitor sees it from then on.
+func (r *Rotation) Swap(dayIndex, slot int) (Question, error) {
+	r.mu.Lock()
+	defer r.mu.Unlock()
+
+	if slot < 0 || slot >= QuestionsPerDay {
+		return Question{}, ErrInvalidSlot
+	}
+	r.extendTo(dayIndex)
+
+	oldIdx := r.days[dayIndex][slot]
+	category := r.questions[oldIdx].Category
+
+	used := r.windowUsed(dayIndex)
+	delete(used, oldIdx) // allow the cycle to eventually return to the original
+
+	candidates := r.swapCandidates(category, used)
+	if len(candidates) == 0 {
+		candidates = r.swapCandidates("", used) // fall back across all categories
+	}
+	if len(candidates) == 0 {
+		return Question{}, ErrNoAlternatives
+	}
+
+	pos := (r.cyclePos[dayIndex][slot] + 1) % len(candidates)
+	r.cyclePos[dayIndex][slot] = pos
+	newIdx := candidates[pos]
+
+	r.days[dayIndex][slot] = newIdx
+	r.lastUsed[newIdx] = dayIndex
+	r.recomputeLastUsed(oldIdx)
+	r.persist()
+
+	return r.questions[newIdx], nil
+}
+
+// swapCandidates lists eligible question indices in ascending order, optionally
+// restricted to one category (category == "" means any).
+func (r *Rotation) swapCandidates(category string, used map[int]bool) []int {
+	var pool []int
+	if category == "" {
+		pool = make([]int, len(r.questions))
+		for i := range pool {
+			pool[i] = i
+		}
+	} else {
+		pool = r.members[category]
+	}
+	candidates := make([]int, 0, len(pool))
+	for _, idx := range pool {
+		if !used[idx] {
+			candidates = append(candidates, idx)
+		}
+	}
+	sort.Ints(candidates)
+	return candidates
+}
+
+// recomputeLastUsed restores idx's true last-shown day after it is swapped out
+// of a slot, in case it still appears elsewhere in the generated schedule.
+func (r *Rotation) recomputeLastUsed(idx int) {
+	last := -1
+	for d, indices := range r.days {
+		for _, i := range indices {
+			if i == idx && d > last {
+				last = d
+			}
+		}
+	}
+	r.lastUsed[idx] = last
 }
 
 // quotas splits the day's slots across categories in proportion to pool size,

@@ -1,42 +1,482 @@
 [
-  { "id": "truefalse-001", "category": "truefalse", "question": "Spiders are insects: true or false?", "answer": "False" },
-  { "id": "truefalse-002", "category": "truefalse", "question": "The Earth goes around the Sun: true or false?", "answer": "True" },
-  { "id": "truefalse-003", "category": "truefalse", "question": "Cardiff is in Scotland: true or false?", "answer": "False" },
-  { "id": "truefalse-004", "category": "truefalse", "question": "Penguins can fly: true or false?", "answer": "False" },
-  { "id": "truefalse-005", "category": "truefalse", "question": "A tomato is a fruit: true or false?", "answer": "True" },
-  { "id": "truefalse-006", "category": "truefalse", "question": "The Pacific is an ocean: true or false?", "answer": "True" },
-  { "id": "truefalse-007", "category": "truefalse", "question": "Bats are birds: true or false?", "answer": "False" },
-  { "id": "truefalse-008", "category": "truefalse", "question": "Water freezes at 0 Celsius: true or false?", "answer": "True" },
-  { "id": "truefalse-009", "category": "truefalse", "question": "There are 12 months in a year: true or false?", "answer": "True" },
-  { "id": "truefalse-010", "category": "truefalse", "question": "A triangle has four sides: true or false?", "answer": "False" },
-  { "id": "truefalse-011", "category": "truefalse", "question": "Cows lay eggs: true or false?", "answer": "False" },
-  { "id": "truefalse-012", "category": "truefalse", "question": "Australia is a country: true or false?", "answer": "True" },
-  { "id": "truefalse-013", "category": "truefalse", "question": "The Sun is a star: true or false?", "answer": "True" },
-  { "id": "truefalse-014", "category": "truefalse", "question": "A dolphin is a fish: true or false?", "answer": "False" },
-  { "id": "truefalse-015", "category": "truefalse", "question": "Big Ben is in Manchester: true or false?", "answer": "False" },
-  { "id": "truefalse-016", "category": "truefalse", "question": "Humans have two lungs: true or false?", "answer": "True" },
-  { "id": "truefalse-017", "category": "truefalse", "question": "The Thames flows through Paris: true or false?", "answer": "False" },
-  { "id": "truefalse-018", "category": "truefalse", "question": "Cheese is made from milk: true or false?", "answer": "True" },
-  { "id": "truefalse-019", "category": "truefalse", "question": "A week has eight days: true or false?", "answer": "False" },
-  { "id": "truefalse-020", "category": "truefalse", "question": "Mount Everest is in Asia: true or false?", "answer": "True" },
-  { "id": "truefalse-021", "category": "truefalse", "question": "Carrots grow underground: true or false?", "answer": "True" },
-  { "id": "truefalse-022", "category": "truefalse", "question": "A piano is a wind instrument: true or false?", "answer": "False" },
-  { "id": "truefalse-023", "category": "truefalse", "question": "Scotland is part of the UK: true or false?", "answer": "True" },
-  { "id": "truefalse-024", "category": "truefalse", "question": "Snakes have legs: true or false?", "answer": "False" },
-  { "id": "truefalse-025", "category": "truefalse", "question": "Honey is made by bees: true or false?", "answer": "True" },
-  { "id": "truefalse-026", "category": "truefalse", "question": "The Atlantic is a desert: true or false?", "answer": "False" },
-  { "id": "truefalse-027", "category": "truefalse", "question": "A leap year has 366 days: true or false?", "answer": "True" },
-  { "id": "truefalse-028", "category": "truefalse", "question": "Wales has a dragon on its flag: true or false?", "answer": "True" },
-  { "id": "truefalse-029", "category": "truefalse", "question": "Rugby is played with a round ball: true or false?", "answer": "False" },
-  { "id": "truefalse-030", "category": "truefalse", "question": "The alphabet has 26 letters: true or false?", "answer": "True" },
-  { "id": "truefalse-031", "category": "truefalse", "question": "Spiders have eight legs: true or false?", "answer": "True" },
-  { "id": "truefalse-032", "category": "truefalse", "question": "The Sun rises in the west: true or false?", "answer": "False" },
-  { "id": "truefalse-033", "category": "truefalse", "question": "Cheese is a vegetable: true or false?", "answer": "False" },
-  { "id": "truefalse-034", "category": "truefalse", "question": "London is in England: true or false?", "answer": "True" },
-  { "id": "truefalse-035", "category": "truefalse", "question": "Elephants can fly: true or false?", "answer": "False" },
-  { "id": "truefalse-036", "category": "truefalse", "question": "A bicycle has three wheels: true or false?", "answer": "False" },
-  { "id": "truefalse-037", "category": "truefalse", "question": "The Moon orbits the Earth: true or false?", "answer": "True" },
-  { "id": "truefalse-038", "category": "truefalse", "question": "Fish have feathers: true or false?", "answer": "False" },
-  { "id": "truefalse-039", "category": "truefalse", "question": "Winter is colder than summer: true or false?", "answer": "True" },
-  { "id": "truefalse-040", "category": "truefalse", "question": "There are 7 days in a week: true or false?", "answer": "True" }
+  {
+    "id": "truefalse-001",
+    "category": "truefalse",
+    "question": "Spiders are insects: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-002",
+    "category": "truefalse",
+    "question": "The Earth goes around the Sun: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-003",
+    "category": "truefalse",
+    "question": "Cardiff is in Scotland: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-004",
+    "category": "truefalse",
+    "question": "Penguins can fly: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-005",
+    "category": "truefalse",
+    "question": "A tomato is a fruit: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-006",
+    "category": "truefalse",
+    "question": "The Pacific is an ocean: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-007",
+    "category": "truefalse",
+    "question": "Bats are birds: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-008",
+    "category": "truefalse",
+    "question": "Water freezes at 0 Celsius: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-009",
+    "category": "truefalse",
+    "question": "There are 12 months in a year: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-010",
+    "category": "truefalse",
+    "question": "A triangle has four sides: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-011",
+    "category": "truefalse",
+    "question": "Cows lay eggs: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-012",
+    "category": "truefalse",
+    "question": "Australia is a country: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-013",
+    "category": "truefalse",
+    "question": "The Sun is a star: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-014",
+    "category": "truefalse",
+    "question": "A dolphin is a fish: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-015",
+    "category": "truefalse",
+    "question": "Big Ben is in Manchester: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-016",
+    "category": "truefalse",
+    "question": "Humans have two lungs: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-017",
+    "category": "truefalse",
+    "question": "The Thames flows through Paris: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-018",
+    "category": "truefalse",
+    "question": "Cheese is made from milk: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-019",
+    "category": "truefalse",
+    "question": "A week has eight days: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-020",
+    "category": "truefalse",
+    "question": "Mount Everest is in Asia: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-021",
+    "category": "truefalse",
+    "question": "Carrots grow underground: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-022",
+    "category": "truefalse",
+    "question": "A piano is a wind instrument: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-023",
+    "category": "truefalse",
+    "question": "Scotland is part of the UK: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-024",
+    "category": "truefalse",
+    "question": "Snakes have legs: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-025",
+    "category": "truefalse",
+    "question": "Honey is made by bees: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-026",
+    "category": "truefalse",
+    "question": "The Atlantic is a desert: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-027",
+    "category": "truefalse",
+    "question": "A leap year has 366 days: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-028",
+    "category": "truefalse",
+    "question": "Wales has a dragon on its flag: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-029",
+    "category": "truefalse",
+    "question": "Rugby is played with a round ball: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-030",
+    "category": "truefalse",
+    "question": "The alphabet has 26 letters: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-031",
+    "category": "truefalse",
+    "question": "Spiders have eight legs: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-032",
+    "category": "truefalse",
+    "question": "The Sun rises in the west: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-033",
+    "category": "truefalse",
+    "question": "Cheese is a vegetable: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-034",
+    "category": "truefalse",
+    "question": "London is in England: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-035",
+    "category": "truefalse",
+    "question": "Elephants can fly: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-036",
+    "category": "truefalse",
+    "question": "A bicycle has three wheels: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-037",
+    "category": "truefalse",
+    "question": "The Moon orbits the Earth: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-038",
+    "category": "truefalse",
+    "question": "Fish have feathers: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-039",
+    "category": "truefalse",
+    "question": "Winter is colder than summer: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-040",
+    "category": "truefalse",
+    "question": "There are 7 days in a week: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-041",
+    "category": "truefalse",
+    "question": "A square has four equal sides: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-042",
+    "category": "truefalse",
+    "question": "The Great Wall of China is in Japan: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-043",
+    "category": "truefalse",
+    "question": "A kitten is a baby cat: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-044",
+    "category": "truefalse",
+    "question": "The capital of France is Berlin: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-045",
+    "category": "truefalse",
+    "question": "Humans have one heart: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-046",
+    "category": "truefalse",
+    "question": "A hexagon has five sides: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-047",
+    "category": "truefalse",
+    "question": "Ice is frozen water: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-048",
+    "category": "truefalse",
+    "question": "The Moon is a planet: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-049",
+    "category": "truefalse",
+    "question": "A spider has six legs: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-050",
+    "category": "truefalse",
+    "question": "Birds lay eggs: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-051",
+    "category": "truefalse",
+    "question": "The UK is an island nation: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-052",
+    "category": "truefalse",
+    "question": "A triangle has three angles: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-053",
+    "category": "truefalse",
+    "question": "Sharks are mammals: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-054",
+    "category": "truefalse",
+    "question": "The Earth is flat: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-055",
+    "category": "truefalse",
+    "question": "Kangaroos are native to Australia: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-056",
+    "category": "truefalse",
+    "question": "A decade is ten years: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-057",
+    "category": "truefalse",
+    "question": "Paris is the capital of Italy: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-058",
+    "category": "truefalse",
+    "question": "Penguins live at the North Pole: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-059",
+    "category": "truefalse",
+    "question": "Oxygen is needed for humans to breathe: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-060",
+    "category": "truefalse",
+    "question": "A year has 10 months: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-061",
+    "category": "truefalse",
+    "question": "Tomatoes grow on trees: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-062",
+    "category": "truefalse",
+    "question": "The human body has one brain: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-063",
+    "category": "truefalse",
+    "question": "Wales is part of Great Britain: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-064",
+    "category": "truefalse",
+    "question": "A clock face usually shows 24 numbers: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-065",
+    "category": "truefalse",
+    "question": "Bees make honey: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-066",
+    "category": "truefalse",
+    "question": "Fish can breathe air out of water: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-067",
+    "category": "truefalse",
+    "question": "The Sun is bigger than the Earth: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-068",
+    "category": "truefalse",
+    "question": "Scotland has its own flag: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-069",
+    "category": "truefalse",
+    "question": "A week has seven days: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-070",
+    "category": "truefalse",
+    "question": "Dogs are reptiles: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-071",
+    "category": "truefalse",
+    "question": "Ireland is in Europe: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-072",
+    "category": "truefalse",
+    "question": "The alphabet has 25 letters: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-073",
+    "category": "truefalse",
+    "question": "Snow is cold: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-074",
+    "category": "truefalse",
+    "question": "A triangle has four corners: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-075",
+    "category": "truefalse",
+    "question": "Bats are blind: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-076",
+    "category": "truefalse",
+    "question": "London is the capital of England: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-077",
+    "category": "truefalse",
+    "question": "Octopuses have eight legs: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-078",
+    "category": "truefalse",
+    "question": "The human skeleton has no bones: true or false?",
+    "answer": "False"
+  },
+  {
+    "id": "truefalse-079",
+    "category": "truefalse",
+    "question": "A calendar year has twelve months: true or false?",
+    "answer": "True"
+  },
+  {
+    "id": "truefalse-080",
+    "category": "truefalse",
+    "question": "Camels store water in their humps: true or false?",
+    "answer": "False"
+  }
 ]

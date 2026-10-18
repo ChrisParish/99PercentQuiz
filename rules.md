@@ -5,8 +5,9 @@ If a rule changes here, change the corresponding check in the script.
 
 ## Target
 
-- **400 questions** — 20 broadcast days × 20 questions.
-- Answerable by **99% of UK adults**. If you have to think, it's too hard.
+- **800 questions** — 40 broadcast days × 20 questions.
+- Answerable by **99% of UK adults**, and easy for anyone aged 10 or older in the UK.
+  If you have to think, it's too hard.
 - **Quick fire.** Read aloud in under 4 seconds, answered in one word or a short phrase.
 - **No multiple choice.**
 - **UK English throughout** — courgette, not zucchini.
@@ -15,17 +16,17 @@ If a rule changes here, change the corresponding check in the script.
 
 | Category            | Code       | Count |
 | ------------------- | ---------- | ----- |
-| Animals             | `animals`  | 50    |
-| Simple science      | `science`  | 45    |
-| General knowledge   | `general`  | 45    |
-| UK geography        | `geography`| 40    |
-| Food & drink        | `food`     | 40    |
-| Sports              | `sports`   | 40    |
-| Music (1990–present)| `music`    | 40    |
-| True or False       | `truefalse`| 40    |
-| Body & everyday life| `body`     | 40    |
-| Maths               | `maths`    | 20    |
-| **Total**           |            | **400** |
+| Animals             | `animals`  | 100   |
+| Simple science      | `science`  | 90    |
+| General knowledge   | `general`  | 90    |
+| UK geography        | `geography`| 80    |
+| Food & drink        | `food`     | 80    |
+| Sports              | `sports`   | 80    |
+| Music (1990–present)| `music`    | 80    |
+| True or False       | `truefalse`| 80    |
+| Body & everyday life| `body`     | 80    |
+| Maths               | `maths`    | 40    |
+| **Total**           |            | **800** |
 
 Maths is deliberately the smallest category at one per day. It is the only
 category the validator can prove correct, but three a day felt unbalanced on air.

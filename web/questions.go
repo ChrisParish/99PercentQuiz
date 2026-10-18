@@ -17,6 +17,7 @@ import (
 var poolJSON []byte
 
 type Question struct {
+	ID       string `json:"id"`
 	Question string `json:"question"`
 	Answer   string `json:"answer"`
 	Category string `json:"category"`
@@ -48,7 +49,11 @@ func loadQuestions() ([]Question, error) {
 	}
 
 	seen := make(map[string]int, len(qs))
+	seenID := make(map[string]int, len(qs))
 	for i, q := range qs {
+		if strings.TrimSpace(q.ID) == "" {
+			return nil, fmt.Errorf("question %d (%q) has no id", i, q.Question)
+		}
 		if strings.TrimSpace(q.Question) == "" {
 			return nil, fmt.Errorf("question %d has an empty question", i)
 		}
@@ -58,6 +63,10 @@ func loadQuestions() ([]Question, error) {
 		if strings.TrimSpace(q.Category) == "" {
 			return nil, fmt.Errorf("question %d (%q) has no category", i, q.Question)
 		}
+		if prev, dup := seenID[q.ID]; dup {
+			return nil, fmt.Errorf("questions %d and %d share id %q", prev, i, q.ID)
+		}
+		seenID[q.ID] = i
 		key := strings.ToLower(strings.Join(strings.Fields(q.Question), " "))
 		if prev, dup := seen[key]; dup {
 			return nil, fmt.Errorf("questions %d and %d are duplicates: %q", prev, i, q.Question)

@@ -1,4 +1,4 @@
-﻿# Fact-check batch 1
+# Fact-check batch 1
 
 You are fact-checking questions for a UK breakfast-radio quiz aimed at the general public.
 
@@ -21,53 +21,53 @@ Reply with ONLY a JSON array. No commentary before or after:
 
 ## Questions
 
-maths-024 | What is 24 + 39?
-animals-048 | Which garden bird has a red breast?
-general-031 | Which season comes after summer?
-science-005 | At what Celsius temperature does water boil?
-food-017 | Which spread is made from crushed peanuts?
-geography-028 | Which UK city has the Bullring shopping centre?
-music-007 | Which band sang Bitter Sweet Symphony?
-sports-013 | Which sport uses a shuttlecock?
-body-005 | How many teeth does an adult human have?
-truefalse-017 | The Thames flows through Paris: true or false?
-maths-027 | What is 72 - 38?
-animals-047 | Which white bird is a symbol of peace?
-general-002 | How many months are in a year?
-science-018 | Which direction does a compass needle point?
-maths-005 | What is 51 + 27?
-food-002 | Which drink is made from crushed grapes?
-geography-007 | Which stretch of water separates England and France?
-music-028 | Which boy band released Back for Good?
-sports-020 | Which sport uses a horse and a mallet?
-animals-028 | Which lizard changes colour to blend in?
-body-011 | Which organ covers the outside of your body?
-truefalse-001 | Spiders are insects: true or false?
-general-017 | How many wheels does a tricycle have?
-science-043 | Which planet is closest to the Sun?
-maths-032 | What is 81 - 46?
-animals-037 | Which bird is traditional at Christmas dinner?
-food-015 | Spaghetti and penne are types of what?
-geography-010 | How many countries make up the United Kingdom?
-music-009 | Which singer released Someone Like You?
-sports-005 | Which sport is played at Lord's?
-maths-020 | What is 27 + 14?
-general-042 | Which country is famous for the Great Wall?
-science-026 | Meat-eating animals are known as what?
-body-015 | What should you brush twice a day?
-truefalse-023 | Scotland is part of the UK: true or false?
-animals-027 | Which bear eats bamboo in China?
-maths-050 | What is 9 x 9?
-food-001 | What is the main ingredient in guacamole?
-general-014 | Berlin is the capital of which country?
-geography-016 | Which sea lies to the east of England?
-music-003 | Which boy band sang Never Forget?
-science-016 | Molten rock from a volcano is called what?
-sports-022 | Which football club plays at Anfield?
-maths-007 | What is 44 + 35?
-animals-036 | Which pet is famous for barking?
-body-023 | What beat can you feel in your wrist?
-truefalse-018 | Cheese is made from milk: true or false?
-general-012 | Madrid is the capital of which country?
-science-015 | Which season comes after winter?
-maths-025 | What is 55 + 33?
+animals-054 | A baby kangaroo is called what?
+general-069 | What is the name for a baby's first set of teeth?
+body-054 | Which two things keep growing throughout your life, often needing cutting?
+geography-054 | Which river flows through York?
+music-045 | Which Coldplay song features the lyric 'nobody said it was easy'?
+sports-043 | Which sport uses the terms birdie, bogey and par?
+truefalse-075 | Bats are blind: true or false?
+maths-076 | What is 94 - 80?
+body-071 | Which body part contains your vocal cords?
+food-044 | Which British dessert is made from apples and a crumbly topping?
+geography-078 | Which UK nation is Holyhead a ferry port for, sailing to Ireland?
+music-061 | Which American rapper released the song Lose Yourself?
+sports-051 | Which athletics event involves jumping over barriers in a sprint?
+truefalse-070 | Dogs are reptiles: true or false?
+food-043 | Which Italian rice dish is cooked slowly with stock?
+geography-048 | In which English city is the SS Great Britain kept?
+music-065 | Which British singer released the song Castle on the Hill?
+truefalse-051 | The UK is an island nation: true or false?
+maths-071 | What is 3 x 7?
+general-060 | How many playing cards are in a standard deck, excluding jokers?
+science-084 | Which natural process turns a caterpillar into a butterfly?
+body-072 | Which bones run down the middle of your back?
+food-078 | Which nut is used to make marzipan, often on Christmas cake?
+music-071 | Which Spice Girl was known as Scary Spice?
+animals-089 | Which insect has a hard wing case and six legs?
+science-076 | Which simple circuit part stores and provides electrical power?
+animals-059 | A baby frog is called what?
+body-052 | Which part of your ear helps you keep your balance?
+maths-063 | What is 8 x 9?
+animals-086 | Which small mammal digs tunnels underground?
+body-058 | Which body system, including your stomach, helps you digest food?
+food-063 | Which Greek salad is made with feta cheese and olives?
+music-048 | Which pop star is known as the Queen of Pop?
+truefalse-060 | A year has 10 months: true or false?
+body-043 | Which part of your body helps you grip and hold things?
+food-068 | Which sesame seed spread is used to make hummus?
+music-046 | Which British boy band released the song What Makes You Beautiful?
+sports-069 | Which winter sport involves lying on your back and sliding feet-first?
+truefalse-046 | A hexagon has five sides: true or false?
+general-074 | How many wheels does a unicycle have?
+science-074 | Which weather event is a large tropical storm with strong winds?
+animals-052 | A baby bear is called what?
+body-041 | How many bones does an adult human skeleton have?
+food-053 | Which blue-veined cheese is made in Leicestershire?
+music-059 | Which girl group released the song Survivor?
+truefalse-054 | The Earth is flat: true or false?
+animals-096 | Which seabird is known for stealing chips at the seaside?
+animals-073 | Which spiny mammal rolls into a ball when scared?
+general-079 | Which season comes before spring?
+science-049 | What do we call animals without a backbone?

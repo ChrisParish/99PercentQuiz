@@ -1,4 +1,4 @@
-﻿# Fact-check batch 7
+# Fact-check batch 7
 
 You are fact-checking questions for a UK breakfast-radio quiz aimed at the general public.
 
@@ -21,53 +21,53 @@ Reply with ONLY a JSON array. No commentary before or after:
 
 ## Questions
 
-truefalse-007 | Bats are birds: true or false?
-food-022 | Which meat do we get from a cow?
-geography-008 | In which UK country is Ben Nevis?
-music-006 | Which band released Don't Look Back in Anger?
-sports-011 | How many points is a try worth in rugby union?
-maths-016 | What is 29 + 32?
-general-008 | How many letters are in the English alphabet?
-science-041 | What are the three states of matter?
-animals-010 | Which farm animal says baa?
-maths-044 | What is 47 - 29?
-body-004 | How many lungs does a human have?
-truefalse-003 | Cardiff is in Scotland: true or false?
-food-033 | Which nut is used to make marzipan?
-geography-034 | Which UK city has the Clifton Suspension Bridge?
-music-002 | Which girl group sang Wannabe?
-sports-019 | Which sport does Andy Murray play?
-general-039 | Which instrument has black and white keys?
-science-042 | What force slows a sliding object down?
-animals-030 | What is a female horse called?
-maths-051 | What is 3 x 8?
-maths-038 | What is 99 - 33?
-animals-049 | Which pet is often kept in a hutch?
-general-022 | Which job involves flying a plane?
-science-004 | What force pulls objects towards the Earth?
-food-034 | What are chips made from?
-geography-009 | In which UK country is Snowdon?
-music-026 | Which band sang Take Me Out?
-sports-010 | Which sport is Wayne Rooney known for?
-body-016 | How many eyes does a person have?
-truefalse-028 | Wales has a dragon on its flag: true or false?
-maths-036 | What is 55 - 19?
-animals-038 | Which bird cannot fly and lives in Antarctica?
-general-018 | How many sides does a square have?
-science-013 | What is the hard outer layer of a tree called?
-maths-049 | What is 8 x 8?
-food-032 | Which fruit has fuzzy skin and a stone inside?
-geography-002 | What is the capital of Scotland?
-music-001 | Which band released Wonderwall?
-sports-031 | In which sport do teams compete for the FA Cup?
-animals-016 | What is a group of lions called?
-body-010 | How many toes does a person have?
-truefalse-010 | A triangle has four sides: true or false?
-general-038 | How many strings does a standard guitar have?
-science-014 | What do plants take in through their roots?
-maths-052 | What is 6 x 6?
-animals-002 | What do you call a baby dog?
-food-005 | Which grain is used to make bread flour?
-geography-024 | The Channel Tunnel links Britain to which country?
-music-011 | Which band released Yellow and Fix You?
-sports-006 | In which sport would you score a try?
+body-062 | Which sense do your taste buds provide on your tongue?
+food-073 | Which thin French pancakes are filled with sweet or savoury fillings?
+geography-057 | Which UK mountain range runs down the centre of England?
+truefalse-064 | A clock face usually shows 24 numbers: true or false?
+maths-066 | What is 46 + 22?
+animals-063 | Which insect lives in a hive?
+food-065 | Which Scottish soup is made with barley and vegetables?
+geography-065 | Which English county is Stonehenge located in?
+truefalse-041 | A square has four equal sides: true or false?
+science-065 | Which renewable energy comes from turning turbines with the wind?
+animals-080 | Which farm animal gives us milk and moos?
+body-068 | What is the flat underside of your foot called?
+music-051 | Which Irish band released the song With or Without You?
+truefalse-078 | The human skeleton has no bones: true or false?
+general-087 | How many legs does a table usually have?
+body-069 | Which organ stores urine before it leaves the body?
+food-047 | Which dark, salty spread is made from yeast extract?
+geography-079 | Which English seaside town is famous for its illuminations and tower?
+sports-078 | Which sport involves two teams pulling on a rope across a line?
+truefalse-059 | Oxygen is needed for humans to breathe: true or false?
+animals-058 | A baby eagle is called what?
+science-067 | Which scientist is famous for his theory of gravity?
+body-059 | Which part of your body do doctors check with a stethoscope?
+geography-052 | Which English city is nicknamed 'Brum'?
+music-042 | Which band released the song Chasing Cars?
+maths-068 | What is 60 - 23?
+animals-081 | Which insect has colourful wings and visits flowers?
+food-069 | Which Middle Eastern dip is made from blended chickpeas?
+music-044 | Which British singer released the album 25 in 2015?
+sports-063 | Which cricket shot clears the boundary without the ball bouncing?
+truefalse-053 | Sharks are mammals: true or false?
+food-075 | Which thin, deep-fried potato snack comes in a packet?
+geography-062 | Which UK country has the city of Inverness?
+music-077 | Which music genre, originating in Jamaica, is associated with Bob Marley?
+truefalse-049 | A spider has six legs: true or false?
+animals-084 | Which seabird dives for fish and has a colourful beak?
+body-049 | Which body fluid clots to stop bleeding when you cut yourself?
+geography-047 | Which UK city is known for the Angel of the North sculpture?
+sports-049 | Which sport involves lifting a heavy weighted bar overhead?
+truefalse-080 | Camels store water in their humps: true or false?
+animals-092 | Which large flightless bird runs very fast in Africa?
+general-084 | Which precious yellow metal is used to make wedding rings?
+science-080 | Which word describes the layer of gases around the Earth?
+animals-082 | Which bird is known for stealing shiny objects?
+body-047 | Which gas do your lungs breathe out?
+food-052 | Which English cheese is crumbly and often paired with pickle?
+sports-057 | Which sport involves riding a horse over a course of fences?
+truefalse-044 | The capital of France is Berlin: true or false?
+general-046 | Which colour is a London bus traditionally painted?
+science-087 | What is the hardest natural substance, often used in jewellery?

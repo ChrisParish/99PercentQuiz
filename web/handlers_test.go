@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/http"
 	"net/http/httptest"
 	"strings"
@@ -16,11 +17,20 @@ func newTestServer(t *testing.T) http.Handler {
 		t.Fatalf("Europe/London unavailable: %v", err)
 	}
 	qs := testPool()
-	s, err := NewServer(NewRotation(qs, 20260105), len(qs), "Test Quiz", loc)
+	s, err := NewServer(NewRotation(qs, 20260105, ""), len(qs), "Test Quiz", loc)
 	if err != nil {
 		t.Fatalf("building server: %v", err)
 	}
 	return s.Handler()
+}
+
+func post(t *testing.T, h http.Handler, path string) *httptest.ResponseRecorder {
+	t.Helper()
+	rec := httptest.NewRecorder()
+	req := httptest.NewRequest(http.MethodPost, path, nil)
+	req.Header.Set("Origin", "http://"+req.Host)
+	h.ServeHTTP(rec, req)
+	return rec
 }
 
 func get(t *testing.T, h http.Handler, path string) *httptest.ResponseRecorder {
@@ -146,8 +156,81 @@ func TestPrintViewShowsAnswersInline(t *testing.T) {
 	if !strings.Contains(body, `class="answer"`) {
 		t.Error("print view does not render answers")
 	}
+	if strings.Contains(body, "swap-form") {
+		t.Error("print view should not include the swap control")
+	}
 	if got := len(questionsIn(body)); got != QuestionsPerDay {
 		t.Errorf("print view rendered %d questions, want %d", got, QuestionsPerDay)
+	}
+}
+
+func TestQuizViewHasSwapControls(t *testing.T) {
+	h := newTestServer(t)
+	body := get(t, h, "/2026-09-02").Body.String()
+
+	if got := strings.Count(body, `class="btn swap"`); got != QuestionsPerDay {
+		t.Errorf("found %d swap buttons, want %d", got, QuestionsPerDay)
+	}
+	for i := 0; i < QuestionsPerDay; i++ {
+		want := fmt.Sprintf(`action="/2026-09-02/swap/%d"`, i)
+		if !strings.Contains(body, want) {
+			t.Errorf("missing swap form %s on the questions list", want)
+		}
+	}
+	if !strings.Contains(body, `class="questions" data-date="2026-09-02"`) {
+		t.Error("questions list is missing its data-date attribute")
+	}
+}
+
+func TestSwapChangesTheQuestionForEveryVisitor(t *testing.T) {
+	h := newTestServer(t)
+	before := questionsIn(get(t, h, "/2026-09-02").Body.String())
+
+	rec := post(t, h, "/2026-09-02/swap/0")
+	if rec.Code != http.StatusSeeOther {
+		t.Fatalf("swap: got %d, want %d", rec.Code, http.StatusSeeOther)
+	}
+	if loc := rec.Header().Get("Location"); loc != "/2026-09-02" {
+		t.Errorf("swap redirected to %q, want /2026-09-02", loc)
+	}
+
+	after := questionsIn(get(t, h, "/2026-09-02").Body.String())
+	if before[0] == after[0] {
+		t.Error("question 0 did not change after a swap")
+	}
+	for i := 1; i < len(before); i++ {
+		if before[i] != after[i] {
+			t.Errorf("slot %d changed but wasn't swapped", i)
+		}
+	}
+}
+
+func TestSwapRejectsBadInput(t *testing.T) {
+	h := newTestServer(t)
+	cases := []struct {
+		path string
+		want int
+	}{
+		{fmt.Sprintf("/2026-09-02/swap/%d", QuestionsPerDay), http.StatusBadRequest},
+		{"/2026-09-02/swap/-1", http.StatusBadRequest},
+		{"/2026-09-02/swap/notanumber", http.StatusBadRequest},
+		{"/not-a-date/swap/0", http.StatusNotFound},
+	}
+	for _, c := range cases {
+		if rec := post(t, h, c.path); rec.Code != c.want {
+			t.Errorf("POST %s: got %d, want %d", c.path, rec.Code, c.want)
+		}
+	}
+}
+
+func TestSwapRejectsCrossOrigin(t *testing.T) {
+	h := newTestServer(t)
+	rec := httptest.NewRecorder()
+	req := httptest.NewRequest(http.MethodPost, "/2026-09-02/swap/0", nil)
+	req.Header.Set("Origin", "https://evil.example")
+	h.ServeHTTP(rec, req)
+	if rec.Code != http.StatusForbidden {
+		t.Errorf("cross-origin swap: got %d, want %d", rec.Code, http.StatusForbidden)
 	}
 }
 
@@ -156,7 +239,7 @@ func TestSecurityHeaders(t *testing.T) {
 	rec := get(t, h, "/2026-09-02")
 	for header, want := range map[string]string{
 		"X-Content-Type-Options": "nosniff",
-		"Referrer-Policy":        "no-referrer",
+		"Referrer-Policy":        "same-origin",
 	} {
 		if got := rec.Header().Get(header); got != want {
 			t.Errorf("%s: got %q, want %q", header, got, want)
@@ -164,6 +247,9 @@ func TestSecurityHeaders(t *testing.T) {
 	}
 	if csp := rec.Header().Get("Content-Security-Policy"); !strings.Contains(csp, "frame-ancestors 'none'") {
 		t.Errorf("CSP missing frame-ancestors: %q", csp)
+	}
+	if csp := rec.Header().Get("Content-Security-Policy"); !strings.Contains(csp, "form-action 'self'") {
+		t.Errorf("CSP must allow same-origin form posts for the swap button: %q", csp)
 	}
 }
 
@@ -186,8 +272,8 @@ func TestHealthReportsTimezoneAndCount(t *testing.T) {
 	if body.Status != "ok" {
 		t.Errorf("status %q, want ok", body.Status)
 	}
-	if body.Questions != 400 {
-		t.Errorf("questions %d, want 400", body.Questions)
+	if body.Questions != 800 {
+		t.Errorf("questions %d, want 800", body.Questions)
 	}
 	// Catches a runtime image with no tzdata, where this silently becomes UTC.
 	if body.Timezone != "Europe/London" {
@@ -207,7 +293,7 @@ func TestEmbeddedQuestionsRenderEndToEnd(t *testing.T) {
 	if err != nil {
 		t.Fatalf("loading embedded questions: %v", err)
 	}
-	s, err := NewServer(NewRotation(qs, 20260105), len(qs), "The 99% Quiz", loc)
+	s, err := NewServer(NewRotation(qs, 20260105, ""), len(qs), "The 99% Quiz", loc)
 	if err != nil {
 		t.Fatal(err)
 	}

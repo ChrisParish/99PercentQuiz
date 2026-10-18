@@ -1,4 +1,4 @@
-﻿# Fact-check batch 6
+# Fact-check batch 6
 
 You are fact-checking questions for a UK breakfast-radio quiz aimed at the general public.
 
@@ -21,53 +21,53 @@ Reply with ONLY a JSON array. No commentary before or after:
 
 ## Questions
 
-maths-045 | What is 78 - 53?
-animals-020 | Which animal has a long trunk?
-general-003 | How many hours are in a day?
-science-028 | What are the two poles of a magnet called?
-maths-033 | What is 74 - 29?
-food-004 | A potato baked in its skin is called what?
-geography-013 | Which English city is famous for its Roman baths?
-music-013 | Which artist released Bad Guy?
-sports-028 | In which sport would you do a slam dunk?
-animals-004 | What do you call a baby horse?
-body-029 | The nails on your feet are called what?
-truefalse-026 | The Atlantic is a desert: true or false?
-general-005 | How many seconds are in a minute?
-science-045 | What do we call water falling from clouds?
-maths-030 | What is 96 - 56?
-animals-013 | How many legs does a spider have?
-food-024 | Which batter pudding is served with roast beef?
-geography-018 | Which UK country has a dragon on its flag?
-music-024 | Which artist sang Torn in 1997?
-sports-035 | Which winter sport involves skis and snow?
-maths-029 | What is 88 - 34?
-general-040 | What is a book of maps called?
-science-021 | How many sides does an octagon have?
-body-003 | Which organ do you use to think?
-truefalse-015 | Big Ben is in Manchester: true or false?
-animals-023 | Which bird is famous for copying speech?
-maths-039 | What is 70 - 44?
-food-014 | Which Italian dish has a base, sauce and cheese?
-general-033 | What is the opposite of up?
-geography-025 | Which ocean lies to the west of Ireland?
-music-027 | Which singer released Shake It Off?
-science-035 | How long does Earth take to spin once?
-sports-004 | How many players are in a rugby union team?
-maths-011 | What is 47 + 12?
-animals-031 | What is a male cow called?
-body-022 | Which joint is halfway down your leg?
-truefalse-002 | The Earth goes around the Sun: true or false?
-general-006 | Which month comes after June?
-science-037 | An erupting mountain is called what?
-maths-012 | What is 33 + 41?
-food-012 | Which fruit is said to keep the doctor away?
-geography-004 | What is the capital of Northern Ireland?
-music-032 | Which band sang Wake Me Up When September Ends?
-sports-012 | Which sport is played at the Crucible in Sheffield?
-animals-012 | Which animal produces the milk we drink?
-maths-021 | What is 38 + 11?
-general-016 | How many wheels does a bicycle have?
-science-008 | How many planets are in our solar system?
-animals-043 | Which small creature leaves a slime trail?
-body-017 | Which body part contains the eardrum?
+general-082 | Which day comes before Monday?
+food-076 | Which fizzy drink is traditionally flavoured with ginger?
+music-078 | Which music genre features fast rhyming lyrics over a beat?
+sports-071 | Which US sport uses an oval ball and scores touchdowns?
+truefalse-072 | The alphabet has 25 letters: true or false?
+general-067 | How many days are there in September?
+food-074 | Which dark British sausage is made with blood and oats?
+geography-046 | Which UK city has the Headingley cricket ground?
+animals-069 | Which pink wading bird stands on one leg?
+general-075 | Which job involves teaching children in a classroom?
+body-056 | Which body system moves blood around using your heart and vessels?
+food-080 | Which sweet, sticky syrup is drizzled on pancakes, made from maple trees?
+music-058 | Which American singer released the album 1989?
+sports-076 | Which sport involves swimming four different strokes within one race?
+science-086 | Which blood cells fight off infection in the human body?
+animals-071 | Which large grey mammal wallows in African rivers?
+music-066 | Which pop star released the song Blinding Lights?
+sports-068 | Which sport uses an oval ball and has no forward pass?
+food-070 | Which Indian bread is cooked in a clay oven called a tandoor?
+general-070 | Which piece of cutlery has prongs and is used for eating?
+food-061 | Which Japanese dish is made of vinegared rice and raw fish?
+geography-051 | Which city is built around an extinct volcano topped by a castle?
+sports-046 | Which sport involves hitting a ball over a net with your hands?
+general-055 | Which shape has five straight sides?
+science-082 | Which part of a plant carries water up from the roots?
+science-090 | Which shape is perfectly round with no corners?
+food-064 | Which British afternoon meal includes scones, jam and clotted cream?
+geography-074 | Which London museum has a giant blue whale skeleton on display?
+music-055 | Which rock band released Stairway to Heaven?
+sports-050 | Which sport combines swimming, cycling and running in one race?
+maths-072 | What is 56 - 39?
+science-055 | Which state of matter has no fixed shape or volume?
+body-063 | How many senses do humans traditionally have?
+food-050 | Which Scottish dish is made from sheep's offal, oats and spices?
+music-080 | Which BBC radio station plays classical music?
+animals-065 | Which nocturnal mammal hangs upside down to sleep?
+science-072 | Which common metal is strongly attracted to magnets?
+body-046 | Which gas do your lungs take in when you breathe?
+food-060 | Which hot, spicy dish is a British takeaway favourite from South Asia?
+music-054 | Which British band released the song Hey Jude?
+truefalse-058 | Penguins live at the North Pole: true or false?
+animals-099 | Which small pet rodent is known for running on a wheel?
+maths-080 | What is 5 x 4?
+general-089 | Which utensil do you cut food with at the table?
+science-075 | Which giant sea wave can be caused by an undersea earthquake?
+body-057 | Which body system, including your lungs, helps you breathe?
+sports-065 | Which athletics event involves throwing a javelin as far as possible?
+truefalse-069 | A week has seven days: true or false?
+animals-070 | Which Arctic bear has white fur?
+science-085 | What is the name for melted rock found underground?

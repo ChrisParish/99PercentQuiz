@@ -1,4 +1,4 @@
-﻿# Fact-check batch 3
+# Fact-check batch 3
 
 You are fact-checking questions for a UK breakfast-radio quiz aimed at the general public.
 
@@ -21,53 +21,53 @@ Reply with ONLY a JSON array. No commentary before or after:
 
 ## Questions
 
-body-013 | Which body part do you use to taste?
-truefalse-014 | A dolphin is a fish: true or false?
-general-011 | Paris is the capital of which country?
-science-031 | What do we see before we hear thunder?
-maths-028 | What is 63 - 27?
-animals-035 | Which pet is famous for chasing mice?
-food-026 | Which juice comes from squeezing oranges?
-geography-020 | Which UK city is known as the Steel City?
-music-022 | Which singer sang Believe in 1998?
-sports-003 | Which sport uses a bat, ball and wickets?
-maths-060 | What is 9 x 7?
-general-026 | Which day comes before Saturday?
-science-017 | Which instrument shows direction using magnetism?
-body-018 | Which organs fill with air when you breathe?
-truefalse-016 | Humans have two lungs: true or false?
-animals-042 | Which animal is famous for building dams?
-maths-001 | What is 18 + 27?
-food-021 | A sausage wrapped in pastry is called what?
-general-035 | What is the opposite of wet?
-geography-033 | Which county is called the Garden of England?
-music-023 | Which band released Song 2?
-science-010 | What is at the centre of our solar system?
-sports-017 | Which tennis tournament is held in south-west London?
-maths-053 | What is 7 x 7?
-animals-009 | Which farm animal says oink?
-body-020 | Which joint bends in the middle of your arm?
-truefalse-022 | A piano is a wind instrument: true or false?
-general-029 | Which number comes after 9?
-science-039 | Which part of a plant attracts bees?
-maths-040 | What is 84 - 57?
-food-018 | Which fruit is yellow and very sour?
-geography-003 | What is the capital of Wales?
-music-033 | Which singer sang Rehab?
-sports-032 | Which sport uses a bow and arrow?
-animals-011 | Which animal neighs and is ridden by a jockey?
-maths-022 | What is 62 + 25?
-general-007 | Which month usually has 28 days?
-science-024 | What powder do bees carry between flowers?
-animals-007 | A baby goat is known as what?
-body-012 | What red liquid carries oxygen around your body?
-truefalse-029 | Rugby is played with a round ball: true or false?
-food-028 | Which green vegetable looks like a tiny tree?
-geography-031 | What is the sea between Britain and Ireland called?
-music-016 | Which boy band featured Harry Styles?
-sports-008 | How many holes are on a standard golf course?
-maths-042 | What is 65 - 39?
-general-036 | What do you use to unlock a door?
-science-012 | Water in gas form is called what?
-animals-015 | How many legs does a horse have?
-maths-017 | What is 45 + 45?
+food-058 | Which small dried fruit is a variety of raisin used in baking?
+geography-070 | Which English county is Alton Towers theme park located in?
+truefalse-071 | Ireland is in Europe: true or false?
+general-061 | Which shape is a football pitch, roughly?
+food-046 | Which Christmas dessert is a dark, fruity steamed pudding?
+geography-050 | The Royal Albert Hall can be found in which city?
+music-067 | Which singer released the album Future Nostalgia?
+sports-053 | Which athletics event involves jumping as high as possible over a bar?
+animals-078 | Which large sea mammal breathes through a blowhole?
+general-083 | How many weeks are there in a year?
+science-071 | Which natural wax do bees use to build their hive?
+animals-060 | Which farm animal says cluck?
+sports-047 | Which sport involves throwing small arrows at a round board?
+general-054 | Which language is mainly spoken in Germany?
+maths-079 | What is 9 x 2?
+general-051 | What is the largest ocean on Earth?
+animals-090 | Which creature has a long sticky tongue and lives near ponds?
+body-050 | How many fingers are on one human hand, including the thumb?
+geography-075 | Which London museum is famous for the Rosetta Stone?
+truefalse-065 | Bees make honey: true or false?
+general-081 | Which day comes after Wednesday?
+body-077 | Which digit on your hand can touch all the others?
+food-055 | Which hot sauce made from horseradish is served with roast beef?
+geography-068 | Which English county is the Eden Project located in?
+sports-054 | Which athletics event involves jumping as far as possible from a run-up?
+general-090 | Which item of furniture do you sleep on?
+science-066 | Which gas makes bread dough rise when yeast is added?
+music-063 | Which singer released the song Diamonds in 2012?
+sports-062 | Which racquet sport is played by hitting a ball against a wall?
+truefalse-050 | Birds lay eggs: true or false?
+animals-061 | Which farm animal says neigh?
+general-066 | Which colour do you get by mixing red and white?
+body-051 | What is the clear front part of your eye called?
+music-052 | Which Swedish pop group released Dancing Queen?
+general-047 | Which colour is a Royal Mail postbox traditionally painted?
+science-077 | Which type of material lets electricity pass through easily?
+truefalse-066 | Fish can breathe air out of water: true or false?
+animals-087 | Which small mammal collects nuts for winter?
+science-081 | What is Earth's hard outer rocky layer called?
+body-076 | Which hairs grow along your eyelids to protect your eyes?
+food-077 | Which herbal drink is made by infusing peppermint leaves?
+music-072 | Which Spice Girl was known as Baby Spice?
+sports-042 | Which sport is track cycling contested in, inside a velodrome?
+truefalse-079 | A calendar year has twelve months: true or false?
+animals-053 | A baby fox is called what?
+general-064 | What is the opposite of big?
+animals-055 | A baby deer is called what?
+food-045 | Which dessert is made of meringue, cream and fruit?
+geography-064 | Wedgwood pottery has long been made in which UK city?
+sports-080 | Which international rugby competition is contested by six European nations?

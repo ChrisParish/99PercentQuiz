@@ -3,8 +3,11 @@ package main
 import (
 	"embed"
 	"encoding/json"
+	"errors"
 	"html/template"
 	"net/http"
+	"net/url"
+	"strconv"
 	"time"
 )
 
@@ -45,6 +48,7 @@ func (s *Server) Handler() http.Handler {
 	mux.HandleFunc("GET /print", s.handlePrintToday)
 	mux.HandleFunc("GET /print/{date}", s.handlePrintDate)
 	mux.Handle("GET /static/", http.FileServer(http.FS(staticFS)))
+	mux.HandleFunc("POST /{date}/swap/{slot}", s.handleSwap)
 	mux.HandleFunc("GET /{date}", s.handleDate)
 	return securityHeaders(mux)
 }
@@ -53,10 +57,13 @@ func securityHeaders(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		h := w.Header()
 		h.Set("X-Content-Type-Options", "nosniff")
-		h.Set("Referrer-Policy", "no-referrer")
+		// "no-referrer" would also blank the Origin header on the swap form's
+		// same-origin POST (browsers coerce it to the literal string "null"
+		// when the referrer policy is no-referrer), breaking the CSRF check.
+		h.Set("Referrer-Policy", "same-origin")
 		h.Set("Content-Security-Policy",
 			"default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self' data:; "+
-				"base-uri 'none'; form-action 'none'; frame-ancestors 'none'")
+				"base-uri 'none'; form-action 'self'; frame-ancestors 'none'")
 		next.ServeHTTP(w, r)
 	})
 }
@@ -124,6 +131,73 @@ func (s *Server) render(w http.ResponseWriter, _ *http.Request, day time.Time, t
 	if err := s.templates.ExecuteTemplate(w, tmpl, data); err != nil {
 		http.Error(w, "template error", http.StatusInternalServerError)
 	}
+}
+
+// handleSwap replaces the question in one slot of one day with the next
+// eligible alternative. The change is global - it is visible to every
+// subsequent visitor to that date, not just the one who clicked.
+func (s *Server) handleSwap(w http.ResponseWriter, r *http.Request) {
+	if !sameOrigin(r) {
+		http.Error(w, "cross-origin requests are not allowed", http.StatusForbidden)
+		return
+	}
+
+	day, ok := parseISODate(r.PathValue("date"))
+	if !ok {
+		http.Error(w, "Not found. Use a date in the form /YYYY-MM-DD/swap/N.", http.StatusNotFound)
+		return
+	}
+	slot, err := strconv.Atoi(r.PathValue("slot"))
+	if err != nil || slot < 0 || slot >= QuestionsPerDay {
+		http.Error(w, "slot must be between 0 and "+strconv.Itoa(QuestionsPerDay-1), http.StatusBadRequest)
+		return
+	}
+
+	index, err := WeekdayIndex(day)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+
+	if _, err := s.rotation.Swap(index, slot); err != nil {
+		switch {
+		case errors.Is(err, ErrNoAlternatives):
+			http.Error(w, "no alternative question is available for this slot", http.StatusConflict)
+		default:
+			http.Error(w, err.Error(), http.StatusBadRequest)
+		}
+		return
+	}
+
+	resolved := ResolveWeekday(day)
+	http.Redirect(w, r, "/"+resolved.Format(isoLayout), http.StatusSeeOther)
+}
+
+// sameOrigin is a lightweight CSRF guard: there is no session or auth to rely
+// on, so a swap is only accepted if the request's own Origin (or failing
+// that, Referer) names this same host. Requests with neither header - not
+// expected from a browser form post - are rejected too.
+func sameOrigin(r *http.Request) bool {
+	check := func(raw string) (bool, bool) {
+		// "null" is a legitimate opaque origin (e.g. a sandboxed context), not
+		// an absent header - but it can never match a real host, so treat it
+		// as present-and-mismatched rather than falling through to Referer.
+		if raw == "" {
+			return false, false
+		}
+		u, err := url.Parse(raw)
+		if err != nil {
+			return false, true
+		}
+		return u.Host == r.Host, true
+	}
+	if ok, present := check(r.Header.Get("Origin")); present {
+		return ok
+	}
+	if ok, present := check(r.Header.Get("Referer")); present {
+		return ok
+	}
+	return false
 }
 
 func (s *Server) handleHealth(w http.ResponseWriter, _ *http.Request) {

@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"os"
 	"os/signal"
+	"path/filepath"
 	"strconv"
 	"syscall"
 	"time"
@@ -26,6 +27,7 @@ func run() error {
 	port := env("PORT", "8080")
 	title := env("QUIZ_TITLE", "The 99% Quiz")
 	tz := env("QUIZ_TZ", "Europe/London")
+	stateDir := env("STATE_DIR", "/data/state")
 
 	seed, err := strconv.ParseUint(env("QUIZ_SEED", "20260105"), 10, 64)
 	if err != nil {
@@ -42,7 +44,12 @@ func run() error {
 		return err
 	}
 
-	server, err := NewServer(NewRotation(questions, seed), len(questions), title, loc)
+	if err := os.MkdirAll(stateDir, 0o755); err != nil {
+		return err
+	}
+	schedulePath := filepath.Join(stateDir, "schedule.json")
+
+	server, err := NewServer(NewRotation(questions, seed, schedulePath), len(questions), title, loc)
 	if err != nil {
 		return err
 	}

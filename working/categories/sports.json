@@ -1,42 +1,529 @@
 [
-  { "id": "sports-001", "category": "sports", "question": "How many players are in a football team on the pitch?", "answer": "11" },
-  { "id": "sports-002", "category": "sports", "question": "Which sport is played at Wimbledon?", "answer": "Tennis" },
-  { "id": "sports-003", "category": "sports", "question": "Which sport uses a bat, ball and wickets?", "answer": "Cricket" },
-  { "id": "sports-004", "category": "sports", "question": "How many players are in a rugby union team?", "answer": "15" },
-  { "id": "sports-005", "category": "sports", "question": "Which sport is played at Lord's?", "answer": "Cricket" },
-  { "id": "sports-006", "category": "sports", "question": "In which sport would you score a try?", "answer": "Rugby", "acceptedAnswers": ["Rugby union", "Rugby league"] },
-  { "id": "sports-007", "category": "sports", "question": "Which sport uses a driver and a putter?", "answer": "Golf" },
-  { "id": "sports-008", "category": "sports", "question": "How many holes are on a standard golf course?", "answer": "18" },
-  { "id": "sports-009", "category": "sports", "question": "Which sport does Lewis Hamilton compete in?", "answer": "Formula 1", "acceptedAnswers": ["F1", "Motor racing"] },
-  { "id": "sports-010", "category": "sports", "question": "Which sport is Wayne Rooney known for?", "answer": "Football" },
-  { "id": "sports-011", "category": "sports", "question": "Which winter sport is played with a puck?", "answer": "Ice hockey" },
-  { "id": "sports-012", "category": "sports", "question": "Which sport is played at the Crucible in Sheffield?", "answer": "Snooker" },
-  { "id": "sports-013", "category": "sports", "question": "Which sport uses a shuttlecock?", "answer": "Badminton" },
-  { "id": "sports-014", "category": "sports", "question": "Which sport is played on ice with brooms?", "answer": "Curling" },
-  { "id": "sports-015", "category": "sports", "question": "Which sport does Ronnie O'Sullivan play?", "answer": "Snooker" },
-  { "id": "sports-016", "category": "sports", "question": "Which horse race is run at Aintree?", "answer": "The Grand National", "acceptedAnswers": ["Grand National"] },
-  { "id": "sports-017", "category": "sports", "question": "Which tennis tournament is held in south-west London?", "answer": "Wimbledon" },
-  { "id": "sports-018", "category": "sports", "question": "Which sport is Sir Chris Hoy famous for?", "answer": "Cycling" },
-  { "id": "sports-019", "category": "sports", "question": "Which sport does Andy Murray play?", "answer": "Tennis" },
-  { "id": "sports-020", "category": "sports", "question": "Which sport uses a horse and a mallet?", "answer": "Polo" },
-  { "id": "sports-021", "category": "sports", "question": "Which football club plays at Old Trafford?", "answer": "Manchester United" },
-  { "id": "sports-022", "category": "sports", "question": "Which football club plays at Anfield?", "answer": "Liverpool" },
-  { "id": "sports-023", "category": "sports", "question": "In which sport do players shout fore?", "answer": "Golf" },
-  { "id": "sports-024", "category": "sports", "question": "How many rings are on the Olympic flag?", "answer": "5" },
-  { "id": "sports-025", "category": "sports", "question": "How often are the Summer Olympics held?", "answer": "Every 4 years" },
-  { "id": "sports-026", "category": "sports", "question": "Which sport features the Ashes series?", "answer": "Cricket" },
-  { "id": "sports-027", "category": "sports", "question": "Which sport uses a pommel horse and rings?", "answer": "Gymnastics" },
-  { "id": "sports-028", "category": "sports", "question": "In which sport would you do a slam dunk?", "answer": "Basketball" },
-  { "id": "sports-029", "category": "sports", "question": "Which sport is played at Twickenham?", "answer": "Rugby", "acceptedAnswers": ["Rugby union"] },
-  { "id": "sports-030", "category": "sports", "question": "What colour card sends a footballer off?", "answer": "Red" },
-  { "id": "sports-031", "category": "sports", "question": "In which sport do teams compete for the FA Cup?", "answer": "Football" },
-  { "id": "sports-032", "category": "sports", "question": "Which sport uses a bow and arrow?", "answer": "Archery" },
-  { "id": "sports-033", "category": "sports", "question": "Which athletics race is 26.2 miles long?", "answer": "The marathon", "acceptedAnswers": ["Marathon"] },
-  { "id": "sports-034", "category": "sports", "question": "Which London stadium hosts the FA Cup final?", "answer": "Wembley", "acceptedAnswers": ["Wembley Stadium"] },
-  { "id": "sports-035", "category": "sports", "question": "Which winter sport involves sliding downhill on skis?", "answer": "Skiing" },
-  { "id": "sports-036", "category": "sports", "question": "In which sport do competitors race on bicycles?", "answer": "Cycling" },
-  { "id": "sports-037", "category": "sports", "question": "Which sport has rounds, gloves and a ring?", "answer": "Boxing" },
-  { "id": "sports-038", "category": "sports", "question": "Which sport uses small bats on a table?", "answer": "Table tennis" },
-  { "id": "sports-039", "category": "sports", "question": "Which sport involves riding waves on a board?", "answer": "Surfing" },
-  { "id": "sports-040", "category": "sports", "question": "Which sport has a goalkeeper and a penalty area?", "answer": "Football" }
+  {
+    "id": "sports-001",
+    "category": "sports",
+    "question": "How many players are in a football team on the pitch?",
+    "answer": "11"
+  },
+  {
+    "id": "sports-002",
+    "category": "sports",
+    "question": "Which sport is played at Wimbledon?",
+    "answer": "Tennis"
+  },
+  {
+    "id": "sports-003",
+    "category": "sports",
+    "question": "Which sport uses a bat, ball and wickets?",
+    "answer": "Cricket"
+  },
+  {
+    "id": "sports-004",
+    "category": "sports",
+    "question": "How many players are in a rugby union team?",
+    "answer": "15"
+  },
+  {
+    "id": "sports-005",
+    "category": "sports",
+    "question": "Which sport is played at Lord's?",
+    "answer": "Cricket"
+  },
+  {
+    "id": "sports-006",
+    "category": "sports",
+    "question": "In which sport would you score a try?",
+    "answer": "Rugby",
+    "acceptedAnswers": [
+      "Rugby union",
+      "Rugby league"
+    ]
+  },
+  {
+    "id": "sports-007",
+    "category": "sports",
+    "question": "Which sport uses a driver and a putter?",
+    "answer": "Golf"
+  },
+  {
+    "id": "sports-008",
+    "category": "sports",
+    "question": "How many holes are on a standard golf course?",
+    "answer": "18"
+  },
+  {
+    "id": "sports-009",
+    "category": "sports",
+    "question": "Which sport does Lewis Hamilton compete in?",
+    "answer": "Formula 1",
+    "acceptedAnswers": [
+      "F1",
+      "Motor racing"
+    ]
+  },
+  {
+    "id": "sports-010",
+    "category": "sports",
+    "question": "Which sport is Wayne Rooney known for?",
+    "answer": "Football"
+  },
+  {
+    "id": "sports-011",
+    "category": "sports",
+    "question": "Which winter sport is played with a puck?",
+    "answer": "Ice hockey"
+  },
+  {
+    "id": "sports-012",
+    "category": "sports",
+    "question": "Which sport is played at the Crucible in Sheffield?",
+    "answer": "Snooker"
+  },
+  {
+    "id": "sports-013",
+    "category": "sports",
+    "question": "Which sport uses a shuttlecock?",
+    "answer": "Badminton"
+  },
+  {
+    "id": "sports-014",
+    "category": "sports",
+    "question": "Which sport is played on ice with brooms?",
+    "answer": "Curling"
+  },
+  {
+    "id": "sports-015",
+    "category": "sports",
+    "question": "Which sport does Ronnie O'Sullivan play?",
+    "answer": "Snooker"
+  },
+  {
+    "id": "sports-016",
+    "category": "sports",
+    "question": "Which horse race is run at Aintree?",
+    "answer": "The Grand National",
+    "acceptedAnswers": [
+      "Grand National"
+    ]
+  },
+  {
+    "id": "sports-017",
+    "category": "sports",
+    "question": "Which tennis tournament is held in south-west London?",
+    "answer": "Wimbledon"
+  },
+  {
+    "id": "sports-018",
+    "category": "sports",
+    "question": "Which sport is Sir Chris Hoy famous for?",
+    "answer": "Cycling"
+  },
+  {
+    "id": "sports-019",
+    "category": "sports",
+    "question": "Which sport does Andy Murray play?",
+    "answer": "Tennis"
+  },
+  {
+    "id": "sports-020",
+    "category": "sports",
+    "question": "Which sport uses a horse and a mallet?",
+    "answer": "Polo"
+  },
+  {
+    "id": "sports-021",
+    "category": "sports",
+    "question": "Which football club plays at Old Trafford?",
+    "answer": "Manchester United"
+  },
+  {
+    "id": "sports-022",
+    "category": "sports",
+    "question": "Which football club plays at Anfield?",
+    "answer": "Liverpool"
+  },
+  {
+    "id": "sports-023",
+    "category": "sports",
+    "question": "In which sport do players shout fore?",
+    "answer": "Golf"
+  },
+  {
+    "id": "sports-024",
+    "category": "sports",
+    "question": "How many rings are on the Olympic flag?",
+    "answer": "5"
+  },
+  {
+    "id": "sports-025",
+    "category": "sports",
+    "question": "How often are the Summer Olympics held?",
+    "answer": "Every 4 years"
+  },
+  {
+    "id": "sports-026",
+    "category": "sports",
+    "question": "Which sport features the Ashes series?",
+    "answer": "Cricket"
+  },
+  {
+    "id": "sports-027",
+    "category": "sports",
+    "question": "Which sport uses a pommel horse and rings?",
+    "answer": "Gymnastics"
+  },
+  {
+    "id": "sports-028",
+    "category": "sports",
+    "question": "In which sport would you do a slam dunk?",
+    "answer": "Basketball"
+  },
+  {
+    "id": "sports-029",
+    "category": "sports",
+    "question": "Which sport is played at Twickenham?",
+    "answer": "Rugby",
+    "acceptedAnswers": [
+      "Rugby union"
+    ]
+  },
+  {
+    "id": "sports-030",
+    "category": "sports",
+    "question": "What colour card sends a footballer off?",
+    "answer": "Red"
+  },
+  {
+    "id": "sports-031",
+    "category": "sports",
+    "question": "In which sport do teams compete for the FA Cup?",
+    "answer": "Football"
+  },
+  {
+    "id": "sports-032",
+    "category": "sports",
+    "question": "Which sport uses a bow and arrow?",
+    "answer": "Archery"
+  },
+  {
+    "id": "sports-033",
+    "category": "sports",
+    "question": "Which athletics race is 26.2 miles long?",
+    "answer": "The marathon",
+    "acceptedAnswers": [
+      "Marathon"
+    ]
+  },
+  {
+    "id": "sports-034",
+    "category": "sports",
+    "question": "Which London stadium hosts the FA Cup final?",
+    "answer": "Wembley",
+    "acceptedAnswers": [
+      "Wembley Stadium"
+    ]
+  },
+  {
+    "id": "sports-035",
+    "category": "sports",
+    "question": "Which winter sport involves sliding downhill on skis?",
+    "answer": "Skiing"
+  },
+  {
+    "id": "sports-036",
+    "category": "sports",
+    "question": "In which sport do competitors race on bicycles?",
+    "answer": "Cycling"
+  },
+  {
+    "id": "sports-037",
+    "category": "sports",
+    "question": "Which sport has rounds, gloves and a ring?",
+    "answer": "Boxing"
+  },
+  {
+    "id": "sports-038",
+    "category": "sports",
+    "question": "Which sport uses small bats on a table?",
+    "answer": "Table tennis"
+  },
+  {
+    "id": "sports-039",
+    "category": "sports",
+    "question": "Which sport involves riding waves on a board?",
+    "answer": "Surfing"
+  },
+  {
+    "id": "sports-040",
+    "category": "sports",
+    "question": "Which sport has a goalkeeper and a penalty area?",
+    "answer": "Football"
+  },
+  {
+    "id": "sports-041",
+    "category": "sports",
+    "question": "Which sport do Novak Djokovic and Rafael Nadal play?",
+    "answer": "Tennis"
+  },
+  {
+    "id": "sports-042",
+    "category": "sports",
+    "question": "Which sport is track cycling contested in, inside a velodrome?",
+    "answer": "Cycling",
+    "acceptedAnswers": [
+      "Track cycling"
+    ]
+  },
+  {
+    "id": "sports-043",
+    "category": "sports",
+    "question": "Which sport uses the terms birdie, bogey and par?",
+    "answer": "Golf"
+  },
+  {
+    "id": "sports-044",
+    "category": "sports",
+    "question": "Which winter sport involves jumping and spinning on ice skates?",
+    "answer": "Figure skating"
+  },
+  {
+    "id": "sports-045",
+    "category": "sports",
+    "question": "Which bat-and-ball sport, popular in the USA, is played on a diamond?",
+    "answer": "Baseball"
+  },
+  {
+    "id": "sports-046",
+    "category": "sports",
+    "question": "Which sport involves hitting a ball over a net with your hands?",
+    "answer": "Volleyball"
+  },
+  {
+    "id": "sports-047",
+    "category": "sports",
+    "question": "Which sport involves throwing small arrows at a round board?",
+    "answer": "Darts"
+  },
+  {
+    "id": "sports-048",
+    "category": "sports",
+    "question": "Which cue sport is played with coloured balls on a six-pocket table?",
+    "answer": "Pool"
+  },
+  {
+    "id": "sports-049",
+    "category": "sports",
+    "question": "Which sport involves lifting a heavy weighted bar overhead?",
+    "answer": "Weightlifting"
+  },
+  {
+    "id": "sports-050",
+    "category": "sports",
+    "question": "Which sport combines swimming, cycling and running in one race?",
+    "answer": "A triathlon",
+    "acceptedAnswers": [
+      "Triathlon"
+    ]
+  },
+  {
+    "id": "sports-051",
+    "category": "sports",
+    "question": "Which athletics event involves jumping over barriers in a sprint?",
+    "answer": "Hurdles"
+  },
+  {
+    "id": "sports-052",
+    "category": "sports",
+    "question": "Which athletics event involves throwing a heavy metal ball?",
+    "answer": "Shot put"
+  },
+  {
+    "id": "sports-053",
+    "category": "sports",
+    "question": "Which athletics event involves jumping as high as possible over a bar?",
+    "answer": "High jump"
+  },
+  {
+    "id": "sports-054",
+    "category": "sports",
+    "question": "Which athletics event involves jumping as far as possible from a run-up?",
+    "answer": "Long jump"
+  },
+  {
+    "id": "sports-055",
+    "category": "sports",
+    "question": "Which sport is contested for the World Cup every four years?",
+    "answer": "Football"
+  },
+  {
+    "id": "sports-056",
+    "category": "sports",
+    "question": "Which water sport uses oars and is raced at Henley?",
+    "answer": "Rowing"
+  },
+  {
+    "id": "sports-057",
+    "category": "sports",
+    "question": "Which sport involves riding a horse over a course of fences?",
+    "answer": "Showjumping"
+  },
+  {
+    "id": "sports-058",
+    "category": "sports",
+    "question": "Which rowing race is held every year between Oxford and Cambridge?",
+    "answer": "The Boat Race",
+    "acceptedAnswers": [
+      "Boat Race"
+    ]
+  },
+  {
+    "id": "sports-059",
+    "category": "sports",
+    "question": "Which group of combat sports includes judo, karate and taekwondo?",
+    "answer": "Martial arts"
+  },
+  {
+    "id": "sports-060",
+    "category": "sports",
+    "question": "Which sport includes routines performed on a balance beam?",
+    "answer": "Gymnastics"
+  },
+  {
+    "id": "sports-061",
+    "category": "sports",
+    "question": "Which sport uses 10 pins and a rolling ball?",
+    "answer": "Bowling",
+    "acceptedAnswers": [
+      "Ten-pin bowling"
+    ]
+  },
+  {
+    "id": "sports-062",
+    "category": "sports",
+    "question": "Which racquet sport is played by hitting a ball against a wall?",
+    "answer": "Squash"
+  },
+  {
+    "id": "sports-063",
+    "category": "sports",
+    "question": "Which cricket shot clears the boundary without the ball bouncing?",
+    "answer": "A six",
+    "acceptedAnswers": [
+      "Six"
+    ]
+  },
+  {
+    "id": "sports-064",
+    "category": "sports",
+    "question": "Which famous French cycling race awards a yellow jersey to the leader?",
+    "answer": "The Tour de France",
+    "acceptedAnswers": [
+      "Tour de France"
+    ]
+  },
+  {
+    "id": "sports-065",
+    "category": "sports",
+    "question": "Which athletics event involves throwing a javelin as far as possible?",
+    "answer": "Javelin"
+  },
+  {
+    "id": "sports-066",
+    "category": "sports",
+    "question": "Which athletics event involves throwing a discus as far as possible?",
+    "answer": "Discus"
+  },
+  {
+    "id": "sports-067",
+    "category": "sports",
+    "question": "Which athletics event uses a long flexible pole to clear a bar?",
+    "answer": "Pole vault"
+  },
+  {
+    "id": "sports-068",
+    "category": "sports",
+    "question": "Which sport uses an oval ball and has no forward pass?",
+    "answer": "Rugby"
+  },
+  {
+    "id": "sports-069",
+    "category": "sports",
+    "question": "Which winter sport involves lying on your back and sliding feet-first?",
+    "answer": "Luge"
+  },
+  {
+    "id": "sports-070",
+    "category": "sports",
+    "question": "Which winter sport involves sliding headfirst down an icy track?",
+    "answer": "Skeleton"
+  },
+  {
+    "id": "sports-071",
+    "category": "sports",
+    "question": "Which US sport uses an oval ball and scores touchdowns?",
+    "answer": "American football"
+  },
+  {
+    "id": "sports-072",
+    "category": "sports",
+    "question": "Which sport uses curved sticks to hit a ball into a goal?",
+    "answer": "Hockey"
+  },
+  {
+    "id": "sports-073",
+    "category": "sports",
+    "question": "Which sport involves duelling opponents with a thin sword for points?",
+    "answer": "Fencing"
+  },
+  {
+    "id": "sports-074",
+    "category": "sports",
+    "question": "Which gymnastics discipline uses ribbons and hoops set to music?",
+    "answer": "Rhythmic gymnastics"
+  },
+  {
+    "id": "sports-075",
+    "category": "sports",
+    "question": "Which sport is similar to basketball but played without dribbling?",
+    "answer": "Netball"
+  },
+  {
+    "id": "sports-076",
+    "category": "sports",
+    "question": "Which sport involves swimming four different strokes within one race?",
+    "answer": "Medley swimming",
+    "acceptedAnswers": [
+      "Swimming"
+    ]
+  },
+  {
+    "id": "sports-077",
+    "category": "sports",
+    "question": "Which sport involves jumping from a high board into a pool?",
+    "answer": "Diving"
+  },
+  {
+    "id": "sports-078",
+    "category": "sports",
+    "question": "Which sport involves two teams pulling on a rope across a line?",
+    "answer": "Tug of war"
+  },
+  {
+    "id": "sports-079",
+    "category": "sports",
+    "question": "Which sport involves racing bikes with jumps around a dirt track?",
+    "answer": "BMX racing",
+    "acceptedAnswers": [
+      "BMX"
+    ]
+  },
+  {
+    "id": "sports-080",
+    "category": "sports",
+    "question": "Which international rugby competition is contested by six European nations?",
+    "answer": "The Six Nations",
+    "acceptedAnswers": [
+      "Six Nations"
+    ]
+  }
 ]

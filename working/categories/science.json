@@ -1,47 +1,665 @@
 [
-  { "id": "science-001", "category": "science", "question": "What gas do humans need to breathe?", "answer": "Oxygen" },
-  { "id": "science-002", "category": "science", "question": "What gas do plants take in from the air?", "answer": "Carbon dioxide" },
-  { "id": "science-003", "category": "science", "question": "What process do plants use to make food?", "answer": "Photosynthesis" },
-  { "id": "science-004", "category": "science", "question": "What force pulls objects towards the Earth?", "answer": "Gravity" },
-  { "id": "science-005", "category": "science", "question": "At what Celsius temperature does water boil?", "answer": "100" },
-  { "id": "science-006", "category": "science", "question": "At what Celsius temperature does water freeze?", "answer": "0" },
-  { "id": "science-007", "category": "science", "question": "What is H2O better known as?", "answer": "Water" },
-  { "id": "science-008", "category": "science", "question": "How many planets are in our solar system?", "answer": "8" },
-  { "id": "science-009", "category": "science", "question": "Which planet is known as the red planet?", "answer": "Mars" },
-  { "id": "science-010", "category": "science", "question": "What is at the centre of our solar system?", "answer": "The Sun", "acceptedAnswers": ["Sun"] },
-  { "id": "science-011", "category": "science", "question": "Frozen water is known as what?", "answer": "Ice" },
-  { "id": "science-012", "category": "science", "question": "What rises from a boiling kettle?", "answer": "Steam", "acceptedAnswers": ["Water vapour", "Vapour"] },
-  { "id": "science-013", "category": "science", "question": "What is the hard outer layer of a tree called?", "answer": "Bark" },
-  { "id": "science-014", "category": "science", "question": "What liquid do plants take in through their roots?", "answer": "Water" },
-  { "id": "science-015", "category": "science", "question": "Which season comes after winter?", "answer": "Spring" },
-  { "id": "science-016", "category": "science", "question": "Molten rock from a volcano is called what?", "answer": "Lava" },
-  { "id": "science-017", "category": "science", "question": "Which instrument shows direction using magnetism?", "answer": "A compass", "acceptedAnswers": ["Compass"] },
-  { "id": "science-018", "category": "science", "question": "Which direction does a compass needle point?", "answer": "North" },
-  { "id": "science-019", "category": "science", "question": "What is a shape with three sides called?", "answer": "A triangle", "acceptedAnswers": ["Triangle"] },
-  { "id": "science-020", "category": "science", "question": "How many sides does a hexagon have?", "answer": "6" },
-  { "id": "science-021", "category": "science", "question": "How many sides does an octagon have?", "answer": "8" },
-  { "id": "science-022", "category": "science", "question": "How many degrees are in a right angle?", "answer": "90" },
-  { "id": "science-023", "category": "science", "question": "How many degrees are in a full circle?", "answer": "360" },
-  { "id": "science-024", "category": "science", "question": "What powder do bees carry between flowers?", "answer": "Pollen" },
-  { "id": "science-025", "category": "science", "question": "Plant-eating animals are known as what?", "answer": "Herbivores" },
-  { "id": "science-026", "category": "science", "question": "Meat-eating animals are known as what?", "answer": "Carnivores" },
-  { "id": "science-027", "category": "science", "question": "What is the chemical symbol for water?", "answer": "H2O" },
-  { "id": "science-028", "category": "science", "question": "What are the two poles of a magnet called?", "answer": "North and south" },
-  { "id": "science-029", "category": "science", "question": "What do we call the study of living things?", "answer": "Biology" },
-  { "id": "science-030", "category": "science", "question": "Which loud noise follows a flash of lightning?", "answer": "Thunder" },
-  { "id": "science-031", "category": "science", "question": "What do we see before we hear thunder?", "answer": "Lightning" },
-  { "id": "science-032", "category": "science", "question": "How many colours are in a rainbow?", "answer": "7" },
-  { "id": "science-033", "category": "science", "question": "What do we call Earth's path around the Sun?", "answer": "An orbit", "acceptedAnswers": ["Orbit"] },
-  { "id": "science-034", "category": "science", "question": "How long does Earth take to orbit the Sun?", "answer": "1 year", "acceptedAnswers": ["365 days", "A year"] },
-  { "id": "science-035", "category": "science", "question": "How long is one day on Earth?", "answer": "24 hours", "acceptedAnswers": ["1 day", "A day"] },
-  { "id": "science-036", "category": "science", "question": "What is Earth's natural satellite called?", "answer": "The Moon", "acceptedAnswers": ["Moon"] },
-  { "id": "science-037", "category": "science", "question": "An erupting mountain is called what?", "answer": "A volcano", "acceptedAnswers": ["Volcano"] },
-  { "id": "science-038", "category": "science", "question": "Which part of a plant is usually underground?", "answer": "The roots", "acceptedAnswers": ["Roots", "Root"] },
-  { "id": "science-039", "category": "science", "question": "Which part of a plant attracts bees?", "answer": "The flower", "acceptedAnswers": ["Flower", "Petals"] },
-  { "id": "science-040", "category": "science", "question": "What do you use to measure temperature?", "answer": "A thermometer", "acceptedAnswers": ["Thermometer"] },
-  { "id": "science-041", "category": "science", "question": "What are the three states of matter?", "answer": "Solid, liquid, gas" },
-  { "id": "science-042", "category": "science", "question": "What force slows a sliding object down?", "answer": "Friction" },
-  { "id": "science-043", "category": "science", "question": "Which planet is closest to the Sun?", "answer": "Mercury" },
-  { "id": "science-044", "category": "science", "question": "Which planet has bright rings around it?", "answer": "Saturn" },
-  { "id": "science-045", "category": "science", "question": "What do we call water falling from clouds?", "answer": "Rain" }
+  {
+    "id": "science-001",
+    "category": "science",
+    "question": "What gas do humans need to breathe?",
+    "answer": "Oxygen"
+  },
+  {
+    "id": "science-002",
+    "category": "science",
+    "question": "What gas do plants take in from the air?",
+    "answer": "Carbon dioxide"
+  },
+  {
+    "id": "science-003",
+    "category": "science",
+    "question": "What process do plants use to make food?",
+    "answer": "Photosynthesis"
+  },
+  {
+    "id": "science-004",
+    "category": "science",
+    "question": "What force pulls objects towards the Earth?",
+    "answer": "Gravity"
+  },
+  {
+    "id": "science-005",
+    "category": "science",
+    "question": "At what Celsius temperature does water boil?",
+    "answer": "100"
+  },
+  {
+    "id": "science-006",
+    "category": "science",
+    "question": "At what Celsius temperature does water freeze?",
+    "answer": "0"
+  },
+  {
+    "id": "science-007",
+    "category": "science",
+    "question": "What is H2O better known as?",
+    "answer": "Water"
+  },
+  {
+    "id": "science-008",
+    "category": "science",
+    "question": "How many planets are in our solar system?",
+    "answer": "8"
+  },
+  {
+    "id": "science-009",
+    "category": "science",
+    "question": "Which planet is known as the red planet?",
+    "answer": "Mars"
+  },
+  {
+    "id": "science-010",
+    "category": "science",
+    "question": "What is at the centre of our solar system?",
+    "answer": "The Sun",
+    "acceptedAnswers": [
+      "Sun"
+    ]
+  },
+  {
+    "id": "science-011",
+    "category": "science",
+    "question": "Frozen water is known as what?",
+    "answer": "Ice"
+  },
+  {
+    "id": "science-012",
+    "category": "science",
+    "question": "What rises from a boiling kettle?",
+    "answer": "Steam",
+    "acceptedAnswers": [
+      "Water vapour",
+      "Vapour"
+    ]
+  },
+  {
+    "id": "science-013",
+    "category": "science",
+    "question": "What is the hard outer layer of a tree called?",
+    "answer": "Bark"
+  },
+  {
+    "id": "science-014",
+    "category": "science",
+    "question": "What liquid do plants take in through their roots?",
+    "answer": "Water"
+  },
+  {
+    "id": "science-015",
+    "category": "science",
+    "question": "Which season comes after winter?",
+    "answer": "Spring"
+  },
+  {
+    "id": "science-016",
+    "category": "science",
+    "question": "Molten rock from a volcano is called what?",
+    "answer": "Lava"
+  },
+  {
+    "id": "science-017",
+    "category": "science",
+    "question": "Which instrument shows direction using magnetism?",
+    "answer": "A compass",
+    "acceptedAnswers": [
+      "Compass"
+    ]
+  },
+  {
+    "id": "science-018",
+    "category": "science",
+    "question": "Which direction does a compass needle point?",
+    "answer": "North"
+  },
+  {
+    "id": "science-019",
+    "category": "science",
+    "question": "What is a shape with three sides called?",
+    "answer": "A triangle",
+    "acceptedAnswers": [
+      "Triangle"
+    ]
+  },
+  {
+    "id": "science-020",
+    "category": "science",
+    "question": "How many sides does a hexagon have?",
+    "answer": "6"
+  },
+  {
+    "id": "science-021",
+    "category": "science",
+    "question": "How many sides does an octagon have?",
+    "answer": "8"
+  },
+  {
+    "id": "science-022",
+    "category": "science",
+    "question": "How many degrees are in a right angle?",
+    "answer": "90"
+  },
+  {
+    "id": "science-023",
+    "category": "science",
+    "question": "How many degrees are in a full circle?",
+    "answer": "360"
+  },
+  {
+    "id": "science-024",
+    "category": "science",
+    "question": "What powder do bees carry between flowers?",
+    "answer": "Pollen"
+  },
+  {
+    "id": "science-025",
+    "category": "science",
+    "question": "Plant-eating animals are known as what?",
+    "answer": "Herbivores"
+  },
+  {
+    "id": "science-026",
+    "category": "science",
+    "question": "Meat-eating animals are known as what?",
+    "answer": "Carnivores"
+  },
+  {
+    "id": "science-027",
+    "category": "science",
+    "question": "What is the chemical symbol for water?",
+    "answer": "H2O"
+  },
+  {
+    "id": "science-028",
+    "category": "science",
+    "question": "What are the two poles of a magnet called?",
+    "answer": "North and south"
+  },
+  {
+    "id": "science-029",
+    "category": "science",
+    "question": "What do we call the study of living things?",
+    "answer": "Biology"
+  },
+  {
+    "id": "science-030",
+    "category": "science",
+    "question": "Which loud noise follows a flash of lightning?",
+    "answer": "Thunder"
+  },
+  {
+    "id": "science-031",
+    "category": "science",
+    "question": "What do we see before we hear thunder?",
+    "answer": "Lightning"
+  },
+  {
+    "id": "science-032",
+    "category": "science",
+    "question": "How many colours are in a rainbow?",
+    "answer": "7"
+  },
+  {
+    "id": "science-033",
+    "category": "science",
+    "question": "What do we call Earth's path around the Sun?",
+    "answer": "An orbit",
+    "acceptedAnswers": [
+      "Orbit"
+    ]
+  },
+  {
+    "id": "science-034",
+    "category": "science",
+    "question": "How long does Earth take to orbit the Sun?",
+    "answer": "1 year",
+    "acceptedAnswers": [
+      "365 days",
+      "A year"
+    ]
+  },
+  {
+    "id": "science-035",
+    "category": "science",
+    "question": "How long is one day on Earth?",
+    "answer": "24 hours",
+    "acceptedAnswers": [
+      "1 day",
+      "A day"
+    ]
+  },
+  {
+    "id": "science-036",
+    "category": "science",
+    "question": "What is Earth's natural satellite called?",
+    "answer": "The Moon",
+    "acceptedAnswers": [
+      "Moon"
+    ]
+  },
+  {
+    "id": "science-037",
+    "category": "science",
+    "question": "An erupting mountain is called what?",
+    "answer": "A volcano",
+    "acceptedAnswers": [
+      "Volcano"
+    ]
+  },
+  {
+    "id": "science-038",
+    "category": "science",
+    "question": "Which part of a plant is usually underground?",
+    "answer": "The roots",
+    "acceptedAnswers": [
+      "Roots",
+      "Root"
+    ]
+  },
+  {
+    "id": "science-039",
+    "category": "science",
+    "question": "Which part of a plant attracts bees?",
+    "answer": "The flower",
+    "acceptedAnswers": [
+      "Flower",
+      "Petals"
+    ]
+  },
+  {
+    "id": "science-040",
+    "category": "science",
+    "question": "What do you use to measure temperature?",
+    "answer": "A thermometer",
+    "acceptedAnswers": [
+      "Thermometer"
+    ]
+  },
+  {
+    "id": "science-041",
+    "category": "science",
+    "question": "What are the three states of matter?",
+    "answer": "Solid, liquid, gas"
+  },
+  {
+    "id": "science-042",
+    "category": "science",
+    "question": "What force slows a sliding object down?",
+    "answer": "Friction"
+  },
+  {
+    "id": "science-043",
+    "category": "science",
+    "question": "Which planet is closest to the Sun?",
+    "answer": "Mercury"
+  },
+  {
+    "id": "science-044",
+    "category": "science",
+    "question": "Which planet has bright rings around it?",
+    "answer": "Saturn"
+  },
+  {
+    "id": "science-045",
+    "category": "science",
+    "question": "What do we call water falling from clouds?",
+    "answer": "Rain"
+  },
+  {
+    "id": "science-046",
+    "category": "science",
+    "question": "What do plants give off during photosynthesis?",
+    "answer": "Oxygen"
+  },
+  {
+    "id": "science-047",
+    "category": "science",
+    "question": "Which simple machine helps you lift heavy objects using a pole?",
+    "answer": "A lever",
+    "acceptedAnswers": [
+      "Lever"
+    ]
+  },
+  {
+    "id": "science-048",
+    "category": "science",
+    "question": "Which natural event is measured on the Richter scale?",
+    "answer": "An earthquake",
+    "acceptedAnswers": [
+      "Earthquake"
+    ]
+  },
+  {
+    "id": "science-049",
+    "category": "science",
+    "question": "What do we call animals without a backbone?",
+    "answer": "Invertebrates"
+  },
+  {
+    "id": "science-050",
+    "category": "science",
+    "question": "Which word describes animals that have a backbone?",
+    "answer": "Vertebrates"
+  },
+  {
+    "id": "science-051",
+    "category": "science",
+    "question": "Which black part of your eye lets light in?",
+    "answer": "The pupil",
+    "acceptedAnswers": [
+      "Pupil"
+    ]
+  },
+  {
+    "id": "science-052",
+    "category": "science",
+    "question": "Which natural satellite causes the tides on Earth?",
+    "answer": "The Moon",
+    "acceptedAnswers": [
+      "Moon"
+    ]
+  },
+  {
+    "id": "science-053",
+    "category": "science",
+    "question": "Which green chemical in leaves absorbs sunlight?",
+    "answer": "Chlorophyll"
+  },
+  {
+    "id": "science-054",
+    "category": "science",
+    "question": "Which state of matter has a fixed volume but no fixed shape?",
+    "answer": "Liquid"
+  },
+  {
+    "id": "science-055",
+    "category": "science",
+    "question": "Which state of matter has no fixed shape or volume?",
+    "answer": "Gas"
+  },
+  {
+    "id": "science-056",
+    "category": "science",
+    "question": "Which state of matter has a fixed shape and volume?",
+    "answer": "Solid"
+  },
+  {
+    "id": "science-057",
+    "category": "science",
+    "question": "Changing a liquid into a gas is known as what?",
+    "answer": "Evaporation"
+  },
+  {
+    "id": "science-058",
+    "category": "science",
+    "question": "Changing a gas into a liquid is known as what?",
+    "answer": "Condensation"
+  },
+  {
+    "id": "science-059",
+    "category": "science",
+    "question": "Changing a solid into a liquid is known as what?",
+    "answer": "Melting"
+  },
+  {
+    "id": "science-060",
+    "category": "science",
+    "question": "Changing a liquid into a solid is known as what?",
+    "answer": "Freezing"
+  },
+  {
+    "id": "science-061",
+    "category": "science",
+    "question": "What force pulls two magnets together or pushes them apart?",
+    "answer": "Magnetism"
+  },
+  {
+    "id": "science-062",
+    "category": "science",
+    "question": "Which simple tool is a slanted surface used to move things up?",
+    "answer": "A ramp",
+    "acceptedAnswers": [
+      "Ramp",
+      "Inclined plane"
+    ]
+  },
+  {
+    "id": "science-063",
+    "category": "science",
+    "question": "Which units do UK scientists use to measure temperature?",
+    "answer": "Celsius",
+    "acceptedAnswers": [
+      "Degrees Celsius"
+    ]
+  },
+  {
+    "id": "science-064",
+    "category": "science",
+    "question": "Which renewable energy comes from the Sun?",
+    "answer": "Solar energy",
+    "acceptedAnswers": [
+      "Solar power"
+    ]
+  },
+  {
+    "id": "science-065",
+    "category": "science",
+    "question": "Which renewable energy comes from turning turbines with the wind?",
+    "answer": "Wind energy",
+    "acceptedAnswers": [
+      "Wind power"
+    ]
+  },
+  {
+    "id": "science-066",
+    "category": "science",
+    "question": "Which gas makes bread dough rise when yeast is added?",
+    "answer": "Carbon dioxide",
+    "acceptedAnswers": [
+      "CO2"
+    ]
+  },
+  {
+    "id": "science-067",
+    "category": "science",
+    "question": "Which scientist is famous for his theory of gravity?",
+    "answer": "Isaac Newton",
+    "acceptedAnswers": [
+      "Newton"
+    ]
+  },
+  {
+    "id": "science-068",
+    "category": "science",
+    "question": "Which scientist developed the theory of evolution?",
+    "answer": "Charles Darwin",
+    "acceptedAnswers": [
+      "Darwin"
+    ]
+  },
+  {
+    "id": "science-069",
+    "category": "science",
+    "question": "Which instrument is used to view very small objects like cells?",
+    "answer": "A microscope",
+    "acceptedAnswers": [
+      "Microscope"
+    ]
+  },
+  {
+    "id": "science-070",
+    "category": "science",
+    "question": "Which instrument is used to view distant objects like stars?",
+    "answer": "A telescope",
+    "acceptedAnswers": [
+      "Telescope"
+    ]
+  },
+  {
+    "id": "science-071",
+    "category": "science",
+    "question": "Which natural wax do bees use to build their hive?",
+    "answer": "Beeswax",
+    "acceptedAnswers": [
+      "Wax"
+    ]
+  },
+  {
+    "id": "science-072",
+    "category": "science",
+    "question": "Which common metal is strongly attracted to magnets?",
+    "answer": "Iron"
+  },
+  {
+    "id": "science-073",
+    "category": "science",
+    "question": "Which weather event spins violently and can destroy buildings?",
+    "answer": "A tornado",
+    "acceptedAnswers": [
+      "Tornado"
+    ]
+  },
+  {
+    "id": "science-074",
+    "category": "science",
+    "question": "Which weather event is a large tropical storm with strong winds?",
+    "answer": "A hurricane",
+    "acceptedAnswers": [
+      "Hurricane"
+    ]
+  },
+  {
+    "id": "science-075",
+    "category": "science",
+    "question": "Which giant sea wave can be caused by an undersea earthquake?",
+    "answer": "A tsunami",
+    "acceptedAnswers": [
+      "Tsunami"
+    ]
+  },
+  {
+    "id": "science-076",
+    "category": "science",
+    "question": "Which simple circuit part stores and provides electrical power?",
+    "answer": "A battery",
+    "acceptedAnswers": [
+      "Battery"
+    ]
+  },
+  {
+    "id": "science-077",
+    "category": "science",
+    "question": "Which type of material lets electricity pass through easily?",
+    "answer": "A conductor",
+    "acceptedAnswers": [
+      "Conductor"
+    ]
+  },
+  {
+    "id": "science-078",
+    "category": "science",
+    "question": "Which type of material stops electricity passing through?",
+    "answer": "An insulator",
+    "acceptedAnswers": [
+      "Insulator"
+    ]
+  },
+  {
+    "id": "science-079",
+    "category": "science",
+    "question": "Which everyday object uses a lens to magnify small writing?",
+    "answer": "A magnifying glass",
+    "acceptedAnswers": [
+      "Magnifying glass"
+    ]
+  },
+  {
+    "id": "science-080",
+    "category": "science",
+    "question": "Which word describes the layer of gases around the Earth?",
+    "answer": "The atmosphere",
+    "acceptedAnswers": [
+      "Atmosphere"
+    ]
+  },
+  {
+    "id": "science-081",
+    "category": "science",
+    "question": "What is Earth's hard outer rocky layer called?",
+    "answer": "The crust",
+    "acceptedAnswers": [
+      "Crust"
+    ]
+  },
+  {
+    "id": "science-082",
+    "category": "science",
+    "question": "Which part of a plant carries water up from the roots?",
+    "answer": "The stem",
+    "acceptedAnswers": [
+      "Stem"
+    ]
+  },
+  {
+    "id": "science-083",
+    "category": "science",
+    "question": "Which gas do fizzy drinks contain that makes them bubble?",
+    "answer": "Carbon dioxide",
+    "acceptedAnswers": [
+      "CO2"
+    ]
+  },
+  {
+    "id": "science-084",
+    "category": "science",
+    "question": "Which natural process turns a caterpillar into a butterfly?",
+    "answer": "Metamorphosis"
+  },
+  {
+    "id": "science-085",
+    "category": "science",
+    "question": "What is the name for melted rock found underground?",
+    "answer": "Magma"
+  },
+  {
+    "id": "science-086",
+    "category": "science",
+    "question": "Which blood cells fight off infection in the human body?",
+    "answer": "White blood cells"
+  },
+  {
+    "id": "science-087",
+    "category": "science",
+    "question": "What is the hardest natural substance, often used in jewellery?",
+    "answer": "Diamond"
+  },
+  {
+    "id": "science-088",
+    "category": "science",
+    "question": "Which type of material is a good conductor of heat?",
+    "answer": "Metal"
+  },
+  {
+    "id": "science-089",
+    "category": "science",
+    "question": "How many degrees are there in a straight line?",
+    "answer": "180",
+    "acceptedAnswers": [
+      "180 degrees"
+    ]
+  },
+  {
+    "id": "science-090",
+    "category": "science",
+    "question": "Which shape is perfectly round with no corners?",
+    "answer": "A circle",
+    "acceptedAnswers": [
+      "Circle"
+    ]
+  }
 ]

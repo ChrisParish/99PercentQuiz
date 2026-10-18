@@ -1,52 +1,891 @@
 [
-  { "id": "animals-001", "category": "animals", "question": "What do you call a baby cat?", "answer": "A kitten", "acceptedAnswers": ["Kitten"] },
-  { "id": "animals-002", "category": "animals", "question": "What do you call a baby dog?", "answer": "A puppy", "acceptedAnswers": ["Puppy"] },
-  { "id": "animals-003", "category": "animals", "question": "What do you call a baby sheep?", "answer": "A lamb", "acceptedAnswers": ["Lamb"] },
-  { "id": "animals-004", "category": "animals", "question": "What do you call a baby horse?", "answer": "A foal", "acceptedAnswers": ["Foal"] },
-  { "id": "animals-005", "category": "animals", "question": "What do you call a baby cow?", "answer": "A calf", "acceptedAnswers": ["Calf"] },
-  { "id": "animals-006", "category": "animals", "question": "A baby duck is known as what?", "answer": "A duckling", "acceptedAnswers": ["Duckling"] },
-  { "id": "animals-007", "category": "animals", "question": "A baby goat is known as what?", "answer": "A kid", "acceptedAnswers": ["Kid"] },
-  { "id": "animals-008", "category": "animals", "question": "Which farm animal says moo?", "answer": "A cow", "acceptedAnswers": ["Cow"] },
-  { "id": "animals-009", "category": "animals", "question": "Which farm animal says oink?", "answer": "A pig", "acceptedAnswers": ["Pig"] },
-  { "id": "animals-010", "category": "animals", "question": "Which farm animal says baa?", "answer": "A sheep", "acceptedAnswers": ["Sheep"] },
-  { "id": "animals-011", "category": "animals", "question": "Which animal neighs and is ridden by a jockey?", "answer": "A horse", "acceptedAnswers": ["Horse"] },
-  { "id": "animals-012", "category": "animals", "question": "Which animal does dairy milk usually come from?", "answer": "A cow", "acceptedAnswers": ["Cow"] },
-  { "id": "animals-013", "category": "animals", "question": "How many legs does a spider have?", "answer": "8" },
-  { "id": "animals-014", "category": "animals", "question": "How many legs does an insect have?", "answer": "6" },
-  { "id": "animals-015", "category": "animals", "question": "How many legs does a horse have?", "answer": "4" },
-  { "id": "animals-016", "category": "animals", "question": "What is a group of lions called?", "answer": "A pride", "acceptedAnswers": ["Pride"] },
-  { "id": "animals-017", "category": "animals", "question": "What is a group of wolves called?", "answer": "A pack", "acceptedAnswers": ["Pack"] },
-  { "id": "animals-018", "category": "animals", "question": "What is a group of sheep called?", "answer": "A flock", "acceptedAnswers": ["Flock"] },
-  { "id": "animals-019", "category": "animals", "question": "What is a group of cows called?", "answer": "A herd", "acceptedAnswers": ["Herd"] },
-  { "id": "animals-020", "category": "animals", "question": "Which animal has a long trunk?", "answer": "An elephant", "acceptedAnswers": ["Elephant"] },
-  { "id": "animals-021", "category": "animals", "question": "Which big cat has black stripes?", "answer": "A tiger", "acceptedAnswers": ["Tiger"] },
-  { "id": "animals-022", "category": "animals", "question": "Which animal is called the king of the jungle?", "answer": "The lion", "acceptedAnswers": ["Lion"] },
-  { "id": "animals-023", "category": "animals", "question": "Which bird is famous for copying speech?", "answer": "A parrot", "acceptedAnswers": ["Parrot"] },
-  { "id": "animals-024", "category": "animals", "question": "Which animal carries its young in a pouch?", "answer": "A kangaroo", "acceptedAnswers": ["Kangaroo"] },
-  { "id": "animals-025", "category": "animals", "question": "Which sea creature has eight arms?", "answer": "An octopus", "acceptedAnswers": ["Octopus"] },
-  { "id": "animals-026", "category": "animals", "question": "Which animal is famous for its very long neck?", "answer": "A giraffe", "acceptedAnswers": ["Giraffe"] },
-  { "id": "animals-027", "category": "animals", "question": "Which bear eats bamboo in China?", "answer": "A panda", "acceptedAnswers": ["Panda", "Giant panda"] },
-  { "id": "animals-028", "category": "animals", "question": "Which lizard changes colour to blend in?", "answer": "A chameleon", "acceptedAnswers": ["Chameleon"] },
-  { "id": "animals-029", "category": "animals", "question": "What do bees make?", "answer": "Honey" },
-  { "id": "animals-030", "category": "animals", "question": "What is a female horse called?", "answer": "A mare", "acceptedAnswers": ["Mare"] },
-  { "id": "animals-031", "category": "animals", "question": "What is a male cow called?", "answer": "A bull", "acceptedAnswers": ["Bull"] },
-  { "id": "animals-032", "category": "animals", "question": "What is a female chicken called?", "answer": "A hen", "acceptedAnswers": ["Hen"] },
-  { "id": "animals-033", "category": "animals", "question": "What is a male sheep called?", "answer": "A ram", "acceptedAnswers": ["Ram"] },
-  { "id": "animals-034", "category": "animals", "question": "Which desert animal has a hump on its back?", "answer": "A camel", "acceptedAnswers": ["Camel"] },
-  { "id": "animals-035", "category": "animals", "question": "Which pet is famous for chasing mice?", "answer": "A cat", "acceptedAnswers": ["Cat"] },
-  { "id": "animals-036", "category": "animals", "question": "Which pet is famous for barking?", "answer": "A dog", "acceptedAnswers": ["Dog"] },
-  { "id": "animals-037", "category": "animals", "question": "Which bird is traditional at Christmas dinner?", "answer": "A turkey", "acceptedAnswers": ["Turkey"] },
-  { "id": "animals-038", "category": "animals", "question": "Which bird cannot fly and lives in Antarctica?", "answer": "A penguin", "acceptedAnswers": ["Penguin"] },
-  { "id": "animals-039", "category": "animals", "question": "Which animal has black and white stripes?", "answer": "A zebra", "acceptedAnswers": ["Zebra"] },
-  { "id": "animals-040", "category": "animals", "question": "Which bird hoots at night?", "answer": "An owl", "acceptedAnswers": ["Owl"] },
-  { "id": "animals-041", "category": "animals", "question": "What does a tadpole turn into?", "answer": "A frog", "acceptedAnswers": ["Frog"] },
-  { "id": "animals-042", "category": "animals", "question": "Which animal is famous for building dams?", "answer": "A beaver", "acceptedAnswers": ["Beaver"] },
-  { "id": "animals-043", "category": "animals", "question": "Which shelled creature leaves a slime trail?", "answer": "A snail", "acceptedAnswers": ["Snail"] },
-  { "id": "animals-044", "category": "animals", "question": "Which animals pull Santa's sleigh?", "answer": "Reindeer" },
-  { "id": "animals-045", "category": "animals", "question": "Which farm animal gives us wool?", "answer": "A sheep", "acceptedAnswers": ["Sheep"] },
-  { "id": "animals-046", "category": "animals", "question": "Which sea mammal is famous for clicking and jumping?", "answer": "A dolphin", "acceptedAnswers": ["Dolphin"] },
-  { "id": "animals-047", "category": "animals", "question": "Which white bird is a symbol of peace?", "answer": "A dove", "acceptedAnswers": ["Dove"] },
-  { "id": "animals-048", "category": "animals", "question": "Which garden bird has a red breast?", "answer": "A robin", "acceptedAnswers": ["Robin"] },
-  { "id": "animals-049", "category": "animals", "question": "Which pet is often kept in a hutch?", "answer": "A rabbit", "acceptedAnswers": ["Rabbit"] },
-  { "id": "animals-050", "category": "animals", "question": "Which animal do we get bacon from?", "answer": "A pig", "acceptedAnswers": ["Pig"] }
+  {
+    "id": "animals-001",
+    "category": "animals",
+    "question": "What do you call a baby cat?",
+    "answer": "A kitten",
+    "acceptedAnswers": [
+      "Kitten"
+    ]
+  },
+  {
+    "id": "animals-002",
+    "category": "animals",
+    "question": "What do you call a baby dog?",
+    "answer": "A puppy",
+    "acceptedAnswers": [
+      "Puppy"
+    ]
+  },
+  {
+    "id": "animals-003",
+    "category": "animals",
+    "question": "What do you call a baby sheep?",
+    "answer": "A lamb",
+    "acceptedAnswers": [
+      "Lamb"
+    ]
+  },
+  {
+    "id": "animals-004",
+    "category": "animals",
+    "question": "What do you call a baby horse?",
+    "answer": "A foal",
+    "acceptedAnswers": [
+      "Foal"
+    ]
+  },
+  {
+    "id": "animals-005",
+    "category": "animals",
+    "question": "What do you call a baby cow?",
+    "answer": "A calf",
+    "acceptedAnswers": [
+      "Calf"
+    ]
+  },
+  {
+    "id": "animals-006",
+    "category": "animals",
+    "question": "A baby duck is known as what?",
+    "answer": "A duckling",
+    "acceptedAnswers": [
+      "Duckling"
+    ]
+  },
+  {
+    "id": "animals-007",
+    "category": "animals",
+    "question": "A baby goat is known as what?",
+    "answer": "A kid",
+    "acceptedAnswers": [
+      "Kid"
+    ]
+  },
+  {
+    "id": "animals-008",
+    "category": "animals",
+    "question": "Which farm animal says moo?",
+    "answer": "A cow",
+    "acceptedAnswers": [
+      "Cow"
+    ]
+  },
+  {
+    "id": "animals-009",
+    "category": "animals",
+    "question": "Which farm animal says oink?",
+    "answer": "A pig",
+    "acceptedAnswers": [
+      "Pig"
+    ]
+  },
+  {
+    "id": "animals-010",
+    "category": "animals",
+    "question": "Which farm animal says baa?",
+    "answer": "A sheep",
+    "acceptedAnswers": [
+      "Sheep"
+    ]
+  },
+  {
+    "id": "animals-011",
+    "category": "animals",
+    "question": "Which animal neighs and is ridden by a jockey?",
+    "answer": "A horse",
+    "acceptedAnswers": [
+      "Horse"
+    ]
+  },
+  {
+    "id": "animals-012",
+    "category": "animals",
+    "question": "Which animal does dairy milk usually come from?",
+    "answer": "A cow",
+    "acceptedAnswers": [
+      "Cow"
+    ]
+  },
+  {
+    "id": "animals-013",
+    "category": "animals",
+    "question": "How many legs does a spider have?",
+    "answer": "8"
+  },
+  {
+    "id": "animals-014",
+    "category": "animals",
+    "question": "How many legs does an insect have?",
+    "answer": "6"
+  },
+  {
+    "id": "animals-015",
+    "category": "animals",
+    "question": "How many legs does a horse have?",
+    "answer": "4"
+  },
+  {
+    "id": "animals-016",
+    "category": "animals",
+    "question": "What is a group of lions called?",
+    "answer": "A pride",
+    "acceptedAnswers": [
+      "Pride"
+    ]
+  },
+  {
+    "id": "animals-017",
+    "category": "animals",
+    "question": "What is a group of wolves called?",
+    "answer": "A pack",
+    "acceptedAnswers": [
+      "Pack"
+    ]
+  },
+  {
+    "id": "animals-018",
+    "category": "animals",
+    "question": "What is a group of sheep called?",
+    "answer": "A flock",
+    "acceptedAnswers": [
+      "Flock"
+    ]
+  },
+  {
+    "id": "animals-019",
+    "category": "animals",
+    "question": "What is a group of cows called?",
+    "answer": "A herd",
+    "acceptedAnswers": [
+      "Herd"
+    ]
+  },
+  {
+    "id": "animals-020",
+    "category": "animals",
+    "question": "Which animal has a long trunk?",
+    "answer": "An elephant",
+    "acceptedAnswers": [
+      "Elephant"
+    ]
+  },
+  {
+    "id": "animals-021",
+    "category": "animals",
+    "question": "Which big cat has black stripes?",
+    "answer": "A tiger",
+    "acceptedAnswers": [
+      "Tiger"
+    ]
+  },
+  {
+    "id": "animals-022",
+    "category": "animals",
+    "question": "Which animal is called the king of the jungle?",
+    "answer": "The lion",
+    "acceptedAnswers": [
+      "Lion"
+    ]
+  },
+  {
+    "id": "animals-023",
+    "category": "animals",
+    "question": "Which bird is famous for copying speech?",
+    "answer": "A parrot",
+    "acceptedAnswers": [
+      "Parrot"
+    ]
+  },
+  {
+    "id": "animals-024",
+    "category": "animals",
+    "question": "Which animal carries its young in a pouch?",
+    "answer": "A kangaroo",
+    "acceptedAnswers": [
+      "Kangaroo"
+    ]
+  },
+  {
+    "id": "animals-025",
+    "category": "animals",
+    "question": "Which sea creature has eight arms?",
+    "answer": "An octopus",
+    "acceptedAnswers": [
+      "Octopus"
+    ]
+  },
+  {
+    "id": "animals-026",
+    "category": "animals",
+    "question": "Which animal is famous for its very long neck?",
+    "answer": "A giraffe",
+    "acceptedAnswers": [
+      "Giraffe"
+    ]
+  },
+  {
+    "id": "animals-027",
+    "category": "animals",
+    "question": "Which bear eats bamboo in China?",
+    "answer": "A panda",
+    "acceptedAnswers": [
+      "Panda",
+      "Giant panda"
+    ]
+  },
+  {
+    "id": "animals-028",
+    "category": "animals",
+    "question": "Which lizard changes colour to blend in?",
+    "answer": "A chameleon",
+    "acceptedAnswers": [
+      "Chameleon"
+    ]
+  },
+  {
+    "id": "animals-029",
+    "category": "animals",
+    "question": "What do bees make?",
+    "answer": "Honey"
+  },
+  {
+    "id": "animals-030",
+    "category": "animals",
+    "question": "What is a female horse called?",
+    "answer": "A mare",
+    "acceptedAnswers": [
+      "Mare"
+    ]
+  },
+  {
+    "id": "animals-031",
+    "category": "animals",
+    "question": "What is a male cow called?",
+    "answer": "A bull",
+    "acceptedAnswers": [
+      "Bull"
+    ]
+  },
+  {
+    "id": "animals-032",
+    "category": "animals",
+    "question": "What is a female chicken called?",
+    "answer": "A hen",
+    "acceptedAnswers": [
+      "Hen"
+    ]
+  },
+  {
+    "id": "animals-033",
+    "category": "animals",
+    "question": "What is a male sheep called?",
+    "answer": "A ram",
+    "acceptedAnswers": [
+      "Ram"
+    ]
+  },
+  {
+    "id": "animals-034",
+    "category": "animals",
+    "question": "Which desert animal has a hump on its back?",
+    "answer": "A camel",
+    "acceptedAnswers": [
+      "Camel"
+    ]
+  },
+  {
+    "id": "animals-035",
+    "category": "animals",
+    "question": "Which pet is famous for chasing mice?",
+    "answer": "A cat",
+    "acceptedAnswers": [
+      "Cat"
+    ]
+  },
+  {
+    "id": "animals-036",
+    "category": "animals",
+    "question": "Which pet is famous for barking?",
+    "answer": "A dog",
+    "acceptedAnswers": [
+      "Dog"
+    ]
+  },
+  {
+    "id": "animals-037",
+    "category": "animals",
+    "question": "Which bird is traditional at Christmas dinner?",
+    "answer": "A turkey",
+    "acceptedAnswers": [
+      "Turkey"
+    ]
+  },
+  {
+    "id": "animals-038",
+    "category": "animals",
+    "question": "Which bird cannot fly and lives in Antarctica?",
+    "answer": "A penguin",
+    "acceptedAnswers": [
+      "Penguin"
+    ]
+  },
+  {
+    "id": "animals-039",
+    "category": "animals",
+    "question": "Which animal has black and white stripes?",
+    "answer": "A zebra",
+    "acceptedAnswers": [
+      "Zebra"
+    ]
+  },
+  {
+    "id": "animals-040",
+    "category": "animals",
+    "question": "Which bird hoots at night?",
+    "answer": "An owl",
+    "acceptedAnswers": [
+      "Owl"
+    ]
+  },
+  {
+    "id": "animals-041",
+    "category": "animals",
+    "question": "What does a tadpole turn into?",
+    "answer": "A frog",
+    "acceptedAnswers": [
+      "Frog"
+    ]
+  },
+  {
+    "id": "animals-042",
+    "category": "animals",
+    "question": "Which animal is famous for building dams?",
+    "answer": "A beaver",
+    "acceptedAnswers": [
+      "Beaver"
+    ]
+  },
+  {
+    "id": "animals-043",
+    "category": "animals",
+    "question": "Which shelled creature leaves a slime trail?",
+    "answer": "A snail",
+    "acceptedAnswers": [
+      "Snail"
+    ]
+  },
+  {
+    "id": "animals-044",
+    "category": "animals",
+    "question": "Which animals pull Santa's sleigh?",
+    "answer": "Reindeer"
+  },
+  {
+    "id": "animals-045",
+    "category": "animals",
+    "question": "Which farm animal gives us wool?",
+    "answer": "A sheep",
+    "acceptedAnswers": [
+      "Sheep"
+    ]
+  },
+  {
+    "id": "animals-046",
+    "category": "animals",
+    "question": "Which sea mammal is famous for clicking and jumping?",
+    "answer": "A dolphin",
+    "acceptedAnswers": [
+      "Dolphin"
+    ]
+  },
+  {
+    "id": "animals-047",
+    "category": "animals",
+    "question": "Which white bird is a symbol of peace?",
+    "answer": "A dove",
+    "acceptedAnswers": [
+      "Dove"
+    ]
+  },
+  {
+    "id": "animals-048",
+    "category": "animals",
+    "question": "Which garden bird has a red breast?",
+    "answer": "A robin",
+    "acceptedAnswers": [
+      "Robin"
+    ]
+  },
+  {
+    "id": "animals-049",
+    "category": "animals",
+    "question": "Which pet is often kept in a hutch?",
+    "answer": "A rabbit",
+    "acceptedAnswers": [
+      "Rabbit"
+    ]
+  },
+  {
+    "id": "animals-050",
+    "category": "animals",
+    "question": "Which animal do we get bacon from?",
+    "answer": "A pig",
+    "acceptedAnswers": [
+      "Pig"
+    ]
+  },
+  {
+    "id": "animals-051",
+    "category": "animals",
+    "question": "A baby lion is called what?",
+    "answer": "A cub",
+    "acceptedAnswers": [
+      "Cub"
+    ]
+  },
+  {
+    "id": "animals-052",
+    "category": "animals",
+    "question": "A baby bear is called what?",
+    "answer": "A cub",
+    "acceptedAnswers": [
+      "Cub"
+    ]
+  },
+  {
+    "id": "animals-053",
+    "category": "animals",
+    "question": "A baby fox is called what?",
+    "answer": "A cub",
+    "acceptedAnswers": [
+      "Cub"
+    ]
+  },
+  {
+    "id": "animals-054",
+    "category": "animals",
+    "question": "A baby kangaroo is called what?",
+    "answer": "A joey",
+    "acceptedAnswers": [
+      "Joey"
+    ]
+  },
+  {
+    "id": "animals-055",
+    "category": "animals",
+    "question": "A baby deer is called what?",
+    "answer": "A fawn",
+    "acceptedAnswers": [
+      "Fawn"
+    ]
+  },
+  {
+    "id": "animals-056",
+    "category": "animals",
+    "question": "A baby owl is called what?",
+    "answer": "An owlet",
+    "acceptedAnswers": [
+      "Owlet"
+    ]
+  },
+  {
+    "id": "animals-057",
+    "category": "animals",
+    "question": "A baby swan is called what?",
+    "answer": "A cygnet",
+    "acceptedAnswers": [
+      "Cygnet"
+    ]
+  },
+  {
+    "id": "animals-058",
+    "category": "animals",
+    "question": "A baby eagle is called what?",
+    "answer": "An eaglet",
+    "acceptedAnswers": [
+      "Eaglet"
+    ]
+  },
+  {
+    "id": "animals-059",
+    "category": "animals",
+    "question": "A baby frog is called what?",
+    "answer": "A tadpole",
+    "acceptedAnswers": [
+      "Tadpole"
+    ]
+  },
+  {
+    "id": "animals-060",
+    "category": "animals",
+    "question": "Which farm animal says cluck?",
+    "answer": "A chicken",
+    "acceptedAnswers": [
+      "Chicken"
+    ]
+  },
+  {
+    "id": "animals-061",
+    "category": "animals",
+    "question": "Which farm animal says neigh?",
+    "answer": "A horse",
+    "acceptedAnswers": [
+      "Horse"
+    ]
+  },
+  {
+    "id": "animals-062",
+    "category": "animals",
+    "question": "Which farm animal says quack?",
+    "answer": "A duck",
+    "acceptedAnswers": [
+      "Duck"
+    ]
+  },
+  {
+    "id": "animals-063",
+    "category": "animals",
+    "question": "Which insect lives in a hive?",
+    "answer": "A bee",
+    "acceptedAnswers": [
+      "Bee"
+    ]
+  },
+  {
+    "id": "animals-064",
+    "category": "animals",
+    "question": "What is a baby butterfly called before it changes?",
+    "answer": "A caterpillar",
+    "acceptedAnswers": [
+      "Caterpillar"
+    ]
+  },
+  {
+    "id": "animals-065",
+    "category": "animals",
+    "question": "Which nocturnal mammal hangs upside down to sleep?",
+    "answer": "A bat",
+    "acceptedAnswers": [
+      "Bat"
+    ]
+  },
+  {
+    "id": "animals-066",
+    "category": "animals",
+    "question": "Which reptile has a hard shell and moves slowly on land?",
+    "answer": "A tortoise",
+    "acceptedAnswers": [
+      "Tortoise"
+    ]
+  },
+  {
+    "id": "animals-067",
+    "category": "animals",
+    "question": "Which reptile has a shell and swims in the sea?",
+    "answer": "A turtle",
+    "acceptedAnswers": [
+      "Turtle"
+    ]
+  },
+  {
+    "id": "animals-068",
+    "category": "animals",
+    "question": "Which cold-blooded animal sheds its skin?",
+    "answer": "A snake",
+    "acceptedAnswers": [
+      "Snake"
+    ]
+  },
+  {
+    "id": "animals-069",
+    "category": "animals",
+    "question": "Which pink wading bird stands on one leg?",
+    "answer": "A flamingo",
+    "acceptedAnswers": [
+      "Flamingo"
+    ]
+  },
+  {
+    "id": "animals-070",
+    "category": "animals",
+    "question": "Which Arctic bear has white fur?",
+    "answer": "A polar bear",
+    "acceptedAnswers": [
+      "Polar bear"
+    ]
+  },
+  {
+    "id": "animals-071",
+    "category": "animals",
+    "question": "Which large grey mammal wallows in African rivers?",
+    "answer": "A hippo",
+    "acceptedAnswers": [
+      "Hippo",
+      "Hippopotamus"
+    ]
+  },
+  {
+    "id": "animals-072",
+    "category": "animals",
+    "question": "Which large mammal has a horn on its nose?",
+    "answer": "A rhino",
+    "acceptedAnswers": [
+      "Rhino",
+      "Rhinoceros"
+    ]
+  },
+  {
+    "id": "animals-073",
+    "category": "animals",
+    "question": "Which spiny mammal rolls into a ball when scared?",
+    "answer": "A hedgehog",
+    "acceptedAnswers": [
+      "Hedgehog"
+    ]
+  },
+  {
+    "id": "animals-074",
+    "category": "animals",
+    "question": "Which Australian animal eats eucalyptus leaves?",
+    "answer": "A koala",
+    "acceptedAnswers": [
+      "Koala"
+    ]
+  },
+  {
+    "id": "animals-075",
+    "category": "animals",
+    "question": "Which large flightless bird is native to Australia?",
+    "answer": "An emu",
+    "acceptedAnswers": [
+      "Emu"
+    ]
+  },
+  {
+    "id": "animals-076",
+    "category": "animals",
+    "question": "Which male farmyard bird crows at dawn?",
+    "answer": "A cockerel",
+    "acceptedAnswers": [
+      "Cockerel",
+      "Rooster"
+    ]
+  },
+  {
+    "id": "animals-077",
+    "category": "animals",
+    "question": "Which sea creature has a hard shell and large claws?",
+    "answer": "A crab",
+    "acceptedAnswers": [
+      "Crab"
+    ]
+  },
+  {
+    "id": "animals-078",
+    "category": "animals",
+    "question": "Which large sea mammal breathes through a blowhole?",
+    "answer": "A whale",
+    "acceptedAnswers": [
+      "Whale"
+    ]
+  },
+  {
+    "id": "animals-079",
+    "category": "animals",
+    "question": "Which insect is known for living in organised colonies?",
+    "answer": "An ant",
+    "acceptedAnswers": [
+      "Ant"
+    ]
+  },
+  {
+    "id": "animals-080",
+    "category": "animals",
+    "question": "Which farm animal gives us milk and moos?",
+    "answer": "A cow",
+    "acceptedAnswers": [
+      "Cow"
+    ]
+  },
+  {
+    "id": "animals-081",
+    "category": "animals",
+    "question": "Which insect has colourful wings and visits flowers?",
+    "answer": "A butterfly",
+    "acceptedAnswers": [
+      "Butterfly"
+    ]
+  },
+  {
+    "id": "animals-082",
+    "category": "animals",
+    "question": "Which bird is known for stealing shiny objects?",
+    "answer": "A magpie",
+    "acceptedAnswers": [
+      "Magpie"
+    ]
+  },
+  {
+    "id": "animals-083",
+    "category": "animals",
+    "question": "Which songbird is known for singing at night?",
+    "answer": "A nightingale",
+    "acceptedAnswers": [
+      "Nightingale"
+    ]
+  },
+  {
+    "id": "animals-084",
+    "category": "animals",
+    "question": "Which seabird dives for fish and has a colourful beak?",
+    "answer": "A puffin",
+    "acceptedAnswers": [
+      "Puffin"
+    ]
+  },
+  {
+    "id": "animals-085",
+    "category": "animals",
+    "question": "Which large bird of prey has sharp talons?",
+    "answer": "An eagle",
+    "acceptedAnswers": [
+      "Eagle"
+    ]
+  },
+  {
+    "id": "animals-086",
+    "category": "animals",
+    "question": "Which small mammal digs tunnels underground?",
+    "answer": "A mole",
+    "acceptedAnswers": [
+      "Mole"
+    ]
+  },
+  {
+    "id": "animals-087",
+    "category": "animals",
+    "question": "Which small mammal collects nuts for winter?",
+    "answer": "A squirrel",
+    "acceptedAnswers": [
+      "Squirrel"
+    ]
+  },
+  {
+    "id": "animals-088",
+    "category": "animals",
+    "question": "Which bird migrates to the UK in summer from Africa?",
+    "answer": "A swallow",
+    "acceptedAnswers": [
+      "Swallow"
+    ]
+  },
+  {
+    "id": "animals-089",
+    "category": "animals",
+    "question": "Which insect has a hard wing case and six legs?",
+    "answer": "A beetle",
+    "acceptedAnswers": [
+      "Beetle"
+    ]
+  },
+  {
+    "id": "animals-090",
+    "category": "animals",
+    "question": "Which creature has a long sticky tongue and lives near ponds?",
+    "answer": "A frog",
+    "acceptedAnswers": [
+      "Frog"
+    ]
+  },
+  {
+    "id": "animals-091",
+    "category": "animals",
+    "question": "Which huge reptile lives in rivers and has powerful jaws?",
+    "answer": "A crocodile",
+    "acceptedAnswers": [
+      "Crocodile"
+    ]
+  },
+  {
+    "id": "animals-092",
+    "category": "animals",
+    "question": "Which large flightless bird runs very fast in Africa?",
+    "answer": "An ostrich",
+    "acceptedAnswers": [
+      "Ostrich"
+    ]
+  },
+  {
+    "id": "animals-093",
+    "category": "animals",
+    "question": "Which black and yellow striped insect can sting?",
+    "answer": "A wasp",
+    "acceptedAnswers": [
+      "Wasp"
+    ]
+  },
+  {
+    "id": "animals-094",
+    "category": "animals",
+    "question": "Which bird is associated with delivering babies in folklore?",
+    "answer": "A stork",
+    "acceptedAnswers": [
+      "Stork"
+    ]
+  },
+  {
+    "id": "animals-095",
+    "category": "animals",
+    "question": "Which amphibian has smooth moist skin, like a small lizard?",
+    "answer": "A newt",
+    "acceptedAnswers": [
+      "Newt"
+    ]
+  },
+  {
+    "id": "animals-096",
+    "category": "animals",
+    "question": "Which seabird is known for stealing chips at the seaside?",
+    "answer": "A seagull",
+    "acceptedAnswers": [
+      "Seagull"
+    ]
+  },
+  {
+    "id": "animals-097",
+    "category": "animals",
+    "question": "Which wild British mammal has a bushy red tail?",
+    "answer": "A fox",
+    "acceptedAnswers": [
+      "Fox"
+    ]
+  },
+  {
+    "id": "animals-098",
+    "category": "animals",
+    "question": "Which mammal has black and white face markings and digs setts?",
+    "answer": "A badger",
+    "acceptedAnswers": [
+      "Badger"
+    ]
+  },
+  {
+    "id": "animals-099",
+    "category": "animals",
+    "question": "Which small pet rodent is known for running on a wheel?",
+    "answer": "A hamster",
+    "acceptedAnswers": [
+      "Hamster"
+    ]
+  },
+  {
+    "id": "animals-100",
+    "category": "animals",
+    "question": "Which farm animal lives in a sty?",
+    "answer": "A pig",
+    "acceptedAnswers": [
+      "Pig"
+    ]
+  }
 ]

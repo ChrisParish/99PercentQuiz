@@ -1,21 +1,23 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"math"
+	"path/filepath"
 	"reflect"
 	"testing"
 	"time"
 )
 
-// Mirrors the real category quotas so the tests exercise the same arithmetic.
+// Mirrors the real category quotas (doubled) so the tests exercise the same arithmetic.
 var testCategories = []struct {
 	name  string
 	count int
 }{
-	{"maths", 20}, {"animals", 50}, {"science", 45}, {"general", 45},
-	{"geography", 40}, {"food", 40}, {"sports", 40}, {"music", 40},
-	{"truefalse", 40}, {"body", 40},
+	{"maths", 40}, {"animals", 100}, {"science", 90}, {"general", 90},
+	{"geography", 80}, {"food", 80}, {"sports", 80}, {"music", 80},
+	{"truefalse", 80}, {"body", 80},
 }
 
 func testPool() []Question {
@@ -23,6 +25,7 @@ func testPool() []Question {
 	for _, c := range testCategories {
 		for i := 0; i < c.count; i++ {
 			qs = append(qs, Question{
+				ID:       fmt.Sprintf("%s-%03d", c.name, i),
 				Question: fmt.Sprintf("%s question %d?", c.name, i),
 				Answer:   fmt.Sprintf("%s-%d", c.name, i),
 				Category: c.name,
@@ -37,7 +40,7 @@ func testPool() []Question {
 func TestCategoryBalancePerDay(t *testing.T) {
 	const days = 200
 	qs := testPool()
-	r := NewRotation(qs, 20260105)
+	r := NewRotation(qs, 20260105, "")
 
 	for d := 0; d < days; d++ {
 		perDay := make(map[string]int, len(testCategories))
@@ -58,7 +61,7 @@ func TestCategoryBalancePerDay(t *testing.T) {
 func TestCategoryShareHoldsOverTime(t *testing.T) {
 	const days = 400
 	qs := testPool()
-	r := NewRotation(qs, 20260105)
+	r := NewRotation(qs, 20260105, "")
 
 	totals := make(map[string]int, len(testCategories))
 	for d := 0; d < days; d++ {
@@ -79,7 +82,7 @@ func TestCategoryShareHoldsOverTime(t *testing.T) {
 // exclusion window, no matter how far the schedule runs.
 func TestNoRepeatWithinExclusionWindow(t *testing.T) {
 	const days = 10000
-	r := NewRotation(testPool(), 20260105)
+	r := NewRotation(testPool(), 20260105, "")
 
 	lastSeen := make(map[int]int)
 	minGap := math.MaxInt
@@ -102,7 +105,7 @@ func TestNoRepeatWithinExclusionWindow(t *testing.T) {
 }
 
 func TestEveryDayIsFullAndDistinct(t *testing.T) {
-	r := NewRotation(testPool(), 20260105)
+	r := NewRotation(testPool(), 20260105, "")
 	for d := 0; d < 500; d++ {
 		day := r.Day(d)
 		if len(day) != QuestionsPerDay {
@@ -121,7 +124,7 @@ func TestEveryDayIsFullAndDistinct(t *testing.T) {
 func TestFairness(t *testing.T) {
 	const days = 2000
 	qs := testPool()
-	r := NewRotation(qs, 20260105)
+	r := NewRotation(qs, 20260105, "")
 
 	counts := make([]int, len(qs))
 	for d := 0; d < days; d++ {
@@ -147,8 +150,8 @@ func TestFairness(t *testing.T) {
 }
 
 func TestDeterministicAcrossInstances(t *testing.T) {
-	a := NewRotation(testPool(), 42)
-	b := NewRotation(testPool(), 42)
+	a := NewRotation(testPool(), 42, "")
+	b := NewRotation(testPool(), 42, "")
 	for d := 0; d < 200; d++ {
 		if !reflect.DeepEqual(a.Day(d), b.Day(d)) {
 			t.Fatalf("day %d differs between two rotations built with the same seed", d)
@@ -157,8 +160,8 @@ func TestDeterministicAcrossInstances(t *testing.T) {
 }
 
 func TestSeedChangesSchedule(t *testing.T) {
-	a := NewRotation(testPool(), 1)
-	b := NewRotation(testPool(), 2)
+	a := NewRotation(testPool(), 1, "")
+	b := NewRotation(testPool(), 2, "")
 	identical := true
 	for d := 0; d < 50; d++ {
 		if !reflect.DeepEqual(a.Day(d), b.Day(d)) {
@@ -174,7 +177,7 @@ func TestSeedChangesSchedule(t *testing.T) {
 // Fixed 20-day blocks would satisfy the gap rule but repeat the same groupings
 // forever, which presenters would notice.
 func TestGroupingsVaryBetweenCycles(t *testing.T) {
-	r := NewRotation(testPool(), 20260105)
+	r := NewRotation(testPool(), 20260105, "")
 	first := r.Day(0)
 	for _, d := range []int{20, 40, 60, 100} {
 		if reflect.DeepEqual(first, r.Day(d)) {
@@ -310,4 +313,116 @@ func TestEmbeddedQuestionsLoad(t *testing.T) {
 		}
 	}
 	t.Logf("%d broadcast questions across %d categories", len(qs), len(byCategory))
+}
+
+// Swapping must change the slot, keep it in the same category, and never
+// introduce a question already showing elsewhere within the exclusion window.
+func TestSwapReplacesWithEligibleAlternative(t *testing.T) {
+	qs := testPool()
+	r := NewRotation(qs, 20260105, "")
+
+	before := r.Day(10)
+	oldIdx := before[3]
+
+	got, err := r.Swap(10, 3)
+	if err != nil {
+		t.Fatalf("Swap: %v", err)
+	}
+	after := r.Day(10)
+	if after[3] == oldIdx {
+		t.Fatalf("slot 3 did not change after swap")
+	}
+	if got.Category != qs[oldIdx].Category {
+		t.Errorf("swapped-in question category %q, want %q", got.Category, qs[oldIdx].Category)
+	}
+
+	seen := make(map[int]bool, len(after))
+	for _, idx := range after {
+		if seen[idx] {
+			t.Fatalf("day 10 contains a duplicate question after swap")
+		}
+		seen[idx] = true
+	}
+
+	used := r.windowUsed(10)
+	delete(used, after[3])
+	if used[after[3]] {
+		t.Errorf("swapped-in question was already used elsewhere in the exclusion window")
+	}
+}
+
+// Repeated swaps on the same slot must cycle through distinct alternatives
+// rather than repeating the same one or bouncing between just two.
+func TestSwapCyclesThroughAlternatives(t *testing.T) {
+	r := NewRotation(testPool(), 20260105, "")
+	r.Day(5)
+
+	seenQuestions := map[string]bool{}
+	for i := 0; i < 5; i++ {
+		got, err := r.Swap(5, 0)
+		if err != nil {
+			t.Fatalf("swap %d: %v", i, err)
+		}
+		seenQuestions[got.Question] = true
+	}
+	if len(seenQuestions) < 4 {
+		t.Errorf("5 swaps produced only %d distinct questions, want at least 4", len(seenQuestions))
+	}
+}
+
+func TestSwapRejectsInvalidSlot(t *testing.T) {
+	r := NewRotation(testPool(), 20260105, "")
+	if _, err := r.Swap(0, -1); !errors.Is(err, ErrInvalidSlot) {
+		t.Errorf("slot -1: got %v, want ErrInvalidSlot", err)
+	}
+	if _, err := r.Swap(0, QuestionsPerDay); !errors.Is(err, ErrInvalidSlot) {
+		t.Errorf("slot %d: got %v, want ErrInvalidSlot", QuestionsPerDay, err)
+	}
+}
+
+// A swap must persist to disk and be visible to a brand new Rotation instance
+// pointed at the same file, simulating a server restart.
+func TestSwapPersistsAcrossRestarts(t *testing.T) {
+	path := filepath.Join(t.TempDir(), "schedule.json")
+	qs := testPool()
+
+	a := NewRotation(qs, 20260105, path)
+	a.Day(3)
+	swapped, err := a.Swap(3, 2)
+	if err != nil {
+		t.Fatalf("Swap: %v", err)
+	}
+
+	b := NewRotation(qs, 20260105, path)
+	restored := b.Questions(3)
+	if restored[2].ID != swapped.ID {
+		t.Fatalf("after restart, slot 2 on day 3 is %q, want the swapped question %q",
+			restored[2].ID, swapped.ID)
+	}
+
+	// The rest of day 3 must also match exactly, not just the swapped slot.
+	original := a.Questions(3)
+	for i := range original {
+		if original[i].ID != restored[i].ID {
+			t.Errorf("slot %d: got %q after restart, want %q", i, restored[i].ID, original[i].ID)
+		}
+	}
+}
+
+// A schedule file that no longer matches the question pool (e.g. after
+// content changes) must be discarded rather than half-applied.
+func TestStaleScheduleFileIsDiscarded(t *testing.T) {
+	path := filepath.Join(t.TempDir(), "schedule.json")
+	if err := saveSchedule(path, &persistedSchedule{
+		Days: []persistedDay{{QuestionIDs: []string{"no-such-id"}, CyclePos: []int{0}}},
+	}); err != nil {
+		t.Fatalf("saveSchedule: %v", err)
+	}
+
+	r := NewRotation(testPool(), 20260105, path)
+	day := r.Day(0)
+	if len(day) != QuestionsPerDay {
+		t.Fatalf("got %d questions for day 0, want %d (stale file should have been ignored)",
+			len(day), QuestionsPerDay)
+	}
 }

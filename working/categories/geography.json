@@ -1,42 +1,547 @@
 [
-  { "id": "geography-001", "category": "geography", "question": "What is the capital of England?", "answer": "London" },
-  { "id": "geography-002", "category": "geography", "question": "What is the capital of Scotland?", "answer": "Edinburgh" },
-  { "id": "geography-003", "category": "geography", "question": "What is the capital of Wales?", "answer": "Cardiff" },
-  { "id": "geography-004", "category": "geography", "question": "What is the capital of Northern Ireland?", "answer": "Belfast" },
-  { "id": "geography-005", "category": "geography", "question": "What is the capital of the Republic of Ireland?", "answer": "Dublin" },
-  { "id": "geography-006", "category": "geography", "question": "Which river flows through London?", "answer": "The Thames", "acceptedAnswers": ["Thames", "River Thames"] },
-  { "id": "geography-007", "category": "geography", "question": "Which stretch of water separates England and France?", "answer": "The English Channel", "acceptedAnswers": ["English Channel", "The Channel"] },
-  { "id": "geography-008", "category": "geography", "question": "In which UK country is Ben Nevis?", "answer": "Scotland" },
-  { "id": "geography-009", "category": "geography", "question": "In which UK country is Snowdon?", "answer": "Wales" },
-  { "id": "geography-010", "category": "geography", "question": "How many countries make up the United Kingdom?", "answer": "4" },
-  { "id": "geography-011", "category": "geography", "question": "Which city is Big Ben in?", "answer": "London" },
-  { "id": "geography-012", "category": "geography", "question": "Which UK city is famous for the Beatles?", "answer": "Liverpool" },
-  { "id": "geography-013", "category": "geography", "question": "Which English city is famous for its Roman baths?", "answer": "Bath" },
-  { "id": "geography-014", "category": "geography", "question": "Which stone circle stands in Wiltshire?", "answer": "Stonehenge" },
-  { "id": "geography-015", "category": "geography", "question": "Which motorway links London and Leeds?", "answer": "The M1", "acceptedAnswers": ["M1"] },
-  { "id": "geography-016", "category": "geography", "question": "Which sea lies to the east of England?", "answer": "The North Sea", "acceptedAnswers": ["North Sea"] },
-  { "id": "geography-017", "category": "geography", "question": "What is the currency of the United Kingdom?", "answer": "The pound", "acceptedAnswers": ["Pound", "Pound sterling"] },
-  { "id": "geography-018", "category": "geography", "question": "Which UK country has a dragon on its flag?", "answer": "Wales" },
-  { "id": "geography-019", "category": "geography", "question": "Which flower is the national emblem of England?", "answer": "The rose", "acceptedAnswers": ["Rose"] },
-  { "id": "geography-020", "category": "geography", "question": "Which UK city is known as the Steel City?", "answer": "Sheffield" },
-  { "id": "geography-021", "category": "geography", "question": "Which London palace has the Changing of the Guard?", "answer": "Buckingham Palace" },
-  { "id": "geography-022", "category": "geography", "question": "Which London bridge lifts for tall ships?", "answer": "Tower Bridge" },
-  { "id": "geography-023", "category": "geography", "question": "Which national park is in Cumbria?", "answer": "The Lake District", "acceptedAnswers": ["Lake District"] },
-  { "id": "geography-024", "category": "geography", "question": "The Channel Tunnel links Britain to which country?", "answer": "France" },
-  { "id": "geography-025", "category": "geography", "question": "Which ocean lies to the west of Ireland?", "answer": "The Atlantic", "acceptedAnswers": ["Atlantic", "Atlantic Ocean"] },
-  { "id": "geography-026", "category": "geography", "question": "Which UK city has the Royal Mile?", "answer": "Edinburgh" },
-  { "id": "geography-027", "category": "geography", "question": "Which country lies directly south of Scotland?", "answer": "England" },
-  { "id": "geography-028", "category": "geography", "question": "Which UK city has the Bullring shopping centre?", "answer": "Birmingham" },
-  { "id": "geography-029", "category": "geography", "question": "Which UK country is Aberdeen in?", "answer": "Scotland" },
-  { "id": "geography-030", "category": "geography", "question": "Which UK city is Wembley Stadium in?", "answer": "London" },
-  { "id": "geography-031", "category": "geography", "question": "What is the sea between Britain and Ireland called?", "answer": "The Irish Sea", "acceptedAnswers": ["Irish Sea"] },
-  { "id": "geography-032", "category": "geography", "question": "Which UK city has the Tyne Bridge?", "answer": "Newcastle" },
-  { "id": "geography-033", "category": "geography", "question": "Which county is called the Garden of England?", "answer": "Kent" },
-  { "id": "geography-034", "category": "geography", "question": "Which UK city is famous for Hogmanay?", "answer": "Edinburgh" },
-  { "id": "geography-035", "category": "geography", "question": "Which UK country is Glasgow in?", "answer": "Scotland" },
-  { "id": "geography-036", "category": "geography", "question": "Which UK country is Loch Ness in?", "answer": "Scotland" },
-  { "id": "geography-037", "category": "geography", "question": "Which UK country lies west of England?", "answer": "Wales" },
-  { "id": "geography-038", "category": "geography", "question": "Which UK country is Belfast in?", "answer": "Northern Ireland" },
-  { "id": "geography-039", "category": "geography", "question": "Which UK city has the Shard?", "answer": "London" },
-  { "id": "geography-040", "category": "geography", "question": "Which UK country is Dover in?", "answer": "England" }
+  {
+    "id": "geography-001",
+    "category": "geography",
+    "question": "What is the capital of England?",
+    "answer": "London"
+  },
+  {
+    "id": "geography-002",
+    "category": "geography",
+    "question": "What is the capital of Scotland?",
+    "answer": "Edinburgh"
+  },
+  {
+    "id": "geography-003",
+    "category": "geography",
+    "question": "What is the capital of Wales?",
+    "answer": "Cardiff"
+  },
+  {
+    "id": "geography-004",
+    "category": "geography",
+    "question": "What is the capital of Northern Ireland?",
+    "answer": "Belfast"
+  },
+  {
+    "id": "geography-005",
+    "category": "geography",
+    "question": "What is the capital of the Republic of Ireland?",
+    "answer": "Dublin"
+  },
+  {
+    "id": "geography-006",
+    "category": "geography",
+    "question": "Which river flows through London?",
+    "answer": "The Thames",
+    "acceptedAnswers": [
+      "Thames",
+      "River Thames"
+    ]
+  },
+  {
+    "id": "geography-007",
+    "category": "geography",
+    "question": "Which stretch of water separates England and France?",
+    "answer": "The English Channel",
+    "acceptedAnswers": [
+      "English Channel",
+      "The Channel"
+    ]
+  },
+  {
+    "id": "geography-008",
+    "category": "geography",
+    "question": "In which UK country is Ben Nevis?",
+    "answer": "Scotland"
+  },
+  {
+    "id": "geography-009",
+    "category": "geography",
+    "question": "In which UK country is Snowdon?",
+    "answer": "Wales"
+  },
+  {
+    "id": "geography-010",
+    "category": "geography",
+    "question": "How many countries make up the United Kingdom?",
+    "answer": "4"
+  },
+  {
+    "id": "geography-011",
+    "category": "geography",
+    "question": "Which city is Big Ben in?",
+    "answer": "London"
+  },
+  {
+    "id": "geography-012",
+    "category": "geography",
+    "question": "Which UK city is famous for the Beatles?",
+    "answer": "Liverpool"
+  },
+  {
+    "id": "geography-013",
+    "category": "geography",
+    "question": "Which English city is famous for its Roman baths?",
+    "answer": "Bath"
+  },
+  {
+    "id": "geography-014",
+    "category": "geography",
+    "question": "Which stone circle stands in Wiltshire?",
+    "answer": "Stonehenge"
+  },
+  {
+    "id": "geography-015",
+    "category": "geography",
+    "question": "Which motorway links London and Leeds?",
+    "answer": "The M1",
+    "acceptedAnswers": [
+      "M1"
+    ]
+  },
+  {
+    "id": "geography-016",
+    "category": "geography",
+    "question": "Which sea lies to the east of England?",
+    "answer": "The North Sea",
+    "acceptedAnswers": [
+      "North Sea"
+    ]
+  },
+  {
+    "id": "geography-017",
+    "category": "geography",
+    "question": "What is the currency of the United Kingdom?",
+    "answer": "The pound",
+    "acceptedAnswers": [
+      "Pound",
+      "Pound sterling"
+    ]
+  },
+  {
+    "id": "geography-018",
+    "category": "geography",
+    "question": "Which UK country has a dragon on its flag?",
+    "answer": "Wales"
+  },
+  {
+    "id": "geography-019",
+    "category": "geography",
+    "question": "Which flower is the national emblem of England?",
+    "answer": "The rose",
+    "acceptedAnswers": [
+      "Rose"
+    ]
+  },
+  {
+    "id": "geography-020",
+    "category": "geography",
+    "question": "Which UK city is known as the Steel City?",
+    "answer": "Sheffield"
+  },
+  {
+    "id": "geography-021",
+    "category": "geography",
+    "question": "Which London palace has the Changing of the Guard?",
+    "answer": "Buckingham Palace"
+  },
+  {
+    "id": "geography-022",
+    "category": "geography",
+    "question": "Which London bridge lifts for tall ships?",
+    "answer": "Tower Bridge"
+  },
+  {
+    "id": "geography-023",
+    "category": "geography",
+    "question": "Which national park is in Cumbria?",
+    "answer": "The Lake District",
+    "acceptedAnswers": [
+      "Lake District"
+    ]
+  },
+  {
+    "id": "geography-024",
+    "category": "geography",
+    "question": "The Channel Tunnel links Britain to which country?",
+    "answer": "France"
+  },
+  {
+    "id": "geography-025",
+    "category": "geography",
+    "question": "Which ocean lies to the west of Ireland?",
+    "answer": "The Atlantic",
+    "acceptedAnswers": [
+      "Atlantic",
+      "Atlantic Ocean"
+    ]
+  },
+  {
+    "id": "geography-026",
+    "category": "geography",
+    "question": "Which UK city has the Royal Mile?",
+    "answer": "Edinburgh"
+  },
+  {
+    "id": "geography-027",
+    "category": "geography",
+    "question": "Which country lies directly south of Scotland?",
+    "answer": "England"
+  },
+  {
+    "id": "geography-028",
+    "category": "geography",
+    "question": "Which UK city has the Bullring shopping centre?",
+    "answer": "Birmingham"
+  },
+  {
+    "id": "geography-029",
+    "category": "geography",
+    "question": "Which UK country is Aberdeen in?",
+    "answer": "Scotland"
+  },
+  {
+    "id": "geography-030",
+    "category": "geography",
+    "question": "Which UK city is Wembley Stadium in?",
+    "answer": "London"
+  },
+  {
+    "id": "geography-031",
+    "category": "geography",
+    "question": "What is the sea between Britain and Ireland called?",
+    "answer": "The Irish Sea",
+    "acceptedAnswers": [
+      "Irish Sea"
+    ]
+  },
+  {
+    "id": "geography-032",
+    "category": "geography",
+    "question": "Which UK city has the Tyne Bridge?",
+    "answer": "Newcastle"
+  },
+  {
+    "id": "geography-033",
+    "category": "geography",
+    "question": "Which county is called the Garden of England?",
+    "answer": "Kent"
+  },
+  {
+    "id": "geography-034",
+    "category": "geography",
+    "question": "Which UK city is famous for Hogmanay?",
+    "answer": "Edinburgh"
+  },
+  {
+    "id": "geography-035",
+    "category": "geography",
+    "question": "Which UK country is Glasgow in?",
+    "answer": "Scotland"
+  },
+  {
+    "id": "geography-036",
+    "category": "geography",
+    "question": "Which UK country is Loch Ness in?",
+    "answer": "Scotland"
+  },
+  {
+    "id": "geography-037",
+    "category": "geography",
+    "question": "Which UK country lies west of England?",
+    "answer": "Wales"
+  },
+  {
+    "id": "geography-038",
+    "category": "geography",
+    "question": "Which UK country is Belfast in?",
+    "answer": "Northern Ireland"
+  },
+  {
+    "id": "geography-039",
+    "category": "geography",
+    "question": "Which UK city has the Shard?",
+    "answer": "London"
+  },
+  {
+    "id": "geography-040",
+    "category": "geography",
+    "question": "Which UK country is Dover in?",
+    "answer": "England"
+  },
+  {
+    "id": "geography-041",
+    "category": "geography",
+    "question": "Which English city is home to the University of Oxford?",
+    "answer": "Oxford"
+  },
+  {
+    "id": "geography-042",
+    "category": "geography",
+    "question": "Which English city is home to the University of Cambridge?",
+    "answer": "Cambridge"
+  },
+  {
+    "id": "geography-043",
+    "category": "geography",
+    "question": "Which UK city has the famous Albert Dock waterfront?",
+    "answer": "Liverpool"
+  },
+  {
+    "id": "geography-044",
+    "category": "geography",
+    "question": "Aintree Racecourse, home of the Grand National, is near which city?",
+    "answer": "Liverpool"
+  },
+  {
+    "id": "geography-045",
+    "category": "geography",
+    "question": "Which UK city is Old Trafford football stadium in?",
+    "answer": "Manchester"
+  },
+  {
+    "id": "geography-046",
+    "category": "geography",
+    "question": "Which UK city has the Headingley cricket ground?",
+    "answer": "Leeds"
+  },
+  {
+    "id": "geography-047",
+    "category": "geography",
+    "question": "Which UK city is known for the Angel of the North sculpture?",
+    "answer": "Gateshead"
+  },
+  {
+    "id": "geography-048",
+    "category": "geography",
+    "question": "In which English city is the SS Great Britain kept?",
+    "answer": "Bristol"
+  },
+  {
+    "id": "geography-049",
+    "category": "geography",
+    "question": "The Jorvik Viking Centre is located in which UK city?",
+    "answer": "York"
+  },
+  {
+    "id": "geography-050",
+    "category": "geography",
+    "question": "The Royal Albert Hall can be found in which city?",
+    "answer": "London"
+  },
+  {
+    "id": "geography-051",
+    "category": "geography",
+    "question": "Which city is built around an extinct volcano topped by a castle?",
+    "answer": "Edinburgh"
+  },
+  {
+    "id": "geography-052",
+    "category": "geography",
+    "question": "Which English city is nicknamed 'Brum'?",
+    "answer": "Birmingham"
+  },
+  {
+    "id": "geography-053",
+    "category": "geography",
+    "question": "The Titanic Museum can be visited in which UK city?",
+    "answer": "Belfast"
+  },
+  {
+    "id": "geography-054",
+    "category": "geography",
+    "question": "Which river flows through York?",
+    "answer": "The River Ouse",
+    "acceptedAnswers": [
+      "Ouse",
+      "River Ouse"
+    ]
+  },
+  {
+    "id": "geography-055",
+    "category": "geography",
+    "question": "Which Scottish city is known as the Granite City?",
+    "answer": "Aberdeen",
+    "acceptedAnswers": [
+      "River Tyne",
+      "Tyne"
+    ]
+  },
+  {
+    "id": "geography-056",
+    "category": "geography",
+    "question": "Which river flows through Glasgow?",
+    "answer": "The Clyde",
+    "acceptedAnswers": [
+      "River Clyde",
+      "Clyde"
+    ]
+  },
+  {
+    "id": "geography-057",
+    "category": "geography",
+    "question": "Which UK mountain range runs down the centre of England?",
+    "answer": "The Pennines",
+    "acceptedAnswers": [
+      "Pennines"
+    ]
+  },
+  {
+    "id": "geography-058",
+    "category": "geography",
+    "question": "Which sea lies to the west of Scotland?",
+    "answer": "The Atlantic",
+    "acceptedAnswers": [
+      "Atlantic",
+      "Atlantic Ocean"
+    ]
+  },
+  {
+    "id": "geography-059",
+    "category": "geography",
+    "question": "Which UK country is the Isle of Skye part of?",
+    "answer": "Scotland"
+  },
+  {
+    "id": "geography-060",
+    "category": "geography",
+    "question": "The Giant's Causeway is found in which UK country?",
+    "answer": "Northern Ireland"
+  },
+  {
+    "id": "geography-061",
+    "category": "geography",
+    "question": "Which UK country has the city of Swansea?",
+    "answer": "Wales"
+  },
+  {
+    "id": "geography-062",
+    "category": "geography",
+    "question": "Which UK country has the city of Inverness?",
+    "answer": "Scotland"
+  },
+  {
+    "id": "geography-063",
+    "category": "geography",
+    "question": "Which UK country has the city of Londonderry?",
+    "answer": "Northern Ireland"
+  },
+  {
+    "id": "geography-064",
+    "category": "geography",
+    "question": "Wedgwood pottery has long been made in which UK city?",
+    "answer": "Stoke-on-Trent",
+    "acceptedAnswers": [
+      "Stoke"
+    ]
+  },
+  {
+    "id": "geography-065",
+    "category": "geography",
+    "question": "Which English county is Stonehenge located in?",
+    "answer": "Wiltshire"
+  },
+  {
+    "id": "geography-066",
+    "category": "geography",
+    "question": "The Spinnaker Tower overlooks the harbour of which city?",
+    "answer": "Portsmouth"
+  },
+  {
+    "id": "geography-067",
+    "category": "geography",
+    "question": "Harlech Castle stands in which UK country?",
+    "answer": "Wales"
+  },
+  {
+    "id": "geography-068",
+    "category": "geography",
+    "question": "Which English county is the Eden Project located in?",
+    "answer": "Cornwall"
+  },
+  {
+    "id": "geography-069",
+    "category": "geography",
+    "question": "Which English county is famous for Cheddar cheese and its gorge?",
+    "answer": "Somerset"
+  },
+  {
+    "id": "geography-070",
+    "category": "geography",
+    "question": "Which English county is Alton Towers theme park located in?",
+    "answer": "Staffordshire"
+  },
+  {
+    "id": "geography-071",
+    "category": "geography",
+    "question": "Which national park in Yorkshire is known for its dales?",
+    "answer": "The Yorkshire Dales",
+    "acceptedAnswers": [
+      "Yorkshire Dales"
+    ]
+  },
+  {
+    "id": "geography-072",
+    "category": "geography",
+    "question": "Which sea lies between Scotland and Norway?",
+    "answer": "The North Sea",
+    "acceptedAnswers": [
+      "North Sea"
+    ]
+  },
+  {
+    "id": "geography-073",
+    "category": "geography",
+    "question": "Which London park contains the Serpentine lake?",
+    "answer": "Hyde Park"
+  },
+  {
+    "id": "geography-074",
+    "category": "geography",
+    "question": "Which London museum has a giant blue whale skeleton on display?",
+    "answer": "The Natural History Museum",
+    "acceptedAnswers": [
+      "Natural History Museum"
+    ]
+  },
+  {
+    "id": "geography-075",
+    "category": "geography",
+    "question": "Which London museum is famous for the Rosetta Stone?",
+    "answer": "The British Museum",
+    "acceptedAnswers": [
+      "British Museum"
+    ]
+  },
+  {
+    "id": "geography-076",
+    "category": "geography",
+    "question": "Which UK city hosts a famous winter festival in a royal park?",
+    "answer": "London"
+  },
+  {
+    "id": "geography-077",
+    "category": "geography",
+    "question": "The Mersey Tunnel runs beneath which UK city?",
+    "answer": "Liverpool"
+  },
+  {
+    "id": "geography-078",
+    "category": "geography",
+    "question": "Which UK nation is Holyhead a ferry port for, sailing to Ireland?",
+    "answer": "Wales"
+  },
+  {
+    "id": "geography-079",
+    "category": "geography",
+    "question": "Which English seaside town is famous for its illuminations and tower?",
+    "answer": "Blackpool"
+  },
+  {
+    "id": "geography-080",
+    "category": "geography",
+    "question": "The Lake District is a national park in which UK country?",
+    "answer": "England"
+  }
 ]
