@@ -1,0 +1,29 @@
+{
+	"name": "99PercentQuiz",
+	// Go image matches the golang:1.23-alpine toolchain the build/test scripts
+	// shell out to, so gopls/IntelliSense and the scripts agree on version.
+	"image": "mcr.microsoft.com/devcontainers/go:1-1.23-bookworm",
+	"features": {
+		// Build-QuizWeb.sh/Test-QuizWeb.sh run Go toolchain commands inside
+		// `docker run golang:1.23-alpine ...`, and Dockerfile is built with
+		// `docker build`, so the container needs a working Docker CLI/daemon.
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
+		// Root-level Build-Quiz/Test-Quiz/New-FactCheckBatches wrappers exec python3.
+		"ghcr.io/devcontainers/features/python:1": {
+			"installTools": false
+		},
+		// .ps1 originals are kept for Windows/pwsh use; pwsh lets them run here too.
+		"ghcr.io/devcontainers/features/powershell:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"golang.go",
+				"ms-python.python",
+				"ms-vscode.powershell"
+			]
+		}
+	},
+	"postCreateCommand": "chmod +x *.sh web/*.sh && go version && python3 --version && pwsh -v && docker --version",
+	"remoteUser": "vscode"
+}

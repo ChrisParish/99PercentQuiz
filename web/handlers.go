@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"errors"
 	"html/template"
+	"log"
 	"net/http"
 	"net/url"
 	"strconv"
@@ -23,11 +24,12 @@ type Server struct {
 	rotation  *Rotation
 	templates *template.Template
 	title     string
+	version   string
 	loc       *time.Location
 	questions int
 }
 
-func NewServer(rotation *Rotation, questionCount int, title string, loc *time.Location) (*Server, error) {
+func NewServer(rotation *Rotation, questionCount int, title, version string, loc *time.Location) (*Server, error) {
 	tmpl, err := template.ParseFS(templateFS, "templates/*.html")
 	if err != nil {
 		return nil, err
@@ -36,6 +38,7 @@ func NewServer(rotation *Rotation, questionCount int, title string, loc *time.Lo
 		rotation:  rotation,
 		templates: tmpl,
 		title:     title,
+		version:   version,
 		loc:       loc,
 		questions: questionCount,
 	}, nil
@@ -70,6 +73,7 @@ func securityHeaders(next http.Handler) http.Handler {
 
 type pageData struct {
 	Title     string
+	Version   string
 	DateISO   string
 	DateLong  string
 	DayNumber int
@@ -116,6 +120,7 @@ func (s *Server) render(w http.ResponseWriter, _ *http.Request, day time.Time, t
 
 	data := pageData{
 		Title:     s.title,
+		Version:   s.version,
 		DateISO:   resolved.Format(isoLayout),
 		DateLong:  resolved.Format("Monday, 2 January 2006"),
 		DayNumber: index + 1,
@@ -158,18 +163,21 @@ func (s *Server) handleSwap(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
 	}
+	resolved := ResolveWeekday(day)
 
 	if _, err := s.rotation.Swap(index, slot); err != nil {
 		switch {
 		case errors.Is(err, ErrNoAlternatives):
 			http.Error(w, "no alternative question is available for this slot", http.StatusConflict)
-		default:
+		case errors.Is(err, ErrInvalidSlot):
 			http.Error(w, err.Error(), http.StatusBadRequest)
+		default:
+			log.Printf("swap failed for %s slot %d: %v", resolved.Format(isoLayout), slot, err)
+			http.Error(w, "the swap could not be saved", http.StatusInternalServerError)
 		}
 		return
 	}
 
-	resolved := ResolveWeekday(day)
 	http.Redirect(w, r, "/"+resolved.Format(isoLayout), http.StatusSeeOther)
 }
 
@@ -207,6 +215,7 @@ func (s *Server) handleHealth(w http.ResponseWriter, _ *http.Request) {
 	status := http.StatusOK
 	body := map[string]any{
 		"status":    "ok",
+		"version":   s.version,
 		"questions": s.questions,
 		"timezone":  s.loc.String(),
 		"localTime": now.Format(time.RFC3339),

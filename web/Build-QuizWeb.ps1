@@ -23,7 +23,7 @@ Push-Location $root
 try {
     # Docker writes build progress to stderr, which 'Stop' would treat as fatal.
     $ErrorActionPreference = 'Continue'
-    docker build -f web/Dockerfile -t $Tag . 2>&1 | ForEach-Object { "$_" }
+    docker build -f web/Dockerfile --build-arg "VERSION=$Tag" -t $Tag . 2>&1 | ForEach-Object { "$_" }
     if ($LASTEXITCODE -ne 0) {
         Write-Host 'BUILD FAILED' -ForegroundColor Red
         exit 1

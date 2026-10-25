@@ -4,6 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"math"
+	"os"
 	"path/filepath"
 	"reflect"
 	"testing"
@@ -349,6 +350,105 @@ func TestSwapReplacesWithEligibleAlternative(t *testing.T) {
 	if used[after[3]] {
 		t.Errorf("swapped-in question was already used elsewhere in the exclusion window")
 	}
+
+	// Days 0-9 all exist and all sit inside the exclusion window for day 10.
+	for d := 0; d < 10; d++ {
+		for _, idx := range r.Day(d) {
+			if idx == after[3] {
+				t.Errorf("swapped-in question also airs on day %d, inside the exclusion window", d)
+			}
+		}
+	}
+}
+
+// The button must never hand back the question it was asked to replace, nor
+// any it has already been through: a swap that lands on something previously
+// seen reads as a broken button.
+func TestSwapKeepsMovingForward(t *testing.T) {
+	qs := testPool()
+	r := NewRotation(qs, 20260105, "")
+
+	seen := map[string]bool{qs[r.Day(7)[0]].ID: true}
+	for i := 1; i <= 20; i++ {
+		got, err := r.Swap(7, 0)
+		if err != nil {
+			t.Fatalf("swap %d: %v", i, err)
+		}
+		if seen[got.ID] {
+			t.Fatalf("swap %d went back to %s, which this slot has already shown", i, got.ID)
+		}
+		if served := qs[r.Day(7)[0]].ID; served != got.ID {
+			t.Fatalf("swap %d reported %s but the day serves %s", i, got.ID, served)
+		}
+		seen[got.ID] = true
+	}
+}
+
+// Browsing to a far-future date generates every day in between, which fills
+// the forward half of the exclusion window. That used to leave no eligible
+// candidate at all, so swapping an earlier day failed outright.
+func TestSwapWorksWhenTheScheduleRunsFarAhead(t *testing.T) {
+	qs := testPool()
+	r := NewRotation(qs, 20260105, "")
+	r.Day(200)
+
+	const day = 100
+	previous := qs[r.Day(day)[0]].ID
+	for i := 1; i <= 10; i++ {
+		got, err := r.Swap(day, 0)
+		if err != nil {
+			t.Fatalf("swap %d failed on a fully generated schedule: %v", i, err)
+		}
+		if got.ID == previous {
+			t.Fatalf("swap %d returned %s, the question it was meant to replace", i, got.ID)
+		}
+		previous = got.ID
+	}
+}
+
+// Relaxing the forward check must not leave the same question airing twice
+// inside the window; the later, not-yet-aired copy gives way instead.
+func TestSwapDoesNotCreateARepeatInsideTheWindow(t *testing.T) {
+	r := NewRotation(testPool(), 20260105, "")
+	r.Day(200)
+
+	const day = 100
+	for i := 0; i < 10; i++ {
+		if _, err := r.Swap(day, i%QuestionsPerDay); err != nil {
+			t.Fatalf("swap %d: %v", i, err)
+		}
+	}
+
+	for _, idx := range r.Day(day) {
+		for d := day - ExclusionDays; d <= day+ExclusionDays; d++ {
+			if d < 0 || d == day {
+				continue
+			}
+			for _, other := range r.Day(d) {
+				if other == idx {
+					t.Fatalf("question %d airs on both day %d and day %d", idx, day, d)
+				}
+			}
+		}
+	}
+}
+
+// A swap that cannot be written must not be reported as successful, or it
+// silently disappears at the next restart.
+func TestSwapRollsBackWhenItCannotPersist(t *testing.T) {
+	blocker := filepath.Join(t.TempDir(), "blocker")
+	if err := os.WriteFile(blocker, []byte("a file, not a directory"), 0o644); err != nil {
+		t.Fatal(err)
+	}
+	r := NewRotation(testPool(), 20260105, filepath.Join(blocker, "schedule.json"))
+
+	before := r.Day(2)[0]
+	if _, err := r.Swap(2, 0); err == nil {
+		t.Fatal("swap reported success even though the schedule could not be written")
+	}
+	if after := r.Day(2)[0]; after != before {
+		t.Errorf("slot 0 changed to %d after a failed write, want it left at %d", after, before)
+	}
 }
 
 // Repeated swaps on the same slot must cycle through distinct alternatives
@@ -414,7 +514,7 @@ func TestSwapPersistsAcrossRestarts(t *testing.T) {
 func TestStaleScheduleFileIsDiscarded(t *testing.T) {
 	path := filepath.Join(t.TempDir(), "schedule.json")
 	if err := saveSchedule(path, &persistedSchedule{
-		Days: []persistedDay{{QuestionIDs: []string{"no-such-id"}, CyclePos: []int{0}}},
+		Days: []persistedDay{{QuestionIDs: []string{"no-such-id"}}},
 	}); err != nil {
 		t.Fatalf("saveSchedule: %v", err)
 	}

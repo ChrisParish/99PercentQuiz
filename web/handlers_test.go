@@ -17,7 +17,7 @@ func newTestServer(t *testing.T) http.Handler {
 		t.Fatalf("Europe/London unavailable: %v", err)
 	}
 	qs := testPool()
-	s, err := NewServer(NewRotation(qs, 20260105, ""), len(qs), "Test Quiz", loc)
+	s, err := NewServer(NewRotation(qs, 20260105, ""), len(qs), "Test Quiz", "v0.0.0-test", loc)
 	if err != nil {
 		t.Fatalf("building server: %v", err)
 	}
@@ -234,6 +234,27 @@ func TestSwapRejectsCrossOrigin(t *testing.T) {
 	}
 }
 
+// The footer carries the build identifier so you can tell which image a
+// running container came from without shelling into it.
+func TestPagesShowTheRunningVersion(t *testing.T) {
+	h := newTestServer(t)
+	for _, path := range []string{"/2026-09-02", "/print/2026-09-02"} {
+		if body := get(t, h, path).Body.String(); !strings.Contains(body, "v0.0.0-test") {
+			t.Errorf("GET %s does not show the version", path)
+		}
+	}
+
+	var health struct {
+		Version string `json:"version"`
+	}
+	if err := json.Unmarshal(get(t, h, "/healthz").Body.Bytes(), &health); err != nil {
+		t.Fatalf("health response is not JSON: %v", err)
+	}
+	if health.Version != "v0.0.0-test" {
+		t.Errorf("health version %q, want v0.0.0-test", health.Version)
+	}
+}
+
 func TestSecurityHeaders(t *testing.T) {
 	h := newTestServer(t)
 	rec := get(t, h, "/2026-09-02")
@@ -293,7 +314,7 @@ func TestEmbeddedQuestionsRenderEndToEnd(t *testing.T) {
 	if err != nil {
 		t.Fatalf("loading embedded questions: %v", err)
 	}
-	s, err := NewServer(NewRotation(qs, 20260105, ""), len(qs), "The 99% Quiz", loc)
+	s, err := NewServer(NewRotation(qs, 20260105, ""), len(qs), "The 99% Quiz", "test", loc)
 	if err != nil {
 		t.Fatal(err)
 	}

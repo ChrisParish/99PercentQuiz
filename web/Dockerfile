@@ -17,13 +17,24 @@ COPY working/pool.json ./data/pool.json
 # Tests gate the build: a failing test means no image is produced.
 RUN go vet ./... && go test ./...
 
-RUN CGO_ENABLED=0 GOOS=linux go build -trimpath -ldflags="-s -w" -o /out/quizweb .
+# Stamped into the binary so the running container can report which image it
+# came from; the build scripts pass the tag they are about to apply.
+ARG VERSION=dev
+RUN CGO_ENABLED=0 GOOS=linux go build -trimpath \
+    -ldflags="-s -w -X main.version=${VERSION}" -o /out/quizweb .
+
+# The runtime image has no shell to mkdir with, so the state directory is made
+# here. A volume mounted over it inherits this ownership; without it Docker
+# creates the path root-owned and the unprivileged runtime user cannot write.
+RUN install -d -o 65532 -g 65532 /out/state
 
 FROM scratch
 COPY --from=build /out/quizweb /quizweb
+COPY --from=build --chown=65532:65532 /out/state /data/state
 EXPOSE 8080
 USER 65532:65532
-# Swap state (working/pool.json schedule) is persisted here - mount a volume
-# so it survives a restart/redeploy, e.g. docker run -v quizstate:/data/state.
+# Swap state is persisted here - mount a volume so it survives a restart,
+# e.g. docker run -v quizstate:/data/state. A bind mount keeps the host's
+# ownership, so chown it to 65532:65532 there.
 VOLUME ["/data/state"]
 ENTRYPOINT ["/quizweb"]

@@ -26,7 +26,8 @@
 set -e
 
 REGISTRY='registry.cjparish.uk'
-TAG="${REGISTRY}/${1:-99quiz:latest}"
+VERSION="${1:-99quiz:latest}"
+TAG="${REGISTRY}/${VERSION}"
 SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
 ROOT_DIR=$(dirname "$SCRIPT_DIR")
 PLATFORMS="linux/amd64 linux/arm64"
@@ -38,7 +39,8 @@ for PLATFORM in $PLATFORMS; do
     ARCH_TAG="${TAG}-${ARCH}"
 
     echo "Building $ARCH_TAG for $PLATFORM..."
-    if ! docker buildx build --platform "$PLATFORM" -f web/Dockerfile -t "$ARCH_TAG" --load .; then
+    if ! docker buildx build --platform "$PLATFORM" -f web/Dockerfile \
+        --build-arg VERSION="$VERSION" -t "$ARCH_TAG" --load .; then
         echo 'BUILD FAILED' >&2
         exit 1
     fi
